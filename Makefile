@@ -67,7 +67,7 @@ INC_FOLDERS_GCC             = $(addprefix -I ,$(INC_FOLDERS))
 %.dump: %.elf
 	$(RISCV_EXE_PREFIX)objdump -xD $^ > $@
 
-applications/heep_ultrasound/build/heep_ultrasound.elf: applications/heep_ultrasound/src/heep_ultrasound.c
+heep_ultrasound/build/heep_ultrasound.elf: heep_ultrasound/src/heep_ultrasound.c
 	$(RISCV_EXE_PREFIX)gcc -march=rv32imc -o $@ -w -Os -g -nostdlib \
 		$(CUSTOM_GCC_FLAGS) \
 		-DHOST_BUILD \
@@ -79,11 +79,11 @@ applications/heep_ultrasound/build/heep_ultrasound.elf: applications/heep_ultras
 		$^ $(LIB_RUNTIME) \
 		$(LIB_BASE) \
 		$(LIB_DRIVERS) \
-		-Wl,-Map=applications/heep_ultrasound/build/heep_ultrasound.map \
+		-Wl,-Map=heep_ultrasound/build/heep_ultrasound.map \
 		-L $(RISCV)/riscv32-unknown-elf/lib \
 		-lc -lm -lgcc -flto -ffunction-sections -fdata-sections -specs=nano.specs
 
-applications/heep_ultrasound/build/heep_ultrasound.flash_exec.elf: applications/heep_ultrasound/src/heep_ultrasound.c
+heep_ultrasound/build/heep_ultrasound.flash_exec.elf: heep_ultrasound/src/heep_ultrasound.c
 	$(RISCV_EXE_PREFIX)gcc -march=rv32im -o $@ -w -Os -g -nostdlib \
 		$(CUSTOM_GCC_FLAGS) \
 		-DHOST_BUILD \
@@ -95,11 +95,11 @@ applications/heep_ultrasound/build/heep_ultrasound.flash_exec.elf: applications/
 		$^ $(LIB_RUNTIME) \
 		$(LIB_BASE) \
 		$(LIB_DRIVERS) \
-		-Wl,-Map=applications/heep_ultrasound/build/heep_ultrasound.flash_exec.map \
+		-Wl,-Map=heep_ultrasound/build/heep_ultrasound.flash_exec.map \
 		-L $(RISCV)/riscv32-unknown-elf/lib \
 		-lc -lm -lgcc -flto -ffunction-sections -fdata-sections -specs=nano.specs
 
-applications/heep_ultrasound/build/heep_ultrasound.flash_load.elf: applications/heep_ultrasound/src/heep_ultrasound.c
+heep_ultrasound/build/heep_ultrasound.flash_load.elf: heep_ultrasound/src/heep_ultrasound.c
 	$(RISCV_EXE_PREFIX)gcc -march=rv32imc -o $@ -w -Os -g -nostdlib \
 		$(CUSTOM_GCC_FLAGS) \
 		-DHOST_BUILD \
@@ -111,12 +111,12 @@ applications/heep_ultrasound/build/heep_ultrasound.flash_load.elf: applications/
 		$^ $(LIB_RUNTIME) \
 		$(LIB_BASE) \
 		$(LIB_DRIVERS) \
-		-Wl,-Map=applications/heep_ultrasound/build/heep_ultrasound.flash_load.map \
+		-Wl,-Map=heep_ultrasound/build/heep_ultrasound.flash_load.map \
 		-L $(RISCV)/riscv32-unknown-elf/lib \
 		-lc -lm -lgcc -flto -ffunction-sections -fdata-sections -specs=nano.specs
 
 clean:
-	rm -rf applications/*/*.elf \
-	rm -rf applications/*/*.hex \
-	rm -rf applications/*/*.dis \
-	rm -rf applications/*/*.dump
+	rm -rf */*.elf \
+	rm -rf */*.hex \
+	rm -rf */*.dis \
+	rm -rf */*.dump
