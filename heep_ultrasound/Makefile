@@ -26,29 +26,29 @@ TARGET                     ?= sim
 # GCC configuration
 CUSTOM_GCC_FLAGS           =
 
-LIB_CRT                    = $(wildcard device/lib/crt/*.S)
-LIB_CRT_FLASH_EXEC         = $(wildcard device/lib/crt_flash_exec/*.S)
-LIB_CRT_FLASH_LOAD         = $(wildcard device/lib/crt_flash_load/*.S)
-LIB_BASE                   = $(wildcard device/lib/base/*.c)
-LIB_BASE_FREESTD           = device/lib/base/freestanding
-LIB_RUNTIME                = $(wildcard device/lib/runtime/*.c)
-LIB_DRIVERS                = $(wildcard device/lib/drivers/soc_ctrl/*.c)
-LIB_DRIVERS                += $(wildcard device/lib/drivers/uart/*.c)
-LIB_DRIVERS                += $(wildcard device/lib/drivers/rv_plic/*.c)
-LIB_DRIVERS                += $(wildcard device/lib/drivers/rv_timer/*.c)
-LIB_DRIVERS                += $(wildcard device/lib/drivers/gpio/*.c)
-LIB_DRIVERS                += $(wildcard device/lib/drivers/i2c/*.c)
-LIB_DRIVERS                += $(wildcard device/lib/drivers/dma/*.c)
-LIB_DRIVERS                += $(wildcard device/lib/drivers/power_manager/*.c)
-LIB_DRIVERS                += $(wildcard device/lib/drivers/fast_intr_ctrl/*.c)
-LIB_DRIVERS                += $(wildcard device/lib/drivers/spi_mem/*.c)
-LIB_DRIVERS                += $(wildcard device/lib/drivers/spi_memio/*.c)
-LIB_DRIVERS                += $(wildcard device/lib/drivers/spi_host/*.c)
-LIB_DRIVERS                += $(wildcard device/lib/drivers/pad_control/*.c)
-INC_FOLDERS                = $(sort $(dir $(wildcard device/target/$(TARGET)/)))
-INC_FOLDERS                += $(sort $(dir $(wildcard device/lib/base/)))
-INC_FOLDERS                += $(sort $(dir $(wildcard device/lib/drivers/*/)))
-INC_FOLDERS                += $(sort $(dir $(wildcard device/lib/runtime/)))
+LIB_CRT                    = $(wildcard ../../device/lib/crt/*.S)
+LIB_CRT_FLASH_EXEC         = $(wildcard ../../device/lib/crt_flash_exec/*.S)
+LIB_CRT_FLASH_LOAD         = $(wildcard ../../device/lib/crt_flash_load/*.S)
+LIB_BASE                   = $(wildcard ../../device/lib/base/*.c)
+LIB_BASE_FREESTD           = ../../device/lib/base/freestanding
+LIB_RUNTIME                = $(wildcard ../../device/lib/runtime/*.c)
+LIB_DRIVERS                = $(wildcard ../../device/lib/drivers/soc_ctrl/*.c)
+LIB_DRIVERS                += $(wildcard ../../device/lib/drivers/uart/*.c)
+LIB_DRIVERS                += $(wildcard ../../device/lib/drivers/rv_plic/*.c)
+LIB_DRIVERS                += $(wildcard ../../device/lib/drivers/rv_timer/*.c)
+LIB_DRIVERS                += $(wildcard ../../device/lib/drivers/gpio/*.c)
+LIB_DRIVERS                += $(wildcard ../../device/lib/drivers/i2c/*.c)
+LIB_DRIVERS                += $(wildcard ../../device/lib/drivers/dma/*.c)
+LIB_DRIVERS                += $(wildcard ../../device/lib/drivers/power_manager/*.c)
+LIB_DRIVERS                += $(wildcard ../../device/lib/drivers/fast_intr_ctrl/*.c)
+LIB_DRIVERS                += $(wildcard ../../device/lib/drivers/spi_mem/*.c)
+LIB_DRIVERS                += $(wildcard ../../device/lib/drivers/spi_memio/*.c)
+LIB_DRIVERS                += $(wildcard ../../device/lib/drivers/spi_host/*.c)
+LIB_DRIVERS                += $(wildcard ../../device/lib/drivers/pad_control/*.c)
+INC_FOLDERS                = $(sort $(dir $(wildcard ../../device/target/$(TARGET)/)))
+INC_FOLDERS                += $(sort $(dir $(wildcard ../../device/lib/base/)))
+INC_FOLDERS                += $(sort $(dir $(wildcard ../../device/lib/drivers/*/)))
+INC_FOLDERS                += $(sort $(dir $(wildcard ../../device/lib/runtime/)))
 INC_FOLDERS_GCC             = $(addprefix -I ,$(INC_FOLDERS))
 
 # rules to generate hex (loadable by simulators) from elf
@@ -67,7 +67,8 @@ INC_FOLDERS_GCC             = $(addprefix -I ,$(INC_FOLDERS))
 %.dump: %.elf
 	$(RISCV_EXE_PREFIX)objdump -xD $^ > $@
 
-heep_ultrasound/build/heep_ultrasound.elf: heep_ultrasound/src/heep_ultrasound.c
+
+build/heep_ultrasound.elf: src/heep_ultrasound.c
 	$(RISCV_EXE_PREFIX)gcc -march=rv32imc -o $@ -w -Os -g -nostdlib \
 		$(CUSTOM_GCC_FLAGS) \
 		-DHOST_BUILD \
@@ -79,11 +80,11 @@ heep_ultrasound/build/heep_ultrasound.elf: heep_ultrasound/src/heep_ultrasound.c
 		$^ $(LIB_RUNTIME) \
 		$(LIB_BASE) \
 		$(LIB_DRIVERS) \
-		-Wl,-Map=heep_ultrasound/build/heep_ultrasound.map \
+		-Wl,-Map=build/heep_ultrasound.map \
 		-L $(RISCV)/riscv32-unknown-elf/lib \
 		-lc -lm -lgcc -flto -ffunction-sections -fdata-sections -specs=nano.specs
 
-heep_ultrasound/build/heep_ultrasound.flash_exec.elf: heep_ultrasound/src/heep_ultrasound.c
+build/heep_ultrasound.flash_exec.elf: src/heep_ultrasound.c
 	$(RISCV_EXE_PREFIX)gcc -march=rv32im -o $@ -w -Os -g -nostdlib \
 		$(CUSTOM_GCC_FLAGS) \
 		-DHOST_BUILD \
@@ -95,11 +96,11 @@ heep_ultrasound/build/heep_ultrasound.flash_exec.elf: heep_ultrasound/src/heep_u
 		$^ $(LIB_RUNTIME) \
 		$(LIB_BASE) \
 		$(LIB_DRIVERS) \
-		-Wl,-Map=heep_ultrasound/build/heep_ultrasound.flash_exec.map \
+		-Wl,-Map=build/heep_ultrasound.flash_exec.map \
 		-L $(RISCV)/riscv32-unknown-elf/lib \
 		-lc -lm -lgcc -flto -ffunction-sections -fdata-sections -specs=nano.specs
 
-heep_ultrasound/build/heep_ultrasound.flash_load.elf: heep_ultrasound/src/heep_ultrasound.c
+build/heep_ultrasound.flash_load.elf: src/heep_ultrasound.c
 	$(RISCV_EXE_PREFIX)gcc -march=rv32imc -o $@ -w -Os -g -nostdlib \
 		$(CUSTOM_GCC_FLAGS) \
 		-DHOST_BUILD \
@@ -111,7 +112,7 @@ heep_ultrasound/build/heep_ultrasound.flash_load.elf: heep_ultrasound/src/heep_u
 		$^ $(LIB_RUNTIME) \
 		$(LIB_BASE) \
 		$(LIB_DRIVERS) \
-		-Wl,-Map=heep_ultrasound/build/heep_ultrasound.flash_load.map \
+		-Wl,-Map=build/heep_ultrasound.flash_load.map \
 		-L $(RISCV)/riscv32-unknown-elf/lib \
 		-lc -lm -lgcc -flto -ffunction-sections -fdata-sections -specs=nano.specs
 
