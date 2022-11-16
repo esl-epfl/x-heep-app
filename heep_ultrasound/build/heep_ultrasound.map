@@ -1,21 +1,21 @@
 Archive member included to satisfy reference by file (symbol)
 
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-atexit.o)
-                              /tmp/ccfqGdTu.o (atexit)
+                              /tmp/ccvZYcP2.o (atexit)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-exit.o)
-                              /tmp/ccfqGdTu.o (exit)
+                              /tmp/ccvZYcP2.o (exit)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fini.o)
-                              /tmp/ccfqGdTu.o (__libc_fini_array)
+                              /tmp/ccvZYcP2.o (__libc_fini_array)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
                               /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-init.o)
-                              /tmp/ccfqGdTu.o (__libc_init_array)
+                              /tmp/ccvZYcP2.o (__libc_init_array)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memset.o)
-                              /tmp/ccfqGdTu.o (memset)
+                              /tmp/ccvZYcP2.o (memset)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-puts.o)
-                              /tmp/ccLXdK2r.o (puts)
+                              /tmp/cc7vsvpZ.o (puts)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
-                              /tmp/ccSK9Pis.o (symbol from plugin) (errno)
+                              /tmp/ccqOfdr2.o (symbol from plugin) (errno)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
                               /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-puts.o) (__swbuf_r)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
@@ -55,9 +55,9 @@ Archive member included to satisfy reference by file (symbol)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
                               /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o) (_read_r)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_round.o)
-                              /tmp/ccvgjrIr.o (symbol from plugin) (round)
+                              /tmp/cc4EwYm1.o (symbol from plugin) (round)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_sin.o)
-                              /tmp/ccvgjrIr.o (symbol from plugin) (sin)
+                              /tmp/cc4EwYm1.o (symbol from plugin) (sin)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-e_rem_pio2.o)
                               /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_sin.o) (__ieee754_rem_pio2)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_cos.o)
@@ -91,9 +91,9 @@ Archive member included to satisfy reference by file (symbol)
 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
                               /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o) (__clz_tab)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memcpy-asm.o)
-                              /tmp/ccRIgTwS.ltrans0.ltrans.o (memcpy)
+                              /tmp/ccmHbJEe.ltrans0.ltrans.o (memcpy)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-printf.o)
-                              /tmp/ccRIgTwS.ltrans0.ltrans.o (printf)
+                              /tmp/ccmHbJEe.ltrans0.ltrans.o (printf)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
                               /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-printf.o) (_vfprintf_r)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
@@ -109,15 +109,15 @@ Archive member included to satisfy reference by file (symbol)
 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
                               /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
-                              /tmp/ccRIgTwS.ltrans0.ltrans.o (__bswapsi2)
+                              /tmp/ccmHbJEe.ltrans0.ltrans.o (__bswapsi2)
 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
-                              /tmp/ccRIgTwS.ltrans0.ltrans.o (__divdi3)
+                              /tmp/ccmHbJEe.ltrans0.ltrans.o (__divdi3)
 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
-                              /tmp/ccRIgTwS.ltrans0.ltrans.o (__moddi3)
+                              /tmp/ccmHbJEe.ltrans0.ltrans.o (__moddi3)
 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
-                              /tmp/ccRIgTwS.ltrans0.ltrans.o (__udivdi3)
+                              /tmp/ccmHbJEe.ltrans0.ltrans.o (__udivdi3)
 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
-                              /tmp/ccRIgTwS.ltrans0.ltrans.o (__umoddi3)
+                              /tmp/ccmHbJEe.ltrans0.ltrans.o (__umoddi3)
 
 Memory Configuration
 
@@ -128,45 +128,45 @@ ram1             0x0000000000008000 0x0000000000038000 axrwl
 
 Linker script and memory map
 
-LOAD /tmp/ccfqGdTu.o
-LOAD /tmp/ccLXdK2r.o
-LOAD /tmp/ccvgjrIr.o
-LOAD /tmp/ccRIgTwS.ltrans0.ltrans.o
-LOAD /tmp/ccQAnj7R.debug.temp.o
-LOAD /tmp/ccF50nQR.debug.temp.o
-LOAD /tmp/cchjUVjU.debug.temp.o
-LOAD /tmp/ccBD9yrT.debug.temp.o
-LOAD /tmp/ccIh3AxR.debug.temp.o
-LOAD /tmp/cc5HEVFU.debug.temp.o
-LOAD /tmp/ccOwfDaV.debug.temp.o
-LOAD /tmp/ccZcW5EU.debug.temp.o
-LOAD /tmp/ccmpr3YQ.debug.temp.o
-LOAD /tmp/cckECvaR.debug.temp.o
-LOAD /tmp/ccKiUlRQ.debug.temp.o
-LOAD /tmp/ccnwvJiR.debug.temp.o
-LOAD /tmp/cchuOGtS.debug.temp.o
-LOAD /tmp/cczqgMhT.debug.temp.o
-LOAD /tmp/ccp3dDrS.debug.temp.o
-LOAD /tmp/cc5SjuEQ.debug.temp.o
-LOAD /tmp/ccTIrxTT.debug.temp.o
-LOAD /tmp/ccm4Ck8T.debug.temp.o
-LOAD /tmp/ccV6z4Tt.o
-LOAD /tmp/ccH6Srls.o
-LOAD /tmp/ccSK9Pis.o
-LOAD /tmp/ccuHUDHr.o
-LOAD /tmp/ccawFbqu.o
-LOAD /tmp/cck8fJEr.o
-LOAD /tmp/ccmFuKrv.o
-LOAD /tmp/cc0upots.o
-LOAD /tmp/cckyqogw.o
-LOAD /tmp/ccpRH66s.o
-LOAD /tmp/ccw6vpOt.o
-LOAD /tmp/ccMwZTVu.o
-LOAD /tmp/ccSsAdHu.o
-LOAD /tmp/ccNwpdYs.o
-LOAD /tmp/ccqr2xdu.o
-LOAD /tmp/ccFVdBmt.o
-LOAD /tmp/ccscfcgv.o
+LOAD /tmp/ccvZYcP2.o
+LOAD /tmp/cc7vsvpZ.o
+LOAD /tmp/cc4EwYm1.o
+LOAD /tmp/ccmHbJEe.ltrans0.ltrans.o
+LOAD /tmp/ccF51K4f.debug.temp.o
+LOAD /tmp/cc7KY7pg.debug.temp.o
+LOAD /tmp/ccRXeqbg.debug.temp.o
+LOAD /tmp/ccgpTvUh.debug.temp.o
+LOAD /tmp/ccHQiZXh.debug.temp.o
+LOAD /tmp/ccguugsf.debug.temp.o
+LOAD /tmp/cc8z5Hjg.debug.temp.o
+LOAD /tmp/ccca1aZe.debug.temp.o
+LOAD /tmp/ccOw5Luh.debug.temp.o
+LOAD /tmp/ccGzsXWh.debug.temp.o
+LOAD /tmp/cc2pN8Qe.debug.temp.o
+LOAD /tmp/ccNJjdrh.debug.temp.o
+LOAD /tmp/cc11aXTh.debug.temp.o
+LOAD /tmp/ccHVCHeg.debug.temp.o
+LOAD /tmp/cc0dhuNd.debug.temp.o
+LOAD /tmp/cc5d3oWf.debug.temp.o
+LOAD /tmp/cc45OPGf.debug.temp.o
+LOAD /tmp/cc47ZKje.debug.temp.o
+LOAD /tmp/ccLuiEdZ.o
+LOAD /tmp/ccFlBjeY.o
+LOAD /tmp/ccqOfdr2.o
+LOAD /tmp/cca18VC0.o
+LOAD /tmp/ccNxx5dZ.o
+LOAD /tmp/ccoY3KgY.o
+LOAD /tmp/cc7PQc91.o
+LOAD /tmp/ccpBCCiZ.o
+LOAD /tmp/ccR6hdW1.o
+LOAD /tmp/ccQHxH01.o
+LOAD /tmp/ccX9w4tY.o
+LOAD /tmp/ccmyZOe2.o
+LOAD /tmp/ccjtzsQY.o
+LOAD /tmp/ccfAfh6Y.o
+LOAD /tmp/cc2eeCnY.o
+LOAD /tmp/ccW2IVZY.o
+LOAD /tmp/ccwb5kzY.o
 LOAD /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a
 LOAD /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a
 LOAD /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a
@@ -180,404 +180,404 @@ LOAD /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a
 .vectors        0x0000000000000000      0x104
                 0x0000000000000000                PROVIDE (__vector_start = .)
  *(.vectors)
- .vectors       0x0000000000000000      0x104 /tmp/ccLXdK2r.o
+ .vectors       0x0000000000000000      0x104 /tmp/cc7vsvpZ.o
 
 .init           0x0000000000000180       0x62
  *(SORT_NONE(.init))
  *(.text.start)
- .text.start    0x0000000000000180       0x62 /tmp/ccfqGdTu.o
+ .text.start    0x0000000000000180       0x62 /tmp/ccvZYcP2.o
                 0x0000000000000180                _start
                 0x00000000000001dc                _init
                 0x00000000000001e0                _fini
 
-.text           0x00000000000001e4     0x561a
+.text           0x00000000000001e4     0x5616
  *(.text.unlikely .text.*_unlikely .text.unlikely.*)
  *(.text.exit .text.exit.*)
  .text.exit     0x00000000000001e4       0x26 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-exit.o)
                 0x00000000000001e4                exit
  *(.text.startup .text.startup.*)
  .text.startup.main
-                0x000000000000020a      0x390 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x000000000000020a      0x38c /tmp/ccmHbJEe.ltrans0.ltrans.o
                 0x000000000000020a                main
  *(.text.hot .text.hot.*)
  *(.text .stub .text.* .gnu.linkonce.t.*)
- .text          0x000000000000059a        0x0 /tmp/ccfqGdTu.o
- .text          0x000000000000059a        0x0 /tmp/ccLXdK2r.o
- .text.vecs     0x000000000000059a       0x14 /tmp/ccLXdK2r.o
- .text          0x00000000000005ae        0x0 /tmp/ccRIgTwS.ltrans0.ltrans.o
+ .text          0x0000000000000596        0x0 /tmp/ccvZYcP2.o
+ .text          0x0000000000000596        0x0 /tmp/cc7vsvpZ.o
+ .text.vecs     0x0000000000000596       0x14 /tmp/cc7vsvpZ.o
+ .text          0x00000000000005aa        0x0 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .text.spi_set_enable.constprop.0
-                0x00000000000005ae       0x1a /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x00000000000005aa       0x1a /tmp/ccmHbJEe.ltrans0.ltrans.o
  .text.spi_output_enable.constprop.0
-                0x00000000000005c8       0x22 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x00000000000005c4       0x22 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .text.rv_timer_reset.constprop.0
-                0x00000000000005ea       0x86 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x00000000000005e6       0x86 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .text.print_exc_msg
-                0x0000000000000670       0x20 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x000000000000066c       0x20 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .text.handler_instr_acc_fault
-                0x0000000000000690       0x18 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x000000000000068c       0x18 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .text.handler_lsu_fault
-                0x00000000000006a8       0x18 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x00000000000006a4       0x18 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .text.write_to_flash_256_bytes_max.constprop.0
-                0x00000000000006c0      0x12a /tmp/ccRIgTwS.ltrans0.ltrans.o
- *fill*         0x00000000000007ea        0x2 
+                0x00000000000006bc      0x12a /tmp/ccmHbJEe.ltrans0.ltrans.o
+ *fill*         0x00000000000007e6        0x2 
  .text.handler_irq_timer
-                0x00000000000007ec       0x3a /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x00000000000007ec                handler_irq_timer
- *fill*         0x0000000000000826        0x2 
+                0x00000000000007e8       0x3a /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x00000000000007e8                handler_irq_timer
+ *fill*         0x0000000000000822        0x2 
  .text.handler_irq_fast_spi_flash
-                0x0000000000000828       0x42 /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000828                handler_irq_fast_spi_flash
- *fill*         0x000000000000086a        0x2 
+                0x0000000000000824       0x42 /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000824                handler_irq_fast_spi_flash
+ *fill*         0x0000000000000866        0x2 
  .text.handler_irq_fast_dma
-                0x000000000000086c       0x1e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x000000000000086c                handler_irq_fast_dma
- *fill*         0x000000000000088a        0x2 
+                0x0000000000000868       0x1e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000868                handler_irq_fast_dma
+ *fill*         0x0000000000000886        0x2 
  .text.handler_exception
-                0x000000000000088c       0x6e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x000000000000088c                handler_exception
- *fill*         0x00000000000008fa        0x2 
+                0x0000000000000888       0x6e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000888                handler_exception
+ *fill*         0x00000000000008f6        0x2 
  .text.handler_irq_software
-                0x00000000000008fc       0x2e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x00000000000008fc                handler_irq_software
- *fill*         0x000000000000092a        0x2 
+                0x00000000000008f8       0x2e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x00000000000008f8                handler_irq_software
+ *fill*         0x0000000000000926        0x2 
  .text.handler_irq_external
-                0x000000000000092c       0x2e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x000000000000092c                handler_irq_external
- *fill*         0x000000000000095a        0x2 
+                0x0000000000000928       0x2e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000928                handler_irq_external
+ *fill*         0x0000000000000956        0x2 
  .text.handler_irq_fast_timer_1
-                0x000000000000095c       0x2e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x000000000000095c                handler_irq_fast_timer_1
- *fill*         0x000000000000098a        0x2 
+                0x0000000000000958       0x2e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000958                handler_irq_fast_timer_1
+ *fill*         0x0000000000000986        0x2 
  .text.handler_irq_fast_timer_2
-                0x000000000000098c       0x2e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x000000000000098c                handler_irq_fast_timer_2
- *fill*         0x00000000000009ba        0x2 
+                0x0000000000000988       0x2e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000988                handler_irq_fast_timer_2
+ *fill*         0x00000000000009b6        0x2 
  .text.handler_irq_fast_timer_3
-                0x00000000000009bc       0x2e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x00000000000009bc                handler_irq_fast_timer_3
- *fill*         0x00000000000009ea        0x2 
+                0x00000000000009b8       0x2e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x00000000000009b8                handler_irq_fast_timer_3
+ *fill*         0x00000000000009e6        0x2 
  .text.handler_irq_fast_spi
-                0x00000000000009ec       0x2e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x00000000000009ec                handler_irq_fast_spi
- *fill*         0x0000000000000a1a        0x2 
+                0x00000000000009e8       0x2e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x00000000000009e8                handler_irq_fast_spi
+ *fill*         0x0000000000000a16        0x2 
  .text.handler_irq_fast_gpio_0
-                0x0000000000000a1c       0x2e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000a1c                handler_irq_fast_gpio_0
- *fill*         0x0000000000000a4a        0x2 
+                0x0000000000000a18       0x2e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000a18                handler_irq_fast_gpio_0
+ *fill*         0x0000000000000a46        0x2 
  .text.handler_irq_fast_gpio_1
-                0x0000000000000a4c       0x2e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000a4c                handler_irq_fast_gpio_1
- *fill*         0x0000000000000a7a        0x2 
+                0x0000000000000a48       0x2e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000a48                handler_irq_fast_gpio_1
+ *fill*         0x0000000000000a76        0x2 
  .text.handler_irq_fast_gpio_2
-                0x0000000000000a7c       0x2e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000a7c                handler_irq_fast_gpio_2
- *fill*         0x0000000000000aaa        0x2 
+                0x0000000000000a78       0x2e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000a78                handler_irq_fast_gpio_2
+ *fill*         0x0000000000000aa6        0x2 
  .text.handler_irq_fast_gpio_3
-                0x0000000000000aac       0x2e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000aac                handler_irq_fast_gpio_3
- *fill*         0x0000000000000ada        0x2 
+                0x0000000000000aa8       0x2e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000aa8                handler_irq_fast_gpio_3
+ *fill*         0x0000000000000ad6        0x2 
  .text.handler_irq_fast_gpio_4
-                0x0000000000000adc       0x2e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000adc                handler_irq_fast_gpio_4
- *fill*         0x0000000000000b0a        0x2 
+                0x0000000000000ad8       0x2e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000ad8                handler_irq_fast_gpio_4
+ *fill*         0x0000000000000b06        0x2 
  .text.handler_irq_fast_gpio_5
-                0x0000000000000b0c       0x2e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000b0c                handler_irq_fast_gpio_5
- *fill*         0x0000000000000b3a        0x2 
+                0x0000000000000b08       0x2e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000b08                handler_irq_fast_gpio_5
+ *fill*         0x0000000000000b36        0x2 
  .text.handler_irq_fast_gpio_6
-                0x0000000000000b3c       0x2e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000b3c                handler_irq_fast_gpio_6
- *fill*         0x0000000000000b6a        0x2 
+                0x0000000000000b38       0x2e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000b38                handler_irq_fast_gpio_6
+ *fill*         0x0000000000000b66        0x2 
  .text.handler_irq_fast_gpio_7
-                0x0000000000000b6c       0x2e /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000b6c                handler_irq_fast_gpio_7
- .text.init     0x0000000000000b9a        0x4 /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000b9a                init
- .text._close   0x0000000000000b9e        0x4 /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000b9e                _close
- .text._exit    0x0000000000000ba2       0x10 /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000ba2                _exit
- .text._fstat   0x0000000000000bb2        0x8 /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000bb2                _fstat
- .text._isatty  0x0000000000000bba        0x8 /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000bba                _isatty
- .text._lseek   0x0000000000000bc2        0x4 /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000bc2                _lseek
- .text._read    0x0000000000000bc6        0x4 /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000bc6                _read
- .text._write   0x0000000000000bca       0xa0 /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000bca                _write
- .text._sbrk    0x0000000000000c6a       0x32 /tmp/ccRIgTwS.ltrans0.ltrans.o
-                0x0000000000000c6a                _sbrk
- .text          0x0000000000000c9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-atexit.o)
- .text.atexit   0x0000000000000c9c        0xa /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-atexit.o)
-                0x0000000000000c9c                atexit
- .text          0x0000000000000ca6        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-exit.o)
- .text          0x0000000000000ca6        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fini.o)
+                0x0000000000000b68       0x2e /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000b68                handler_irq_fast_gpio_7
+ .text.init     0x0000000000000b96        0x4 /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000b96                init
+ .text._close   0x0000000000000b9a        0x4 /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000b9a                _close
+ .text._exit    0x0000000000000b9e       0x10 /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000b9e                _exit
+ .text._fstat   0x0000000000000bae        0x8 /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000bae                _fstat
+ .text._isatty  0x0000000000000bb6        0x8 /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000bb6                _isatty
+ .text._lseek   0x0000000000000bbe        0x4 /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000bbe                _lseek
+ .text._read    0x0000000000000bc2        0x4 /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000bc2                _read
+ .text._write   0x0000000000000bc6       0xa0 /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000bc6                _write
+ .text._sbrk    0x0000000000000c66       0x32 /tmp/ccmHbJEe.ltrans0.ltrans.o
+                0x0000000000000c66                _sbrk
+ .text          0x0000000000000c98        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-atexit.o)
+ .text.atexit   0x0000000000000c98        0xa /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-atexit.o)
+                0x0000000000000c98                atexit
+ .text          0x0000000000000ca2        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-exit.o)
+ .text          0x0000000000000ca2        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fini.o)
  .text.__libc_fini_array
-                0x0000000000000ca6       0x36 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fini.o)
-                0x0000000000000ca6                __libc_fini_array
- .text          0x0000000000000cdc        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
- .text          0x0000000000000cdc        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-init.o)
+                0x0000000000000ca2       0x36 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fini.o)
+                0x0000000000000ca2                __libc_fini_array
+ .text          0x0000000000000cd8        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
+ .text          0x0000000000000cd8        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-init.o)
  .text.__libc_init_array
-                0x0000000000000cdc       0x5e /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-init.o)
-                0x0000000000000cdc                __libc_init_array
- .text          0x0000000000000d3a       0x10 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memset.o)
-                0x0000000000000d3a                memset
- .text          0x0000000000000d4a        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-puts.o)
- .text._puts_r  0x0000000000000d4a       0xd8 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-puts.o)
-                0x0000000000000d4a                _puts_r
- .text.puts     0x0000000000000e22        0x8 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-puts.o)
-                0x0000000000000e22                puts
- .text          0x0000000000000e2a        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
+                0x0000000000000cd8       0x5e /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-init.o)
+                0x0000000000000cd8                __libc_init_array
+ .text          0x0000000000000d36       0x10 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memset.o)
+                0x0000000000000d36                memset
+ .text          0x0000000000000d46        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-puts.o)
+ .text._puts_r  0x0000000000000d46       0xd8 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-puts.o)
+                0x0000000000000d46                _puts_r
+ .text.puts     0x0000000000000e1e        0x8 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-puts.o)
+                0x0000000000000e1e                puts
+ .text          0x0000000000000e26        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
  .text.cleanup_glue
-                0x0000000000000e2a       0x22 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
-                0x0000000000000e2a                cleanup_glue
+                0x0000000000000e26       0x22 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
+                0x0000000000000e26                cleanup_glue
  .text._reclaim_reent
-                0x0000000000000e4c       0xd4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
-                0x0000000000000e4c                _reclaim_reent
- .text          0x0000000000000f20        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
+                0x0000000000000e48       0xd4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
+                0x0000000000000e48                _reclaim_reent
+ .text          0x0000000000000f1c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
  .text.__swbuf_r
-                0x0000000000000f20       0xba /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
-                0x0000000000000f20                __swbuf_r
- .text.__swbuf  0x0000000000000fda        0xa /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
-                0x0000000000000fda                __swbuf
- .text          0x0000000000000fe4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
+                0x0000000000000f1c       0xba /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
+                0x0000000000000f1c                __swbuf_r
+ .text.__swbuf  0x0000000000000fd6        0xa /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
+                0x0000000000000fd6                __swbuf
+ .text          0x0000000000000fe0        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
  .text.__swsetup_r
-                0x0000000000000fe4      0x102 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
-                0x0000000000000fe4                __swsetup_r
- .text          0x00000000000010e6        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__atexit.o)
+                0x0000000000000fe0      0x102 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
+                0x0000000000000fe0                __swsetup_r
+ .text          0x00000000000010e2        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__atexit.o)
  .text.__register_exitproc
-                0x00000000000010e6       0x80 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__atexit.o)
-                0x00000000000010e6                __register_exitproc
- .text          0x0000000000001166        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
+                0x00000000000010e2       0x80 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__atexit.o)
+                0x00000000000010e2                __register_exitproc
+ .text          0x0000000000001162        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
  .text.__call_exitprocs
-                0x0000000000001166       0xc4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
-                0x0000000000001166                __call_exitprocs
- .text          0x000000000000122a        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
+                0x0000000000001162       0xc4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
+                0x0000000000001162                __call_exitprocs
+ .text          0x0000000000001226        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
  .text.__sflush_r
-                0x000000000000122a      0x146 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
-                0x000000000000122a                __sflush_r
+                0x0000000000001226      0x146 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
+                0x0000000000001226                __sflush_r
  .text._fflush_r
-                0x0000000000001370       0x5e /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
-                0x0000000000001370                _fflush_r
- .text.fflush   0x00000000000013ce       0x16 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
-                0x00000000000013ce                fflush
- .text          0x00000000000013e4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x000000000000136c       0x5e /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
+                0x000000000000136c                _fflush_r
+ .text.fflush   0x00000000000013ca       0x16 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
+                0x00000000000013ca                fflush
+ .text          0x00000000000013e0        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
  .text.__fp_lock
-                0x00000000000013e4        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
- .text.std      0x00000000000013e8       0x62 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x00000000000013e0        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .text.std      0x00000000000013e4       0x62 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x000000000000144a        0x8 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
-                0x000000000000144a                _cleanup_r
+                0x0000000000001446        0x8 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x0000000000001446                _cleanup_r
  .text.__fp_unlock
-                0x0000000000001452        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x000000000000144e        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
  .text.__sfmoreglue
-                0x0000000000001456       0x46 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
-                0x0000000000001456                __sfmoreglue
+                0x0000000000001452       0x46 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x0000000000001452                __sfmoreglue
  .text._cleanup
-                0x000000000000149c        0x6 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
-                0x000000000000149c                _cleanup
- .text.__sinit  0x00000000000014a2       0x64 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
-                0x00000000000014a2                __sinit
- .text.__sfp    0x0000000000001506       0x9a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
-                0x0000000000001506                __sfp
+                0x0000000000001498        0x6 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x0000000000001498                _cleanup
+ .text.__sinit  0x000000000000149e       0x64 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x000000000000149e                __sinit
+ .text.__sfp    0x0000000000001502       0x9a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x0000000000001502                __sfp
  .text.__sfp_lock_acquire
-                0x00000000000015a0        0x2 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
-                0x00000000000015a0                __sfp_lock_acquire
+                0x000000000000159c        0x2 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x000000000000159c                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x00000000000015a2        0x2 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
-                0x00000000000015a2                __sfp_lock_release
+                0x000000000000159e        0x2 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x000000000000159e                __sfp_lock_release
  .text.__sinit_lock_acquire
-                0x00000000000015a4        0x2 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
-                0x00000000000015a4                __sinit_lock_acquire
+                0x00000000000015a0        0x2 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x00000000000015a0                __sinit_lock_acquire
  .text.__sinit_lock_release
-                0x00000000000015a6        0x2 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
-                0x00000000000015a6                __sinit_lock_release
+                0x00000000000015a2        0x2 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x00000000000015a2                __sinit_lock_release
  .text.__fp_lock_all
-                0x00000000000015a8        0xc /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
-                0x00000000000015a8                __fp_lock_all
+                0x00000000000015a4        0xc /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x00000000000015a4                __fp_lock_all
  .text.__fp_unlock_all
-                0x00000000000015b4        0xc /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
-                0x00000000000015b4                __fp_unlock_all
- .text          0x00000000000015c0        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
- .text._fwalk   0x00000000000015c0       0x62 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
-                0x00000000000015c0                _fwalk
+                0x00000000000015b0        0xc /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x00000000000015b0                __fp_unlock_all
+ .text          0x00000000000015bc        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
+ .text._fwalk   0x00000000000015bc       0x62 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
+                0x00000000000015bc                _fwalk
  .text._fwalk_reent
-                0x0000000000001622       0x6a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
-                0x0000000000001622                _fwalk_reent
- .text          0x000000000000168c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
+                0x000000000000161e       0x6a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
+                0x000000000000161e                _fwalk_reent
+ .text          0x0000000000001688        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
  .text.__swhatbuf_r
-                0x000000000000168c       0x5c /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
-                0x000000000000168c                __swhatbuf_r
+                0x0000000000001688       0x5c /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
+                0x0000000000001688                __swhatbuf_r
  .text.__smakebuf_r
-                0x00000000000016e8       0x9a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
-                0x00000000000016e8                __smakebuf_r
- .text          0x0000000000001782        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o)
- .text._free_r  0x0000000000001782       0x9e /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o)
-                0x0000000000001782                _free_r
- .text          0x0000000000001820        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
+                0x00000000000016e4       0x9a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
+                0x00000000000016e4                __smakebuf_r
+ .text          0x000000000000177e        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o)
+ .text._free_r  0x000000000000177e       0x9e /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o)
+                0x000000000000177e                _free_r
+ .text          0x000000000000181c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
  .text._malloc_r
-                0x0000000000001820       0xd4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
-                0x0000000000001820                _malloc_r
- .text          0x00000000000018f4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o)
- .text._sbrk_r  0x00000000000018f4       0x2c /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o)
-                0x00000000000018f4                _sbrk_r
- .text          0x0000000000001920        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
- .text.__sread  0x0000000000001920       0x30 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
-                0x0000000000001920                __sread
+                0x000000000000181c       0xd4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
+                0x000000000000181c                _malloc_r
+ .text          0x00000000000018f0        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o)
+ .text._sbrk_r  0x00000000000018f0       0x2c /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o)
+                0x00000000000018f0                _sbrk_r
+ .text          0x000000000000191c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+ .text.__sread  0x000000000000191c       0x30 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+                0x000000000000191c                __sread
  .text.__seofread
-                0x0000000000001950        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
-                0x0000000000001950                __seofread
+                0x000000000000194c        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+                0x000000000000194c                __seofread
  .text.__swrite
-                0x0000000000001954       0x4e /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
-                0x0000000000001954                __swrite
- .text.__sseek  0x00000000000019a2       0x36 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
-                0x00000000000019a2                __sseek
+                0x0000000000001950       0x4e /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+                0x0000000000001950                __swrite
+ .text.__sseek  0x000000000000199e       0x36 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+                0x000000000000199e                __sseek
  .text.__sclose
-                0x00000000000019d8        0x6 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
-                0x00000000000019d8                __sclose
- .text          0x00000000000019de        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o)
+                0x00000000000019d4        0x6 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+                0x00000000000019d4                __sclose
+ .text          0x00000000000019da        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o)
  .text._write_r
-                0x00000000000019de       0x30 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o)
-                0x00000000000019de                _write_r
- .text          0x0000000000001a0e        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o)
+                0x00000000000019da       0x30 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o)
+                0x00000000000019da                _write_r
+ .text          0x0000000000001a0a        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o)
  .text._close_r
-                0x0000000000001a0e       0x2c /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o)
-                0x0000000000001a0e                _close_r
- .text          0x0000000000001a3a        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o)
+                0x0000000000001a0a       0x2c /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o)
+                0x0000000000001a0a                _close_r
+ .text          0x0000000000001a36        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o)
  .text._fstat_r
-                0x0000000000001a3a       0x2e /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o)
-                0x0000000000001a3a                _fstat_r
- .text          0x0000000000001a68        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o)
+                0x0000000000001a36       0x2e /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o)
+                0x0000000000001a36                _fstat_r
+ .text          0x0000000000001a64        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o)
  .text._isatty_r
-                0x0000000000001a68       0x2c /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o)
-                0x0000000000001a68                _isatty_r
- .text          0x0000000000001a94        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o)
+                0x0000000000001a64       0x2c /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o)
+                0x0000000000001a64                _isatty_r
+ .text          0x0000000000001a90        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o)
  .text._lseek_r
-                0x0000000000001a94       0x30 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o)
-                0x0000000000001a94                _lseek_r
- .text          0x0000000000001ac4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
+                0x0000000000001a90       0x30 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o)
+                0x0000000000001a90                _lseek_r
+ .text          0x0000000000001ac0        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
  .text.__malloc_lock
-                0x0000000000001ac4        0x2 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
-                0x0000000000001ac4                __malloc_lock
+                0x0000000000001ac0        0x2 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
+                0x0000000000001ac0                __malloc_lock
  .text.__malloc_unlock
-                0x0000000000001ac6        0x2 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
-                0x0000000000001ac6                __malloc_unlock
- .text          0x0000000000001ac8        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
- .text._read_r  0x0000000000001ac8       0x30 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
-                0x0000000000001ac8                _read_r
- .text          0x0000000000001af8       0x16 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memcpy-asm.o)
-                0x0000000000001af8                memcpy
- .text          0x0000000000001b0e        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-printf.o)
+                0x0000000000001ac2        0x2 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
+                0x0000000000001ac2                __malloc_unlock
+ .text          0x0000000000001ac4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
+ .text._read_r  0x0000000000001ac4       0x30 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
+                0x0000000000001ac4                _read_r
+ .text          0x0000000000001af4       0x16 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memcpy-asm.o)
+                0x0000000000001af4                memcpy
+ .text          0x0000000000001b0a        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-printf.o)
  .text._printf_r
-                0x0000000000001b0e       0x38 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-printf.o)
-                0x0000000000001b0e                _printf_r
-                0x0000000000001b0e                _iprintf_r
- .text.printf   0x0000000000001b46       0x3a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-printf.o)
-                0x0000000000001b46                printf
-                0x0000000000001b46                iprintf
- .text          0x0000000000001b80        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000000001b0a       0x38 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-printf.o)
+                0x0000000000001b0a                _printf_r
+                0x0000000000001b0a                _iprintf_r
+ .text.printf   0x0000000000001b42       0x3a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-printf.o)
+                0x0000000000001b42                printf
+                0x0000000000001b42                iprintf
+ .text          0x0000000000001b7c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputc_r
-                0x0000000000001b80       0x2a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000000001b7c       0x2a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x0000000000001baa       0x42 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
-                0x0000000000001baa                __sfputs_r
+                0x0000000000001ba6       0x42 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000000001ba6                __sfputs_r
  .text.__sprint_r
-                0x0000000000001bec       0x22 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
-                0x0000000000001bec                __sprint_r
+                0x0000000000001be8       0x22 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000000001be8                __sprint_r
  .text._vfprintf_r
-                0x0000000000001c0e      0x292 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
-                0x0000000000001c0e                _vfiprintf_r
-                0x0000000000001c0e                _vfprintf_r
+                0x0000000000001c0a      0x292 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000000001c0a                _vfiprintf_r
+                0x0000000000001c0a                _vfprintf_r
  .text.vfprintf
-                0x0000000000001ea0        0xc /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
-                0x0000000000001ea0                vfiprintf
-                0x0000000000001ea0                vfprintf
- .text          0x0000000000001eac        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
+                0x0000000000001e9c        0xc /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000000001e9c                vfiprintf
+                0x0000000000001e9c                vfprintf
+ .text          0x0000000000001ea8        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
  .text.__sfvwrite_r
-                0x0000000000001eac      0x2cc /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
-                0x0000000000001eac                __sfvwrite_r
- .text          0x0000000000002178        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memchr.o)
- .text.memchr   0x0000000000002178       0x1a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memchr.o)
-                0x0000000000002178                memchr
- .text          0x0000000000002192       0x26 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memmove.o)
-                0x0000000000002192                memmove
- .text          0x00000000000021b8        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o)
+                0x0000000000001ea8      0x2cc /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
+                0x0000000000001ea8                __sfvwrite_r
+ .text          0x0000000000002174        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memchr.o)
+ .text.memchr   0x0000000000002174       0x1a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memchr.o)
+                0x0000000000002174                memchr
+ .text          0x000000000000218e       0x26 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memmove.o)
+                0x000000000000218e                memmove
+ .text          0x00000000000021b4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o)
  .text._realloc_r
-                0x00000000000021b8       0x7c /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o)
-                0x00000000000021b8                _realloc_r
- .text          0x0000000000002234        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000000000021b4       0x7c /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o)
+                0x00000000000021b4                _realloc_r
+ .text          0x0000000000002230        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
  .text._printf_common
-                0x0000000000002234      0x110 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x0000000000002234                _printf_common
+                0x0000000000002230      0x110 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000000002230                _printf_common
  .text._printf_i
-                0x0000000000002344      0x25a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x0000000000002344                _printf_i
- .text          0x000000000000259e        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
+                0x0000000000002340      0x25a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000000002340                _printf_i
+ .text          0x000000000000259a        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
  .text._malloc_usable_size_r
-                0x000000000000259e       0x14 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
-                0x000000000000259e                _malloc_usable_size_r
- .text          0x00000000000025b2        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_round.o)
- .text.round    0x00000000000025b2       0xb6 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_round.o)
-                0x00000000000025b2                round
- .text          0x0000000000002668        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_sin.o)
- .text.sin      0x0000000000002668       0x7c /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_sin.o)
-                0x0000000000002668                sin
- .text          0x00000000000026e4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-e_rem_pio2.o)
+                0x000000000000259a       0x14 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
+                0x000000000000259a                _malloc_usable_size_r
+ .text          0x00000000000025ae        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_round.o)
+ .text.round    0x00000000000025ae       0xb6 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_round.o)
+                0x00000000000025ae                round
+ .text          0x0000000000002664        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_sin.o)
+ .text.sin      0x0000000000002664       0x7c /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_sin.o)
+                0x0000000000002664                sin
+ .text          0x00000000000026e0        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-e_rem_pio2.o)
  .text.__ieee754_rem_pio2
-                0x00000000000026e4      0x41a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-e_rem_pio2.o)
-                0x00000000000026e4                __ieee754_rem_pio2
- .text          0x0000000000002afe        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_cos.o)
+                0x00000000000026e0      0x41a /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-e_rem_pio2.o)
+                0x00000000000026e0                __ieee754_rem_pio2
+ .text          0x0000000000002afa        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_cos.o)
  .text.__kernel_cos
-                0x0000000000002afe      0x190 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_cos.o)
-                0x0000000000002afe                __kernel_cos
- .text          0x0000000000002c8e        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_rem_pio2.o)
+                0x0000000000002afa      0x190 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_cos.o)
+                0x0000000000002afa                __kernel_cos
+ .text          0x0000000000002c8a        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_rem_pio2.o)
  .text.__kernel_rem_pio2
-                0x0000000000002c8e      0x752 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_rem_pio2.o)
-                0x0000000000002c8e                __kernel_rem_pio2
- .text          0x00000000000033e0        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_sin.o)
+                0x0000000000002c8a      0x752 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_rem_pio2.o)
+                0x0000000000002c8a                __kernel_rem_pio2
+ .text          0x00000000000033dc        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_sin.o)
  .text.__kernel_sin
-                0x00000000000033e0      0x172 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_sin.o)
-                0x00000000000033e0                __kernel_sin
- .text          0x0000000000003552        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_fabs.o)
- .text.fabs     0x0000000000003552        0xe /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_fabs.o)
-                0x0000000000003552                fabs
- .text          0x0000000000003560        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_floor.o)
- .text.floor    0x0000000000003560      0x12e /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_floor.o)
-                0x0000000000003560                floor
- .text          0x000000000000368e        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_scalbn.o)
- .text.scalbn   0x000000000000368e       0xea /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_scalbn.o)
-                0x000000000000368e                scalbn
- .text          0x0000000000003778      0x622 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
-                0x0000000000003778                __adddf3
- .text          0x0000000000003d9a       0x6a /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
-                0x0000000000003d9a                __eqdf2
-                0x0000000000003d9a                __nedf2
- .text          0x0000000000003e04       0xa6 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
-                0x0000000000003e04                __gtdf2
-                0x0000000000003e04                __gedf2
- .text          0x0000000000003eaa      0x476 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
-                0x0000000000003eaa                __muldf3
- .text          0x0000000000004320      0x630 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
-                0x0000000000004320                __subdf3
- .text          0x0000000000004950       0x66 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
-                0x0000000000004950                __fixdfsi
- .text          0x00000000000049b6       0x66 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
-                0x00000000000049b6                __floatsidf
- .text          0x0000000000004a1c       0x3a /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
-                0x0000000000004a1c                __clzsi2
- .text          0x0000000000004a56        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
- .text          0x0000000000004a56       0x24 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
-                0x0000000000004a56                __bswapsi2
- .text          0x0000000000004a7a      0x39a /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
-                0x0000000000004a7a                __divdi3
- .text          0x0000000000004e14      0x376 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
-                0x0000000000004e14                __moddi3
- .text          0x000000000000518a      0x35a /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
-                0x000000000000518a                __udivdi3
- .text          0x00000000000054e4      0x31a /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
-                0x00000000000054e4                __umoddi3
+                0x00000000000033dc      0x172 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_sin.o)
+                0x00000000000033dc                __kernel_sin
+ .text          0x000000000000354e        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_fabs.o)
+ .text.fabs     0x000000000000354e        0xe /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_fabs.o)
+                0x000000000000354e                fabs
+ .text          0x000000000000355c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_floor.o)
+ .text.floor    0x000000000000355c      0x12e /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_floor.o)
+                0x000000000000355c                floor
+ .text          0x000000000000368a        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_scalbn.o)
+ .text.scalbn   0x000000000000368a       0xea /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_scalbn.o)
+                0x000000000000368a                scalbn
+ .text          0x0000000000003774      0x622 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
+                0x0000000000003774                __adddf3
+ .text          0x0000000000003d96       0x6a /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
+                0x0000000000003d96                __eqdf2
+                0x0000000000003d96                __nedf2
+ .text          0x0000000000003e00       0xa6 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
+                0x0000000000003e00                __gtdf2
+                0x0000000000003e00                __gedf2
+ .text          0x0000000000003ea6      0x476 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
+                0x0000000000003ea6                __muldf3
+ .text          0x000000000000431c      0x630 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
+                0x000000000000431c                __subdf3
+ .text          0x000000000000494c       0x66 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
+                0x000000000000494c                __fixdfsi
+ .text          0x00000000000049b2       0x66 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
+                0x00000000000049b2                __floatsidf
+ .text          0x0000000000004a18       0x3a /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
+                0x0000000000004a18                __clzsi2
+ .text          0x0000000000004a52        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .text          0x0000000000004a52       0x24 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
+                0x0000000000004a52                __bswapsi2
+ .text          0x0000000000004a76      0x39a /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
+                0x0000000000004a76                __divdi3
+ .text          0x0000000000004e10      0x376 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
+                0x0000000000004e10                __moddi3
+ .text          0x0000000000005186      0x35a /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+                0x0000000000005186                __udivdi3
+ .text          0x00000000000054e0      0x31a /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+                0x00000000000054e0                __umoddi3
  *(.gnu.warning)
 
 .fini
@@ -586,92 +586,91 @@ LOAD /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a
                 [!provide]                        PROVIDE (_etext = .)
                 [!provide]                        PROVIDE (etext = .)
 
-.rodata         0x0000000000008000     0xf218
+.rodata         0x0000000000008000     0xf210
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x0000000000008000       0x20 /tmp/ccLXdK2r.o
+ .rodata        0x0000000000008000       0x20 /tmp/cc7vsvpZ.o
  .rodata.print_exc_msg.str1.4
-                0x0000000000008020       0x19 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x0000000000008020       0x19 /tmp/ccmHbJEe.ltrans0.ltrans.o
  *fill*         0x0000000000008039        0x3 
  .rodata.handler_instr_acc_fault.str1.4
-                0x000000000000803c       0x35 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x000000000000803c       0x35 /tmp/ccmHbJEe.ltrans0.ltrans.o
  *fill*         0x0000000000008071        0x3 
  .rodata.handler_lsu_fault.str1.4
-                0x0000000000008074       0x31 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x0000000000008074       0x31 /tmp/ccmHbJEe.ltrans0.ltrans.o
  *fill*         0x00000000000080a5        0x3 
  .rodata.write_to_flash_256_bytes_max.constprop.0.str1.4
-                0x00000000000080a8       0x79 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x00000000000080a8       0x79 /tmp/ccmHbJEe.ltrans0.ltrans.o
  *fill*         0x0000000000008121        0x3 
  .rodata.main.str1.4
-                0x0000000000008124       0x80 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x0000000000008124       0x7c /tmp/ccmHbJEe.ltrans0.ltrans.o
  .rodata.handler_exception.str1.4
-                0x00000000000081a4       0x95 /tmp/ccRIgTwS.ltrans0.ltrans.o
- *fill*         0x0000000000008239        0x3 
+                0x00000000000081a0       0x95 /tmp/ccmHbJEe.ltrans0.ltrans.o
+ *fill*         0x0000000000008235        0x3 
  .rodata.handler_exception
-                0x000000000000823c       0x30 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x0000000000008238       0x30 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .rodata.handler_irq_software.str1.4
-                0x000000000000826c       0x18 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x0000000000008268       0x18 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .rodata.handler_irq_external.str1.4
-                0x0000000000008284       0x18 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x0000000000008280       0x18 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .rodata.handler_irq_fast_timer_1.str1.4
-                0x000000000000829c       0x1c /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x0000000000008298       0x1c /tmp/ccmHbJEe.ltrans0.ltrans.o
  .rodata.handler_irq_fast_timer_2.str1.4
-                0x00000000000082b8       0x1c /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x00000000000082b4       0x1c /tmp/ccmHbJEe.ltrans0.ltrans.o
  .rodata.handler_irq_fast_timer_3.str1.4
-                0x00000000000082d4       0x1c /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x00000000000082d0       0x1c /tmp/ccmHbJEe.ltrans0.ltrans.o
  .rodata.handler_irq_fast_spi.str1.4
-                0x00000000000082f0       0x18 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x00000000000082ec       0x18 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .rodata.handler_irq_fast_gpio_0.str1.4
-                0x0000000000008308       0x1b /tmp/ccRIgTwS.ltrans0.ltrans.o
- *fill*         0x0000000000008323        0x1 
+                0x0000000000008304       0x1b /tmp/ccmHbJEe.ltrans0.ltrans.o
+ *fill*         0x000000000000831f        0x1 
  .rodata.handler_irq_fast_gpio_1.str1.4
-                0x0000000000008324       0x1b /tmp/ccRIgTwS.ltrans0.ltrans.o
- *fill*         0x000000000000833f        0x1 
+                0x0000000000008320       0x1b /tmp/ccmHbJEe.ltrans0.ltrans.o
+ *fill*         0x000000000000833b        0x1 
  .rodata.handler_irq_fast_gpio_2.str1.4
-                0x0000000000008340       0x1b /tmp/ccRIgTwS.ltrans0.ltrans.o
- *fill*         0x000000000000835b        0x1 
+                0x000000000000833c       0x1b /tmp/ccmHbJEe.ltrans0.ltrans.o
+ *fill*         0x0000000000008357        0x1 
  .rodata.handler_irq_fast_gpio_3.str1.4
-                0x000000000000835c       0x1b /tmp/ccRIgTwS.ltrans0.ltrans.o
- *fill*         0x0000000000008377        0x1 
+                0x0000000000008358       0x1b /tmp/ccmHbJEe.ltrans0.ltrans.o
+ *fill*         0x0000000000008373        0x1 
  .rodata.handler_irq_fast_gpio_4.str1.4
-                0x0000000000008378       0x1b /tmp/ccRIgTwS.ltrans0.ltrans.o
- *fill*         0x0000000000008393        0x1 
+                0x0000000000008374       0x1b /tmp/ccmHbJEe.ltrans0.ltrans.o
+ *fill*         0x000000000000838f        0x1 
  .rodata.handler_irq_fast_gpio_5.str1.4
-                0x0000000000008394       0x1b /tmp/ccRIgTwS.ltrans0.ltrans.o
- *fill*         0x00000000000083af        0x1 
+                0x0000000000008390       0x1b /tmp/ccmHbJEe.ltrans0.ltrans.o
+ *fill*         0x00000000000083ab        0x1 
  .rodata.handler_irq_fast_gpio_6.str1.4
-                0x00000000000083b0       0x1b /tmp/ccRIgTwS.ltrans0.ltrans.o
- *fill*         0x00000000000083cb        0x1 
+                0x00000000000083ac       0x1b /tmp/ccmHbJEe.ltrans0.ltrans.o
+ *fill*         0x00000000000083c7        0x1 
  .rodata.handler_irq_fast_gpio_7.str1.4
-                0x00000000000083cc       0x1b /tmp/ccRIgTwS.ltrans0.ltrans.o
- *fill*         0x00000000000083e7        0x1 
- .rodata.chirp  0x00000000000083e8     0xea60 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x00000000000083c8       0x1b /tmp/ccmHbJEe.ltrans0.ltrans.o
+ *fill*         0x00000000000083e3        0x1 
+ .rodata.chirp  0x00000000000083e4     0xea60 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .rodata.__sf_fake_stderr
-                0x0000000000016e48       0x20 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
-                0x0000000000016e48                __sf_fake_stderr
+                0x0000000000016e44       0x20 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x0000000000016e44                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x0000000000016e68       0x20 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
-                0x0000000000016e68                __sf_fake_stdin
+                0x0000000000016e64       0x20 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x0000000000016e64                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x0000000000016e88       0x20 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
-                0x0000000000016e88                __sf_fake_stdout
+                0x0000000000016e84       0x20 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+                0x0000000000016e84                __sf_fake_stdout
  .rodata._vfprintf_r.str1.4
-                0x0000000000016ea8       0x13 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
- *fill*         0x0000000000016ebb        0x1 
+                0x0000000000016ea4       0x13 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ *fill*         0x0000000000016eb7        0x1 
  .rodata._printf_i.str1.4
-                0x0000000000016ebc       0x25 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
- *fill*         0x0000000000016ee1        0x3 
+                0x0000000000016eb8       0x25 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ *fill*         0x0000000000016edd        0x3 
  .rodata._printf_i
-                0x0000000000016ee4       0x58 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000000016ee0       0x58 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
  .rodata.npio2_hw
-                0x0000000000016f3c       0x80 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-e_rem_pio2.o)
+                0x0000000000016f38       0x80 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-e_rem_pio2.o)
  .rodata.two_over_pi
-                0x0000000000016fbc      0x108 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-e_rem_pio2.o)
- *fill*         0x00000000000170c4        0x4 
- .rodata.PIo2   0x00000000000170c8       0x40 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_rem_pio2.o)
+                0x0000000000016fb8      0x108 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-e_rem_pio2.o)
+ .rodata.PIo2   0x00000000000170c0       0x40 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_rem_pio2.o)
  .rodata.init_jk
-                0x0000000000017108       0x10 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_rem_pio2.o)
- .rodata        0x0000000000017118      0x100 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
-                0x0000000000017118                __clz_tab
+                0x0000000000017100       0x10 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_rem_pio2.o)
+ .rodata        0x0000000000017110      0x100 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+                0x0000000000017110                __clz_tab
 
 .rodata1
  *(.rodata1)
@@ -680,39 +679,39 @@ LOAD /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a
  *(.eh_frame_hdr)
  *(.eh_frame_entry .eh_frame_entry.*)
 
-.eh_frame       0x0000000000005800       0x64
+.eh_frame       0x00000000000057fc       0x64
  *(.eh_frame)
- .eh_frame      0x0000000000005800       0x28 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
- .eh_frame      0x0000000000005828       0x14 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
+ .eh_frame      0x00000000000057fc       0x28 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
+ .eh_frame      0x0000000000005824       0x14 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
                                          0x28 (size before relaxing)
- .eh_frame      0x000000000000583c       0x14 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .eh_frame      0x0000000000005838       0x14 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
                                          0x28 (size before relaxing)
- .eh_frame      0x0000000000005850       0x14 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+ .eh_frame      0x000000000000584c       0x14 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
                                          0x28 (size before relaxing)
  *(.eh_frame.*)
 
-.rela.dyn       0x0000000000005864        0x0
+.rela.dyn       0x0000000000005860        0x0
  .rela.text.start
-                0x0000000000005864        0x0 /tmp/ccfqGdTu.o
+                0x0000000000005860        0x0 /tmp/ccvZYcP2.o
  .rela.text.__libc_fini_array
-                0x0000000000005864        0x0 /tmp/ccfqGdTu.o
+                0x0000000000005860        0x0 /tmp/ccvZYcP2.o
  .rela.text.__libc_init_array
-                0x0000000000005864        0x0 /tmp/ccfqGdTu.o
+                0x0000000000005860        0x0 /tmp/ccvZYcP2.o
  .rela.text.__register_exitproc
-                0x0000000000005864        0x0 /tmp/ccfqGdTu.o
+                0x0000000000005860        0x0 /tmp/ccvZYcP2.o
  .rela.text._sbrk
-                0x0000000000005864        0x0 /tmp/ccfqGdTu.o
+                0x0000000000005860        0x0 /tmp/ccvZYcP2.o
  .rela.sdata.brk
-                0x0000000000005864        0x0 /tmp/ccfqGdTu.o
+                0x0000000000005860        0x0 /tmp/ccvZYcP2.o
  .rela.text._vfprintf_r
-                0x0000000000005864        0x0 /tmp/ccfqGdTu.o
+                0x0000000000005860        0x0 /tmp/ccvZYcP2.o
 
 .gcc_except_table
  *(.gcc_except_table .gcc_except_table.*)
 
 .gnu_extab
  *(.gnu_extab*)
-                0x0000000000006864                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+                0x0000000000006860                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
 
 .eh_frame
  *(.eh_frame)
@@ -727,7 +726,7 @@ LOAD /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a
 .exception_ranges
  *(.exception_ranges .exception_ranges*)
 
-.tdata          0x0000000000017218        0x0
+.tdata          0x0000000000017210        0x0
                 [!provide]                        PROVIDE (__tdata_start = .)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
 
@@ -735,22 +734,22 @@ LOAD /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a
  *(.tbss .tbss.* .gnu.linkonce.tb.*)
  *(.tcommon)
 
-.preinit_array  0x0000000000017218        0x0
-                0x0000000000017218                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000000017210        0x0
+                0x0000000000017210                PROVIDE (__preinit_array_start = .)
  *(.preinit_array)
-                0x0000000000017218                PROVIDE (__preinit_array_end = .)
+                0x0000000000017210                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0000000000017218        0x0
-                0x0000000000017218                PROVIDE (__init_array_start = .)
+.init_array     0x0000000000017210        0x0
+                0x0000000000017210                PROVIDE (__init_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
  *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
-                0x0000000000017218                PROVIDE (__init_array_end = .)
+                0x0000000000017210                PROVIDE (__init_array_end = .)
 
-.fini_array     0x0000000000017218        0x0
-                0x0000000000017218                PROVIDE (__fini_array_start = .)
+.fini_array     0x0000000000017210        0x0
+                0x0000000000017210                PROVIDE (__fini_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
  *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
-                0x0000000000017218                PROVIDE (__fini_array_end = .)
+                0x0000000000017210                PROVIDE (__fini_array_end = .)
 
 .ctors
  *crtbegin.o(.ctors)
@@ -765,232 +764,232 @@ LOAD /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a
  *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x0000000000017218                . = DATA_SEGMENT_RELRO_END (., 0x0)
+                0x0000000000017210                . = DATA_SEGMENT_RELRO_END (., 0x0)
 
-.data           0x0000000000017218       0x60
-                0x0000000000017218                __DATA_BEGIN__ = .
+.data           0x0000000000017210       0x60
+                0x0000000000017210                __DATA_BEGIN__ = .
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x0000000000017218        0x0 /tmp/ccfqGdTu.o
- .data          0x0000000000017218        0x0 /tmp/ccLXdK2r.o
- .data          0x0000000000017218        0x0 /tmp/ccRIgTwS.ltrans0.ltrans.o
- .data          0x0000000000017218        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-atexit.o)
- .data          0x0000000000017218        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-exit.o)
- .data          0x0000000000017218        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fini.o)
- .data          0x0000000000017218        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000017210        0x0 /tmp/ccvZYcP2.o
+ .data          0x0000000000017210        0x0 /tmp/cc7vsvpZ.o
+ .data          0x0000000000017210        0x0 /tmp/ccmHbJEe.ltrans0.ltrans.o
+ .data          0x0000000000017210        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-atexit.o)
+ .data          0x0000000000017210        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-exit.o)
+ .data          0x0000000000017210        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fini.o)
+ .data          0x0000000000017210        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
  .data.impure_data
-                0x0000000000017218       0x60 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-init.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memset.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-puts.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__atexit.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memcpy-asm.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-printf.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memchr.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memmove.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_round.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_sin.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-e_rem_pio2.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_cos.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_rem_pio2.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_sin.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_fabs.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_floor.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_scalbn.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
- .data          0x0000000000017278        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+                0x0000000000017210       0x60 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-init.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memset.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-puts.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__atexit.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memcpy-asm.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-printf.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memchr.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memmove.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_round.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_sin.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-e_rem_pio2.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_cos.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_rem_pio2.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_sin.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_fabs.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_floor.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_scalbn.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .data          0x0000000000017270        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
 
 .data1
  *(.data1)
 
-.sdata          0x0000000000017278      0x110
-                0x0000000000017278                __SDATA_BEGIN__ = .
+.sdata          0x0000000000017270      0x110
+                0x0000000000017270                __SDATA_BEGIN__ = .
  *(.srodata.cst16)
  *(.srodata.cst8)
- .srodata.cst8  0x0000000000017278       0x48 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-e_rem_pio2.o)
- .srodata.cst8  0x00000000000172c0       0x40 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_cos.o)
+ .srodata.cst8  0x0000000000017270       0x48 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-e_rem_pio2.o)
+ .srodata.cst8  0x00000000000172b8       0x40 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_cos.o)
                                          0x48 (size before relaxing)
- .srodata.cst8  0x0000000000017300       0x18 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_rem_pio2.o)
+ .srodata.cst8  0x00000000000172f8       0x18 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_rem_pio2.o)
                                          0x30 (size before relaxing)
- .srodata.cst8  0x0000000000017318       0x30 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_sin.o)
+ .srodata.cst8  0x0000000000017310       0x30 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_sin.o)
                                          0x38 (size before relaxing)
- .srodata.cst8  0x0000000000017348        0x8 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_floor.o)
- .srodata.cst8  0x0000000000017350       0x28 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_scalbn.o)
+ .srodata.cst8  0x0000000000017340        0x8 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_floor.o)
+ .srodata.cst8  0x0000000000017348       0x28 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_scalbn.o)
                                          0x30 (size before relaxing)
  *(.srodata.cst4)
  *(.srodata.cst2)
  *(.srodata .srodata.*)
  .srodata._global_impure_ptr
-                0x0000000000017378        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
-                0x0000000000017378                _global_impure_ptr
+                0x0000000000017370        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
+                0x0000000000017370                _global_impure_ptr
  *(.sdata .sdata.* .gnu.linkonce.s.*)
- .sdata.brk     0x000000000001737c        0x4 /tmp/ccRIgTwS.ltrans0.ltrans.o
+ .sdata.brk     0x0000000000017374        0x4 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .sdata._impure_ptr
-                0x0000000000017380        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
-                0x0000000000017380                _impure_ptr
+                0x0000000000017378        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
+                0x0000000000017378                _impure_ptr
  .sdata.__atexit_dummy
-                0x0000000000017384        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__atexit.o)
-                0x0000000000017384                __atexit_dummy
-                0x0000000000017388                _edata = .
+                0x000000000001737c        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__atexit.o)
+                0x000000000001737c                __atexit_dummy
+                0x0000000000017380                _edata = .
                 [!provide]                        PROVIDE (edata = .)
-                0x0000000000017388                . = .
-                0x0000000000017388                __bss_start = .
+                0x0000000000017380                . = .
+                0x0000000000017380                __bss_start = .
 
-.sbss           0x0000000000017388       0x24
+.sbss           0x0000000000017380       0x24
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
  .sbss.dma_intr_flag
-                0x0000000000017388        0x1 /tmp/ccRIgTwS.ltrans0.ltrans.o
- *fill*         0x0000000000017389        0x3 
+                0x0000000000017380        0x1 /tmp/ccmHbJEe.ltrans0.ltrans.o
+ *fill*         0x0000000000017381        0x3 
  .sbss.spi_host_adc
-                0x000000000001738c        0x4 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x0000000000017384        0x4 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .sbss.spi_host_dac
-                0x0000000000017390        0x4 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x0000000000017388        0x4 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .sbss.spi_host_flash
-                0x0000000000017394        0x4 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x000000000001738c        0x4 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .sbss.spi_intr_flag
-                0x0000000000017398        0x1 /tmp/ccRIgTwS.ltrans0.ltrans.o
- *fill*         0x0000000000017399        0x3 
- .sbss.errno    0x000000000001739c        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
-                0x000000000001739c                errno
+                0x0000000000017390        0x1 /tmp/ccmHbJEe.ltrans0.ltrans.o
+ *fill*         0x0000000000017391        0x3 
+ .sbss.errno    0x0000000000017394        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
+                0x0000000000017394                errno
  .sbss._global_atexit
-                0x00000000000173a0        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
-                0x00000000000173a0                _global_atexit
+                0x0000000000017398        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
+                0x0000000000017398                _global_atexit
  .sbss.__malloc_free_list
-                0x00000000000173a4        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
-                0x00000000000173a4                __malloc_free_list
+                0x000000000001739c        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
+                0x000000000001739c                __malloc_free_list
  .sbss.__malloc_sbrk_start
-                0x00000000000173a8        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
-                0x00000000000173a8                __malloc_sbrk_start
+                0x00000000000173a0        0x4 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
+                0x00000000000173a0                __malloc_sbrk_start
  *(.scommon)
 
-.bss            0x00000000000173ac     0xeaf8
+.bss            0x00000000000173a4     0xeaf8
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x00000000000173ac        0x0 /tmp/ccfqGdTu.o
- .bss           0x00000000000173ac        0x0 /tmp/ccLXdK2r.o
- .bss           0x00000000000173ac        0x0 /tmp/ccRIgTwS.ltrans0.ltrans.o
- .bss.results   0x00000000000173ac     0xea60 /tmp/ccRIgTwS.ltrans0.ltrans.o
- .bss.timer     0x0000000000025e0c        0xc /tmp/ccRIgTwS.ltrans0.ltrans.o
- .bss           0x0000000000025e18        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-atexit.o)
- .bss           0x0000000000025e18        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-exit.o)
- .bss           0x0000000000025e18        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fini.o)
- .bss           0x0000000000025e18        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
- .bss           0x0000000000025e18        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-init.o)
- .bss           0x0000000000025e18        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memset.o)
- .bss           0x0000000000025e18        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-puts.o)
- .bss           0x0000000000025e18        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
- .bss           0x0000000000025e18        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
- .bss           0x0000000000025e18        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
- .bss           0x0000000000025e18        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__atexit.o)
+ .bss           0x00000000000173a4        0x0 /tmp/ccvZYcP2.o
+ .bss           0x00000000000173a4        0x0 /tmp/cc7vsvpZ.o
+ .bss           0x00000000000173a4        0x0 /tmp/ccmHbJEe.ltrans0.ltrans.o
+ .bss.results   0x00000000000173a4     0xea60 /tmp/ccmHbJEe.ltrans0.ltrans.o
+ .bss.timer     0x0000000000025e04        0xc /tmp/ccmHbJEe.ltrans0.ltrans.o
+ .bss           0x0000000000025e10        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-atexit.o)
+ .bss           0x0000000000025e10        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-exit.o)
+ .bss           0x0000000000025e10        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fini.o)
+ .bss           0x0000000000025e10        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-impure.o)
+ .bss           0x0000000000025e10        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-init.o)
+ .bss           0x0000000000025e10        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memset.o)
+ .bss           0x0000000000025e10        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-puts.o)
+ .bss           0x0000000000025e10        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-reent.o)
+ .bss           0x0000000000025e10        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wbuf.o)
+ .bss           0x0000000000025e10        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-wsetup.o)
+ .bss           0x0000000000025e10        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__atexit.o)
  .bss._global_atexit0
-                0x0000000000025e18       0x8c /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__atexit.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memcpy-asm.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-printf.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memchr.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memmove.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_round.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_sin.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-e_rem_pio2.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_cos.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_rem_pio2.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_sin.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_fabs.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_floor.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_scalbn.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
- .bss           0x0000000000025ea4        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+                0x0000000000025e10       0x8c /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__atexit.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-__call_atexit.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fflush.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-findfp.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fwalk.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-makebuf.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-freer.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-mallocr.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-sbrkr.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-stdio.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-writer.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-closer.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fstatr.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-isattyr.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-lseekr.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-mlock.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-readr.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memcpy-asm.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-printf.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-fvwrite.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memchr.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-memmove.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-reallocr.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-nano-msizer.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_round.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_sin.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-e_rem_pio2.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_cos.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_rem_pio2.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-k_sin.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_fabs.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_floor.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libm_nano.a(lib_a-s_scalbn.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .bss           0x0000000000025e9c        0x0 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
  *(COMMON)
-                0x0000000000025ea4                . = ALIGN ((. != 0x0)?0x4:0x1)
-                0x0000000000025ea4                . = ALIGN (0x4)
-                0x0000000000025ea4                . = SEGMENT_START ("ldata-segment", .)
-                0x0000000000025ea4                . = ALIGN (0x4)
-                0x0000000000025ea4                __BSS_END__ = .
-                0x0000000000025ea4                __bss_end = .
-                0x0000000000017a78                __global_pointer$ = MIN ((__SDATA_BEGIN__ + 0x800), MAX ((__DATA_BEGIN__ + 0x800), (__BSS_END__ - 0x800)))
-                0x0000000000025ea4                _end = .
+                0x0000000000025e9c                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0000000000025e9c                . = ALIGN (0x4)
+                0x0000000000025e9c                . = SEGMENT_START ("ldata-segment", .)
+                0x0000000000025e9c                . = ALIGN (0x4)
+                0x0000000000025e9c                __BSS_END__ = .
+                0x0000000000025e9c                __bss_end = .
+                0x0000000000017a70                __global_pointer$ = MIN ((__SDATA_BEGIN__ + 0x800), MAX ((__DATA_BEGIN__ + 0x800), (__BSS_END__ - 0x800)))
+                0x0000000000025e9c                _end = .
                 [!provide]                        PROVIDE (end = .)
-                0x0000000000025ea4                . = DATA_SEGMENT_END (.)
+                0x0000000000025e9c                . = DATA_SEGMENT_END (.)
 
-.heap           0x0000000000025ea4     0x1000
-                0x0000000000025ea4                PROVIDE (__heap_start = .)
+.heap           0x0000000000025e9c     0x1000
+                0x0000000000025e9c                PROVIDE (__heap_start = .)
                 0x0000000000001000                . = __heap_size
- *fill*         0x0000000000025ea4     0x1000 
-                0x0000000000026ea4                PROVIDE (__heap_end = .)
+ *fill*         0x0000000000025e9c     0x1000 
+                0x0000000000026e9c                PROVIDE (__heap_end = .)
 
-.stack          0x0000000000026eb0     0x1000
+.stack          0x0000000000026ea0     0x1000
                 [!provide]                        PROVIDE (__stack_start = .)
                 0x0000000000001000                . = __stack_size
- *fill*         0x0000000000026eb0     0x1000 
-                0x0000000000027eb0                PROVIDE (_sp = .)
+ *fill*         0x0000000000026ea0     0x1000 
+                0x0000000000027ea0                PROVIDE (_sp = .)
                 [!provide]                        PROVIDE (__stack_end = .)
 
 .stab
@@ -1013,25 +1012,25 @@ LOAD /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a
 
 .comment        0x0000000000000000       0x12
  *(.comment)
- .comment       0x0000000000000000       0x13 /tmp/ccRIgTwS.ltrans0.ltrans.o
- .comment       0x0000000000000000       0x13 /tmp/ccQAnj7R.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/ccF50nQR.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/cchjUVjU.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/ccBD9yrT.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/ccIh3AxR.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/cc5HEVFU.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/ccOwfDaV.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/ccZcW5EU.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/ccmpr3YQ.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/cckECvaR.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/ccKiUlRQ.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/ccnwvJiR.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/cchuOGtS.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/cczqgMhT.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/ccp3dDrS.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/cc5SjuEQ.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/ccTIrxTT.debug.temp.o
- .comment       0x0000000000000000       0x13 /tmp/ccm4Ck8T.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/ccmHbJEe.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x13 /tmp/ccF51K4f.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/cc7KY7pg.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/ccRXeqbg.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/ccgpTvUh.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/ccHQiZXh.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/ccguugsf.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/cc8z5Hjg.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/ccca1aZe.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/ccOw5Luh.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/ccGzsXWh.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/cc2pN8Qe.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/ccNJjdrh.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/cc11aXTh.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/ccHVCHeg.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/cc0dhuNd.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/cc5d3oWf.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/cc45OPGf.debug.temp.o
+ .comment       0x0000000000000000       0x13 /tmp/cc47ZKje.debug.temp.o
  .comment       0x0000000000000000       0x12 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-atexit.o)
                                          0x13 (size before relaxing)
  .comment       0x0000000000000012       0x13 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-exit.o)
@@ -1093,11 +1092,11 @@ LOAD /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a
 .riscv.attributes
                 0x0000000000000000       0x2a
  .riscv.attributes
-                0x0000000000000000       0x28 /tmp/ccfqGdTu.o
+                0x0000000000000000       0x28 /tmp/ccvZYcP2.o
  .riscv.attributes
-                0x0000000000000028       0x28 /tmp/ccLXdK2r.o
+                0x0000000000000028       0x28 /tmp/cc7vsvpZ.o
  .riscv.attributes
-                0x0000000000000050       0x2a /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x0000000000000050       0x2a /tmp/ccmHbJEe.ltrans0.ltrans.o
  .riscv.attributes
                 0x000000000000007a       0x26 /home/saverio/tools/riscv/riscv32-unknown-elf/lib/libc_nano.a(lib_a-atexit.o)
  .riscv.attributes
@@ -1232,11 +1231,11 @@ LOAD /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a
 .debug_aranges  0x0000000000000000      0x330
  *(.debug_aranges)
  .debug_aranges
-                0x0000000000000000       0x20 /tmp/ccfqGdTu.o
+                0x0000000000000000       0x20 /tmp/ccvZYcP2.o
  .debug_aranges
-                0x0000000000000020       0x28 /tmp/ccLXdK2r.o
+                0x0000000000000020       0x28 /tmp/cc7vsvpZ.o
  .debug_aranges
-                0x0000000000000048      0x130 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x0000000000000048      0x130 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .debug_aranges
                 0x0000000000000178       0x20 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
  .debug_aranges
@@ -1269,85 +1268,85 @@ LOAD /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0xddfa
+.debug_info     0x0000000000000000     0xde86
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x0000000000000000       0x25 /tmp/ccfqGdTu.o
- .debug_info    0x0000000000000025       0x23 /tmp/ccLXdK2r.o
- .debug_info    0x0000000000000048     0x3518 /tmp/ccRIgTwS.ltrans0.ltrans.o
- .debug_info    0x0000000000003560     0x1105 /tmp/ccQAnj7R.debug.temp.o
-                0x0000000000003560                heep_ultrasound.c.b21d66af
- .debug_info    0x0000000000004665      0x3d2 /tmp/ccF50nQR.debug.temp.o
-                0x0000000000004665                handler.c.c6d49519
- .debug_info    0x0000000000004a37       0x32 /tmp/cchjUVjU.debug.temp.o
-                0x0000000000004a37                init.c.ac37bd60
- .debug_info    0x0000000000004a69      0xb52 /tmp/ccBD9yrT.debug.temp.o
-                0x0000000000004a69                syscalls.c.35a4f21c
- .debug_info    0x00000000000055bb      0x244 /tmp/ccIh3AxR.debug.temp.o
-                0x00000000000055bb                bitfield.c.bb3b8569
- .debug_info    0x00000000000057ff      0x164 /tmp/cc5HEVFU.debug.temp.o
-                0x00000000000057ff                memory.c.e33276ea
- .debug_info    0x0000000000005963      0x6b9 /tmp/ccOwfDaV.debug.temp.o
-                0x0000000000005963                mmio.c.43d28e82
- .debug_info    0x000000000000601c      0x245 /tmp/ccZcW5EU.debug.temp.o
-                0x000000000000601c                soc_ctrl.c.d6c0dc6c
- .debug_info    0x0000000000006261      0x52d /tmp/ccmpr3YQ.debug.temp.o
-                0x0000000000006261                uart.c.91a03cfd
- .debug_info    0x000000000000678e      0x8cc /tmp/cckECvaR.debug.temp.o
-                0x000000000000678e                rv_plic.c.3fe3bdb7
- .debug_info    0x000000000000705a      0x8f0 /tmp/ccKiUlRQ.debug.temp.o
-                0x000000000000705a                rv_timer.c.fcb1c010
- .debug_info    0x000000000000794a      0x976 /tmp/ccnwvJiR.debug.temp.o
-                0x000000000000794a                gpio.c.08b30353
- .debug_info    0x00000000000082c0      0xb7d /tmp/cchuOGtS.debug.temp.o
-                0x00000000000082c0                i2c.c.99649ba2
- .debug_info    0x0000000000008e3d      0x272 /tmp/cczqgMhT.debug.temp.o
-                0x0000000000008e3d                dma.c.7e4f0197
- .debug_info    0x00000000000090af      0x7d9 /tmp/ccp3dDrS.debug.temp.o
-                0x00000000000090af                power_manager.c.a43e5eba
- .debug_info    0x0000000000009888      0x2ac /tmp/cc5SjuEQ.debug.temp.o
-                0x0000000000009888                fast_intr_ctrl.c.d433dd61
- .debug_info    0x0000000000009b34      0x629 /tmp/ccTIrxTT.debug.temp.o
-                0x0000000000009b34                spi_host.c.ae78def2
- .debug_info    0x000000000000a15d      0x206 /tmp/ccm4Ck8T.debug.temp.o
-                0x000000000000a15d                pad_control.c.d58a0035
- .debug_info    0x000000000000a363      0x4fc /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
- .debug_info    0x000000000000a85f      0x221 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
- .debug_info    0x000000000000aa80      0x21e /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
- .debug_info    0x000000000000ac9e      0x6b6 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
- .debug_info    0x000000000000b354      0x4fc /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
- .debug_info    0x000000000000b850      0x1ca /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
- .debug_info    0x000000000000ba1a      0x268 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
- .debug_info    0x000000000000bc82      0x142 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
- .debug_info    0x000000000000bdc4       0xd8 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
- .debug_info    0x000000000000be9c       0xd1 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
- .debug_info    0x000000000000bf6d      0x793 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
- .debug_info    0x000000000000c700      0x7e4 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
- .debug_info    0x000000000000cee4      0x761 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
- .debug_info    0x000000000000d645      0x7b5 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+ .debug_info    0x0000000000000000       0x25 /tmp/ccvZYcP2.o
+ .debug_info    0x0000000000000025       0x23 /tmp/cc7vsvpZ.o
+ .debug_info    0x0000000000000048     0x3563 /tmp/ccmHbJEe.ltrans0.ltrans.o
+ .debug_info    0x00000000000035ab     0x1146 /tmp/ccF51K4f.debug.temp.o
+                0x00000000000035ab                heep_ultrasound.c.14f1b095
+ .debug_info    0x00000000000046f1      0x3d2 /tmp/cc7KY7pg.debug.temp.o
+                0x00000000000046f1                handler.c.c6d49519
+ .debug_info    0x0000000000004ac3       0x32 /tmp/ccRXeqbg.debug.temp.o
+                0x0000000000004ac3                init.c.ac37bd60
+ .debug_info    0x0000000000004af5      0xb52 /tmp/ccgpTvUh.debug.temp.o
+                0x0000000000004af5                syscalls.c.35a4f21c
+ .debug_info    0x0000000000005647      0x244 /tmp/ccHQiZXh.debug.temp.o
+                0x0000000000005647                bitfield.c.bb3b8569
+ .debug_info    0x000000000000588b      0x164 /tmp/ccguugsf.debug.temp.o
+                0x000000000000588b                memory.c.e33276ea
+ .debug_info    0x00000000000059ef      0x6b9 /tmp/cc8z5Hjg.debug.temp.o
+                0x00000000000059ef                mmio.c.43d28e82
+ .debug_info    0x00000000000060a8      0x245 /tmp/ccca1aZe.debug.temp.o
+                0x00000000000060a8                soc_ctrl.c.d6c0dc6c
+ .debug_info    0x00000000000062ed      0x52d /tmp/ccOw5Luh.debug.temp.o
+                0x00000000000062ed                uart.c.91a03cfd
+ .debug_info    0x000000000000681a      0x8cc /tmp/ccGzsXWh.debug.temp.o
+                0x000000000000681a                rv_plic.c.3fe3bdb7
+ .debug_info    0x00000000000070e6      0x8f0 /tmp/cc2pN8Qe.debug.temp.o
+                0x00000000000070e6                rv_timer.c.fcb1c010
+ .debug_info    0x00000000000079d6      0x976 /tmp/ccNJjdrh.debug.temp.o
+                0x00000000000079d6                gpio.c.08b30353
+ .debug_info    0x000000000000834c      0xb7d /tmp/cc11aXTh.debug.temp.o
+                0x000000000000834c                i2c.c.99649ba2
+ .debug_info    0x0000000000008ec9      0x272 /tmp/ccHVCHeg.debug.temp.o
+                0x0000000000008ec9                dma.c.7e4f0197
+ .debug_info    0x000000000000913b      0x7d9 /tmp/cc0dhuNd.debug.temp.o
+                0x000000000000913b                power_manager.c.a43e5eba
+ .debug_info    0x0000000000009914      0x2ac /tmp/cc5d3oWf.debug.temp.o
+                0x0000000000009914                fast_intr_ctrl.c.d433dd61
+ .debug_info    0x0000000000009bc0      0x629 /tmp/cc45OPGf.debug.temp.o
+                0x0000000000009bc0                spi_host.c.ae78def2
+ .debug_info    0x000000000000a1e9      0x206 /tmp/cc47ZKje.debug.temp.o
+                0x000000000000a1e9                pad_control.c.d58a0035
+ .debug_info    0x000000000000a3ef      0x4fc /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
+ .debug_info    0x000000000000a8eb      0x221 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
+ .debug_info    0x000000000000ab0c      0x21e /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
+ .debug_info    0x000000000000ad2a      0x6b6 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
+ .debug_info    0x000000000000b3e0      0x4fc /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
+ .debug_info    0x000000000000b8dc      0x1ca /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
+ .debug_info    0x000000000000baa6      0x268 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
+ .debug_info    0x000000000000bd0e      0x142 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
+ .debug_info    0x000000000000be50       0xd8 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .debug_info    0x000000000000bf28       0xd1 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
+ .debug_info    0x000000000000bff9      0x793 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
+ .debug_info    0x000000000000c78c      0x7e4 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
+ .debug_info    0x000000000000cf70      0x761 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .debug_info    0x000000000000d6d1      0x7b5 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
 
 .debug_abbrev   0x0000000000000000     0x2b9b
  *(.debug_abbrev)
- .debug_abbrev  0x0000000000000000       0x14 /tmp/ccfqGdTu.o
- .debug_abbrev  0x0000000000000014       0x12 /tmp/ccLXdK2r.o
- .debug_abbrev  0x0000000000000026      0x1c1 /tmp/ccRIgTwS.ltrans0.ltrans.o
- .debug_abbrev  0x00000000000001e7      0x2fa /tmp/ccQAnj7R.debug.temp.o
- .debug_abbrev  0x00000000000004e1      0x105 /tmp/ccF50nQR.debug.temp.o
- .debug_abbrev  0x00000000000005e6       0x2c /tmp/cchjUVjU.debug.temp.o
- .debug_abbrev  0x0000000000000612      0x25d /tmp/ccBD9yrT.debug.temp.o
- .debug_abbrev  0x000000000000086f       0xb6 /tmp/ccIh3AxR.debug.temp.o
- .debug_abbrev  0x0000000000000925       0xc8 /tmp/cc5HEVFU.debug.temp.o
- .debug_abbrev  0x00000000000009ed      0x160 /tmp/ccOwfDaV.debug.temp.o
- .debug_abbrev  0x0000000000000b4d       0xba /tmp/ccZcW5EU.debug.temp.o
- .debug_abbrev  0x0000000000000c07      0x13c /tmp/ccmpr3YQ.debug.temp.o
- .debug_abbrev  0x0000000000000d43      0x1b5 /tmp/cckECvaR.debug.temp.o
- .debug_abbrev  0x0000000000000ef8      0x1a0 /tmp/ccKiUlRQ.debug.temp.o
- .debug_abbrev  0x0000000000001098      0x16b /tmp/ccnwvJiR.debug.temp.o
- .debug_abbrev  0x0000000000001203      0x1f6 /tmp/cchuOGtS.debug.temp.o
- .debug_abbrev  0x00000000000013f9       0xd9 /tmp/cczqgMhT.debug.temp.o
- .debug_abbrev  0x00000000000014d2      0x18c /tmp/ccp3dDrS.debug.temp.o
- .debug_abbrev  0x000000000000165e       0xe2 /tmp/cc5SjuEQ.debug.temp.o
- .debug_abbrev  0x0000000000001740      0x12b /tmp/ccTIrxTT.debug.temp.o
- .debug_abbrev  0x000000000000186b       0xbc /tmp/ccm4Ck8T.debug.temp.o
+ .debug_abbrev  0x0000000000000000       0x14 /tmp/ccvZYcP2.o
+ .debug_abbrev  0x0000000000000014       0x12 /tmp/cc7vsvpZ.o
+ .debug_abbrev  0x0000000000000026      0x1c1 /tmp/ccmHbJEe.ltrans0.ltrans.o
+ .debug_abbrev  0x00000000000001e7      0x2fa /tmp/ccF51K4f.debug.temp.o
+ .debug_abbrev  0x00000000000004e1      0x105 /tmp/cc7KY7pg.debug.temp.o
+ .debug_abbrev  0x00000000000005e6       0x2c /tmp/ccRXeqbg.debug.temp.o
+ .debug_abbrev  0x0000000000000612      0x25d /tmp/ccgpTvUh.debug.temp.o
+ .debug_abbrev  0x000000000000086f       0xb6 /tmp/ccHQiZXh.debug.temp.o
+ .debug_abbrev  0x0000000000000925       0xc8 /tmp/ccguugsf.debug.temp.o
+ .debug_abbrev  0x00000000000009ed      0x160 /tmp/cc8z5Hjg.debug.temp.o
+ .debug_abbrev  0x0000000000000b4d       0xba /tmp/ccca1aZe.debug.temp.o
+ .debug_abbrev  0x0000000000000c07      0x13c /tmp/ccOw5Luh.debug.temp.o
+ .debug_abbrev  0x0000000000000d43      0x1b5 /tmp/ccGzsXWh.debug.temp.o
+ .debug_abbrev  0x0000000000000ef8      0x1a0 /tmp/cc2pN8Qe.debug.temp.o
+ .debug_abbrev  0x0000000000001098      0x16b /tmp/ccNJjdrh.debug.temp.o
+ .debug_abbrev  0x0000000000001203      0x1f6 /tmp/cc11aXTh.debug.temp.o
+ .debug_abbrev  0x00000000000013f9       0xd9 /tmp/ccHVCHeg.debug.temp.o
+ .debug_abbrev  0x00000000000014d2      0x18c /tmp/cc0dhuNd.debug.temp.o
+ .debug_abbrev  0x000000000000165e       0xe2 /tmp/cc5d3oWf.debug.temp.o
+ .debug_abbrev  0x0000000000001740      0x12b /tmp/cc45OPGf.debug.temp.o
+ .debug_abbrev  0x000000000000186b       0xbc /tmp/cc47ZKje.debug.temp.o
  .debug_abbrev  0x0000000000001927      0x176 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
  .debug_abbrev  0x0000000000001a9d      0x153 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
  .debug_abbrev  0x0000000000001bf0      0x166 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
@@ -1363,124 +1362,124 @@ LOAD /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a
  .debug_abbrev  0x000000000000283a      0x1a6 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
  .debug_abbrev  0x00000000000029e0      0x1bb /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
 
-.debug_line     0x0000000000000000     0x8023
+.debug_line     0x0000000000000000     0x7ff1
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x0000000000000000       0xd4 /tmp/ccfqGdTu.o
- .debug_line    0x00000000000000d4      0x1ed /tmp/ccLXdK2r.o
- .debug_line    0x00000000000002c1     0x1e80 /tmp/ccRIgTwS.ltrans0.ltrans.o
- .debug_line    0x0000000000002141       0xb9 /tmp/ccQAnj7R.debug.temp.o
- .debug_line    0x00000000000021fa       0x56 /tmp/ccF50nQR.debug.temp.o
- .debug_line    0x0000000000002250       0x3a /tmp/cchjUVjU.debug.temp.o
- .debug_line    0x000000000000228a       0x9d /tmp/ccBD9yrT.debug.temp.o
- .debug_line    0x0000000000002327       0x4c /tmp/ccIh3AxR.debug.temp.o
- .debug_line    0x0000000000002373       0x5a /tmp/cc5HEVFU.debug.temp.o
- .debug_line    0x00000000000023cd       0x64 /tmp/ccOwfDaV.debug.temp.o
- .debug_line    0x0000000000002431       0x63 /tmp/ccZcW5EU.debug.temp.o
- .debug_line    0x0000000000002494       0x71 /tmp/ccmpr3YQ.debug.temp.o
- .debug_line    0x0000000000002505       0x68 /tmp/cckECvaR.debug.temp.o
- .debug_line    0x000000000000256d       0x68 /tmp/ccKiUlRQ.debug.temp.o
- .debug_line    0x00000000000025d5       0x68 /tmp/ccnwvJiR.debug.temp.o
- .debug_line    0x000000000000263d       0x68 /tmp/cchuOGtS.debug.temp.o
- .debug_line    0x00000000000026a5       0x63 /tmp/cczqgMhT.debug.temp.o
- .debug_line    0x0000000000002708       0x68 /tmp/ccp3dDrS.debug.temp.o
- .debug_line    0x0000000000002770       0x68 /tmp/cc5SjuEQ.debug.temp.o
- .debug_line    0x00000000000027d8       0x68 /tmp/ccTIrxTT.debug.temp.o
- .debug_line    0x0000000000002840       0x63 /tmp/ccm4Ck8T.debug.temp.o
- .debug_line    0x00000000000028a3      0xff9 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
- .debug_line    0x000000000000389c      0x227 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
- .debug_line    0x0000000000003ac3      0x2bc /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
- .debug_line    0x0000000000003d7f      0xda9 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
- .debug_line    0x0000000000004b28     0x1054 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
- .debug_line    0x0000000000005b7c      0x1eb /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
- .debug_line    0x0000000000005d67      0x223 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
- .debug_line    0x0000000000005f8a       0xcb /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
- .debug_line    0x0000000000006055       0x3f /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
- .debug_line    0x0000000000006094       0x9b /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
- .debug_line    0x000000000000612f      0x7ca /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
- .debug_line    0x00000000000068f9      0x862 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
- .debug_line    0x000000000000715b      0x727 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
- .debug_line    0x0000000000007882      0x7a1 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+ .debug_line    0x0000000000000000       0xd4 /tmp/ccvZYcP2.o
+ .debug_line    0x00000000000000d4      0x1ed /tmp/cc7vsvpZ.o
+ .debug_line    0x00000000000002c1     0x1e4e /tmp/ccmHbJEe.ltrans0.ltrans.o
+ .debug_line    0x000000000000210f       0xb9 /tmp/ccF51K4f.debug.temp.o
+ .debug_line    0x00000000000021c8       0x56 /tmp/cc7KY7pg.debug.temp.o
+ .debug_line    0x000000000000221e       0x3a /tmp/ccRXeqbg.debug.temp.o
+ .debug_line    0x0000000000002258       0x9d /tmp/ccgpTvUh.debug.temp.o
+ .debug_line    0x00000000000022f5       0x4c /tmp/ccHQiZXh.debug.temp.o
+ .debug_line    0x0000000000002341       0x5a /tmp/ccguugsf.debug.temp.o
+ .debug_line    0x000000000000239b       0x64 /tmp/cc8z5Hjg.debug.temp.o
+ .debug_line    0x00000000000023ff       0x63 /tmp/ccca1aZe.debug.temp.o
+ .debug_line    0x0000000000002462       0x71 /tmp/ccOw5Luh.debug.temp.o
+ .debug_line    0x00000000000024d3       0x68 /tmp/ccGzsXWh.debug.temp.o
+ .debug_line    0x000000000000253b       0x68 /tmp/cc2pN8Qe.debug.temp.o
+ .debug_line    0x00000000000025a3       0x68 /tmp/ccNJjdrh.debug.temp.o
+ .debug_line    0x000000000000260b       0x68 /tmp/cc11aXTh.debug.temp.o
+ .debug_line    0x0000000000002673       0x63 /tmp/ccHVCHeg.debug.temp.o
+ .debug_line    0x00000000000026d6       0x68 /tmp/cc0dhuNd.debug.temp.o
+ .debug_line    0x000000000000273e       0x68 /tmp/cc5d3oWf.debug.temp.o
+ .debug_line    0x00000000000027a6       0x68 /tmp/cc45OPGf.debug.temp.o
+ .debug_line    0x000000000000280e       0x63 /tmp/cc47ZKje.debug.temp.o
+ .debug_line    0x0000000000002871      0xff9 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
+ .debug_line    0x000000000000386a      0x227 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
+ .debug_line    0x0000000000003a91      0x2bc /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
+ .debug_line    0x0000000000003d4d      0xda9 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
+ .debug_line    0x0000000000004af6     0x1054 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
+ .debug_line    0x0000000000005b4a      0x1eb /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
+ .debug_line    0x0000000000005d35      0x223 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
+ .debug_line    0x0000000000005f58       0xcb /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
+ .debug_line    0x0000000000006023       0x3f /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .debug_line    0x0000000000006062       0x9b /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
+ .debug_line    0x00000000000060fd      0x7ca /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
+ .debug_line    0x00000000000068c7      0x862 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
+ .debug_line    0x0000000000007129      0x727 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .debug_line    0x0000000000007850      0x7a1 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
 
-.debug_frame    0x0000000000000000      0x734
+.debug_frame    0x0000000000000000      0x714
  *(.debug_frame)
- .debug_frame   0x0000000000000000      0x580 /tmp/ccRIgTwS.ltrans0.ltrans.o
- .debug_frame   0x0000000000000580       0x44 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
- .debug_frame   0x00000000000005c4       0x20 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
- .debug_frame   0x00000000000005e4       0x20 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
- .debug_frame   0x0000000000000604       0x54 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
- .debug_frame   0x0000000000000658       0x44 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
- .debug_frame   0x000000000000069c       0x20 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
- .debug_frame   0x00000000000006bc       0x38 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
- .debug_frame   0x00000000000006f4       0x20 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
- .debug_frame   0x0000000000000714       0x20 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
+ .debug_frame   0x0000000000000000      0x560 /tmp/ccmHbJEe.ltrans0.ltrans.o
+ .debug_frame   0x0000000000000560       0x44 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
+ .debug_frame   0x00000000000005a4       0x20 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
+ .debug_frame   0x00000000000005c4       0x20 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
+ .debug_frame   0x00000000000005e4       0x54 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
+ .debug_frame   0x0000000000000638       0x44 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
+ .debug_frame   0x000000000000067c       0x20 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
+ .debug_frame   0x000000000000069c       0x38 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
+ .debug_frame   0x00000000000006d4       0x20 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
+ .debug_frame   0x00000000000006f4       0x20 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
 
-.debug_str      0x0000000000000000     0x3844
+.debug_str      0x0000000000000000     0x387b
  *(.debug_str)
- .debug_str     0x0000000000000000       0x35 /tmp/ccfqGdTu.o
- .debug_str     0x0000000000000035        0xa /tmp/ccLXdK2r.o
+ .debug_str     0x0000000000000000       0x35 /tmp/ccvZYcP2.o
+ .debug_str     0x0000000000000035        0xa /tmp/cc7vsvpZ.o
                                          0x38 (size before relaxing)
- .debug_str     0x000000000000003f      0x16f /tmp/ccRIgTwS.ltrans0.ltrans.o
+ .debug_str     0x000000000000003f      0x16f /tmp/ccmHbJEe.ltrans0.ltrans.o
                                         0x17b (size before relaxing)
- .debug_str     0x00000000000001ae      0xd5c /tmp/ccQAnj7R.debug.temp.o
-                                        0xeca (size before relaxing)
- .debug_str     0x0000000000000f0a      0x255 /tmp/ccF50nQR.debug.temp.o
+ .debug_str     0x00000000000001ae      0xd93 /tmp/ccF51K4f.debug.temp.o
+                                        0xf01 (size before relaxing)
+ .debug_str     0x0000000000000f41      0x255 /tmp/cc7KY7pg.debug.temp.o
                                         0x3c1 (size before relaxing)
- .debug_str     0x000000000000115f      0x255 /tmp/cchjUVjU.debug.temp.o
+ .debug_str     0x0000000000001196      0x255 /tmp/ccRXeqbg.debug.temp.o
                                          0x7d (size before relaxing)
- .debug_str     0x000000000000115f      0x50c /tmp/ccBD9yrT.debug.temp.o
+ .debug_str     0x0000000000001196      0x50c /tmp/ccgpTvUh.debug.temp.o
                                         0x776 (size before relaxing)
- .debug_str     0x000000000000166b       0x9f /tmp/ccIh3AxR.debug.temp.o
+ .debug_str     0x00000000000016a2       0x9f /tmp/ccHQiZXh.debug.temp.o
                                         0x292 (size before relaxing)
- .debug_str     0x000000000000170a       0x25 /tmp/cc5HEVFU.debug.temp.o
+ .debug_str     0x0000000000001741       0x25 /tmp/ccguugsf.debug.temp.o
                                         0x160 (size before relaxing)
- .debug_str     0x000000000000172f      0x22c /tmp/ccOwfDaV.debug.temp.o
+ .debug_str     0x0000000000001766      0x22c /tmp/cc8z5Hjg.debug.temp.o
                                         0x4cb (size before relaxing)
- .debug_str     0x000000000000195b       0x31 /tmp/ccZcW5EU.debug.temp.o
+ .debug_str     0x0000000000001992       0x31 /tmp/ccca1aZe.debug.temp.o
                                         0x263 (size before relaxing)
- .debug_str     0x000000000000198c       0x84 /tmp/ccmpr3YQ.debug.temp.o
+ .debug_str     0x00000000000019c3       0x84 /tmp/ccOw5Luh.debug.temp.o
                                         0x3ea (size before relaxing)
- .debug_str     0x0000000000001a10      0x3d0 /tmp/cckECvaR.debug.temp.o
+ .debug_str     0x0000000000001a47      0x3d0 /tmp/ccGzsXWh.debug.temp.o
                                         0x728 (size before relaxing)
- .debug_str     0x0000000000001de0      0x15f /tmp/ccKiUlRQ.debug.temp.o
+ .debug_str     0x0000000000001e17      0x15f /tmp/cc2pN8Qe.debug.temp.o
                                         0x75d (size before relaxing)
- .debug_str     0x0000000000001f3f      0x37c /tmp/ccnwvJiR.debug.temp.o
+ .debug_str     0x0000000000001f76      0x37c /tmp/ccNJjdrh.debug.temp.o
                                         0x714 (size before relaxing)
- .debug_str     0x00000000000022bb      0x786 /tmp/cchuOGtS.debug.temp.o
+ .debug_str     0x00000000000022f2      0x786 /tmp/cc11aXTh.debug.temp.o
                                         0xa89 (size before relaxing)
- .debug_str     0x0000000000002a41       0x17 /tmp/cczqgMhT.debug.temp.o
+ .debug_str     0x0000000000002a78       0x17 /tmp/ccHVCHeg.debug.temp.o
                                         0x276 (size before relaxing)
- .debug_str     0x0000000000002a58      0x5a7 /tmp/ccp3dDrS.debug.temp.o
+ .debug_str     0x0000000000002a8f      0x5a7 /tmp/cc0dhuNd.debug.temp.o
                                         0x803 (size before relaxing)
- .debug_str     0x0000000000002fff      0x5a7 /tmp/cc5SjuEQ.debug.temp.o
+ .debug_str     0x0000000000003036      0x5a7 /tmp/cc5d3oWf.debug.temp.o
                                         0x3b5 (size before relaxing)
- .debug_str     0x0000000000002fff       0xfc /tmp/ccTIrxTT.debug.temp.o
+ .debug_str     0x0000000000003036       0xfc /tmp/cc45OPGf.debug.temp.o
                                         0x48b (size before relaxing)
- .debug_str     0x00000000000030fb       0xa3 /tmp/ccm4Ck8T.debug.temp.o
+ .debug_str     0x0000000000003132       0xa3 /tmp/cc47ZKje.debug.temp.o
                                         0x238 (size before relaxing)
- .debug_str     0x000000000000319e      0x268 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
+ .debug_str     0x00000000000031d5      0x268 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
                                         0x2a3 (size before relaxing)
- .debug_str     0x0000000000003406       0x27 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
+ .debug_str     0x000000000000343d       0x27 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
                                         0x1b5 (size before relaxing)
- .debug_str     0x000000000000342d       0x2c /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
+ .debug_str     0x0000000000003464       0x2c /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
                                         0x1d9 (size before relaxing)
- .debug_str     0x0000000000003459      0x209 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
+ .debug_str     0x0000000000003490      0x209 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
                                         0x3bd (size before relaxing)
- .debug_str     0x0000000000003662        0x9 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
+ .debug_str     0x0000000000003699        0x9 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
                                         0x2a3 (size before relaxing)
- .debug_str     0x000000000000366b       0x25 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
+ .debug_str     0x00000000000036a2       0x25 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
                                         0x1b0 (size before relaxing)
- .debug_str     0x0000000000003690       0x39 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
+ .debug_str     0x00000000000036c7       0x39 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
                                         0x24d (size before relaxing)
- .debug_str     0x00000000000036c9       0x52 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
+ .debug_str     0x0000000000003700       0x52 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
                                         0x1b3 (size before relaxing)
- .debug_str     0x000000000000371b      0x196 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
- .debug_str     0x000000000000371b      0x196 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
- .debug_str     0x000000000000371b      0x120 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
+ .debug_str     0x0000000000003752      0x196 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clz.o)
+ .debug_str     0x0000000000003752      0x196 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
+ .debug_str     0x0000000000003752      0x120 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
                                         0x248 (size before relaxing)
- .debug_str     0x000000000000383b        0x9 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
+ .debug_str     0x0000000000003872        0x9 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
                                         0x248 (size before relaxing)
- .debug_str     0x0000000000003844      0x249 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
- .debug_str     0x0000000000003844      0x249 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+ .debug_str     0x000000000000387b      0x249 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+ .debug_str     0x000000000000387b      0x249 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
 
 .debug_loc
  *(.debug_loc)
@@ -1524,67 +1523,67 @@ OUTPUT(applications/heep_ultrasound/build/heep_ultrasound.elf elf32-littleriscv)
 .debug_line_str
                 0x0000000000000000      0x86a
  .debug_line_str
-                0x0000000000000000       0x16 /tmp/ccfqGdTu.o
+                0x0000000000000000       0x16 /tmp/ccvZYcP2.o
                                          0x2c (size before relaxing)
  .debug_line_str
-                0x0000000000000016        0xa /tmp/ccLXdK2r.o
+                0x0000000000000016        0xa /tmp/cc7vsvpZ.o
                                          0x32 (size before relaxing)
  .debug_line_str
-                0x0000000000000020      0x147 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x0000000000000020      0x147 /tmp/ccmHbJEe.ltrans0.ltrans.o
                                         0x1e3 (size before relaxing)
  .debug_line_str
-                0x0000000000000167      0x1c3 /tmp/ccQAnj7R.debug.temp.o
+                0x0000000000000167      0x1c3 /tmp/ccF51K4f.debug.temp.o
                                         0x2f7 (size before relaxing)
  .debug_line_str
-                0x000000000000032a       0x27 /tmp/ccF50nQR.debug.temp.o
+                0x000000000000032a       0x27 /tmp/cc7KY7pg.debug.temp.o
                                         0x104 (size before relaxing)
  .debug_line_str
-                0x0000000000000351       0x1a /tmp/cchjUVjU.debug.temp.o
+                0x0000000000000351       0x1a /tmp/ccRXeqbg.debug.temp.o
                                          0x56 (size before relaxing)
  .debug_line_str
-                0x000000000000036b       0x62 /tmp/ccBD9yrT.debug.temp.o
+                0x000000000000036b       0x62 /tmp/ccgpTvUh.debug.temp.o
                                         0x1f5 (size before relaxing)
  .debug_line_str
-                0x00000000000003cd       0x1b /tmp/ccIh3AxR.debug.temp.o
+                0x00000000000003cd       0x1b /tmp/ccHQiZXh.debug.temp.o
                                          0xeb (size before relaxing)
  .debug_line_str
-                0x00000000000003e8       0x22 /tmp/cc5HEVFU.debug.temp.o
+                0x00000000000003e8       0x22 /tmp/ccguugsf.debug.temp.o
                                         0x13e (size before relaxing)
  .debug_line_str
-                0x000000000000040a       0x17 /tmp/ccOwfDaV.debug.temp.o
+                0x000000000000040a       0x17 /tmp/cc8z5Hjg.debug.temp.o
                                         0x14c (size before relaxing)
  .debug_line_str
-                0x0000000000000421       0x27 /tmp/ccZcW5EU.debug.temp.o
+                0x0000000000000421       0x27 /tmp/ccca1aZe.debug.temp.o
                                         0x173 (size before relaxing)
  .debug_line_str
-                0x0000000000000448       0x1f /tmp/ccmpr3YQ.debug.temp.o
+                0x0000000000000448       0x1f /tmp/ccOw5Luh.debug.temp.o
                                         0x185 (size before relaxing)
  .debug_line_str
-                0x0000000000000467       0x25 /tmp/cckECvaR.debug.temp.o
+                0x0000000000000467       0x25 /tmp/ccGzsXWh.debug.temp.o
                                         0x179 (size before relaxing)
  .debug_line_str
-                0x000000000000048c       0x27 /tmp/ccKiUlRQ.debug.temp.o
+                0x000000000000048c       0x27 /tmp/cc2pN8Qe.debug.temp.o
                                         0x17e (size before relaxing)
  .debug_line_str
-                0x00000000000004b3       0x1f /tmp/ccnwvJiR.debug.temp.o
+                0x00000000000004b3       0x1f /tmp/ccNJjdrh.debug.temp.o
                                         0x16a (size before relaxing)
  .debug_line_str
-                0x00000000000004d2       0x3a /tmp/cchuOGtS.debug.temp.o
+                0x00000000000004d2       0x3a /tmp/cc11aXTh.debug.temp.o
                                         0x165 (size before relaxing)
  .debug_line_str
-                0x000000000000050c       0x1d /tmp/cczqgMhT.debug.temp.o
+                0x000000000000050c       0x1d /tmp/ccHVCHeg.debug.temp.o
                                         0x15a (size before relaxing)
  .debug_line_str
-                0x0000000000000529       0x62 /tmp/ccp3dDrS.debug.temp.o
+                0x0000000000000529       0x62 /tmp/cc0dhuNd.debug.temp.o
                                         0x197 (size before relaxing)
  .debug_line_str
-                0x000000000000058b       0x33 /tmp/cc5SjuEQ.debug.temp.o
+                0x000000000000058b       0x33 /tmp/cc5d3oWf.debug.temp.o
                                         0x19c (size before relaxing)
  .debug_line_str
-                0x00000000000005be       0x27 /tmp/ccTIrxTT.debug.temp.o
+                0x00000000000005be       0x27 /tmp/cc45OPGf.debug.temp.o
                                         0x17e (size before relaxing)
  .debug_line_str
-                0x00000000000005e5       0x5a /tmp/ccm4Ck8T.debug.temp.o
+                0x00000000000005e5       0x5a /tmp/cc47ZKje.debug.temp.o
                                         0x182 (size before relaxing)
  .debug_line_str
                 0x000000000000063f       0xb5 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
@@ -1624,63 +1623,63 @@ OUTPUT(applications/heep_ultrasound/build/heep_ultrasound.elf elf32-littleriscv)
                 0x000000000000086a      0x132 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
 
 .debug_rnglists
-                0x0000000000000000      0xfc5
+                0x0000000000000000     0x1000
  .debug_rnglists
-                0x0000000000000000       0x1a /tmp/ccLXdK2r.o
+                0x0000000000000000       0x1a /tmp/cc7vsvpZ.o
  .debug_rnglists
-                0x000000000000001a      0x498 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x000000000000001a      0x4d3 /tmp/ccmHbJEe.ltrans0.ltrans.o
  .debug_rnglists
-                0x00000000000004b2      0x22e /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
+                0x00000000000004ed      0x22e /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
  .debug_rnglists
-                0x00000000000006e0       0x4d /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
+                0x000000000000071b       0x4d /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
  .debug_rnglists
-                0x000000000000072d       0x4e /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
+                0x0000000000000768       0x4e /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
  .debug_rnglists
-                0x000000000000077b      0x1dd /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
+                0x00000000000007b6      0x1dd /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
  .debug_rnglists
-                0x0000000000000958      0x22e /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
+                0x0000000000000993      0x22e /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
  .debug_rnglists
-                0x0000000000000b86       0x1f /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
+                0x0000000000000bc1       0x1f /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
  .debug_rnglists
-                0x0000000000000ba5       0x61 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
+                0x0000000000000be0       0x61 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
  .debug_rnglists
-                0x0000000000000c06       0x28 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
+                0x0000000000000c41       0x28 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
  .debug_rnglists
-                0x0000000000000c2e       0xf6 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
+                0x0000000000000c69       0xf6 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
  .debug_rnglists
-                0x0000000000000d24       0xbf /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
+                0x0000000000000d5f       0xbf /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
  .debug_rnglists
-                0x0000000000000de3      0x111 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+                0x0000000000000e1e      0x111 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
  .debug_rnglists
-                0x0000000000000ef4       0xd1 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+                0x0000000000000f2f       0xd1 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
 
 .debug_loclists
-                0x0000000000000000     0x7853
+                0x0000000000000000     0x78ea
  .debug_loclists
-                0x0000000000000000     0x2248 /tmp/ccRIgTwS.ltrans0.ltrans.o
+                0x0000000000000000     0x22df /tmp/ccmHbJEe.ltrans0.ltrans.o
  .debug_loclists
-                0x0000000000002248     0x10c2 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
+                0x00000000000022df     0x10c2 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(adddf3.o)
  .debug_loclists
-                0x000000000000330a       0xb2 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
+                0x00000000000033a1       0xb2 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(eqdf2.o)
  .debug_loclists
-                0x00000000000033bc      0x117 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
+                0x0000000000003453      0x117 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(gedf2.o)
  .debug_loclists
-                0x00000000000034d3      0xc5a /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
+                0x000000000000356a      0xc5a /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(muldf3.o)
  .debug_loclists
-                0x000000000000412d     0x10df /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
+                0x00000000000041c4     0x10df /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(subdf3.o)
  .debug_loclists
-                0x000000000000520c      0x167 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
+                0x00000000000052a3      0x167 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(fixdfsi.o)
  .debug_loclists
-                0x0000000000005373      0x134 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
+                0x000000000000540a      0x134 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(floatsidf.o)
  .debug_loclists
-                0x00000000000054a7       0x62 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
+                0x000000000000553e       0x62 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_clzsi2.o)
  .debug_loclists
-                0x0000000000005509       0x26 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
+                0x00000000000055a0       0x26 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_bswapsi2.o)
  .debug_loclists
-                0x000000000000552f      0x88e /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
+                0x00000000000055c6      0x88e /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_divdi3.o)
  .debug_loclists
-                0x0000000000005dbd      0x793 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
+                0x0000000000005e54      0x793 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_moddi3.o)
  .debug_loclists
-                0x0000000000006550      0xa99 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
+                0x00000000000065e7      0xa99 /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_udivdi3.o)
  .debug_loclists
-                0x0000000000006fe9      0x86a /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)
+                0x0000000000007080      0x86a /home/saverio/tools/riscv/lib/gcc/riscv32-unknown-elf/11.1.0/libgcc.a(_umoddi3.o)

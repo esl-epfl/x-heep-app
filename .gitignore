@@ -1,3 +1,1 @@
-*.elf
-*.hex
-*.map
+./heep_ultrasound/build/
