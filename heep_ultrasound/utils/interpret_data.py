@@ -14,10 +14,10 @@ res = []
 with open(filename, "rb") as file:
     while(word:=file.read(2)):
         if word == b"\xff\xff":break
-        unpacked = struct.unpack("H", word)
+        unpacked = struct.unpack(">H", word)
         res.append(unpacked[0])
 
-res = res[:len(res) // 8]
+res = res[:len(res)]
 
 plt.plot([i for i in range(len(res))], res, "-bo")
 plt.show()
