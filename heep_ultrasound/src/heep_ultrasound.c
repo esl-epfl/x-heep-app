@@ -29,7 +29,7 @@
 #define FLASH_CLK_MAX_HZ (133 * 1000 * 1000) // In Hz (133 MHz for the flash w25q128jvsim used in the EPFL Programmer)
 
 static rv_timer_t timer;
-static const uint64_t kTickFreqHz = 1000 * 1000; // 1 MHz
+static const uint64_t kTickFreqHz = 10000 * 1000; // 100 MHz
 
 // Interrupt controller variables
 dif_plic_params_t rv_plic_params;
@@ -83,7 +83,7 @@ void setup_timer(uint32_t counter_val, uint32_t system_freq_hz)
 }
 
 
-volatile uint16_t results[N_SAMPLES];
+uint16_t results[N_SAMPLES];
 
 static inline __attribute__((always_inline)) void toggle_gpio()
 {
@@ -97,12 +97,12 @@ void handler_irq_timer(void)
 	// fast_intr_ctrl_t fast_intr_ctrl;
 	// fast_intr_ctrl.base_addr = mmio_region_from_addr((uintptr_t)FAST_INTR_CTRL_START_ADDRESS);
 	// clear_fast_interrupt(&fast_intr_ctrl, kTimer_1_fic_e);
-	mmio_region_write32(timer.base_addr, RV_TIMER_TIMER_V_LOWER0_REG_OFFSET, 0);
-	mmio_region_write32(timer.base_addr, RV_TIMER_TIMER_V_UPPER0_REG_OFFSET, 0);
-	rv_timer_irq_clear(&timer, 0, 0);
-#ifdef DEBUG
-	toggle_gpio();
-#endif
+	//mmio_region_write32(timer.base_addr, RV_TIMER_TIMER_V_LOWER0_REG_OFFSET, 0);
+	//mmio_region_write32(timer.base_addr, RV_TIMER_TIMER_V_UPPER0_REG_OFFSET, 0);
+	//rv_timer_irq_clear(&timer, 0, 0);
+//#ifdef DEBUG
+	//toggle_gpio();
+//#endif
 	//timer_flag = 1;
 }
 
@@ -161,32 +161,22 @@ void prepare_sin_table(uint16_t *samples, uint32_t sample_count, uint32_t freq, 
 	}
 }
 
-void set_voltage(spi_host_t *SPI, enum CHANNEL ch, uint32_t val)
+void set_voltage(spi_host_t *SPI, enum CHANNEL ch, uint32_t val, const uint32_t *cmd_set_voltage) 
 {
 	uint32_t cmd = 0x03000000 | (ch << 20) | ((val & 0xFFF) << 8);
 	spi_write_word(SPI, __builtin_bswap32(cmd)); // This sends the given command according to the mode specified in the command fifo
-	const uint32_t cmd_set_voltage = spi_create_command((spi_command_t){
-			.len = 3, // It's tot len - 1
-			.csaat = false,
-			.speed = kSpiSpeedStandard,
-			.direction = kSpiDirTxOnly});
-	spi_set_command(SPI, cmd_set_voltage); // This writes the command information in the command fifo
+	spi_set_command(SPI, *cmd_set_voltage); // This writes the command information in the command fifo
 	spi_wait_for_ready(SPI);
 }
 
 uint16_t mask = __builtin_bswap16(0xFFF);
-
-uint16_t get_voltage(spi_host_t *SPI)
+uint16_t get_voltage(spi_host_t *SPI, const uint32_t *cmd_get_voltage)
 {
 	// spi_wait_for_ready(SPI);
-	const uint32_t cmd_get_voltage = spi_create_command((spi_command_t){
-			.len = 1,       // It's tot len - 1
-			.csaat = false, // Chip Select Active After Transaction (to keep it activated)
-			.speed = kSpiSpeedStandard,
-			.direction = kSpiDirRxOnly});
-	spi_set_command(SPI, cmd_get_voltage);
+	spi_set_command(SPI, *cmd_get_voltage);
 	spi_wait_for_ready(SPI);
-	spi_wait_for_rx_watermark(SPI);
+	// For somereason watermark fuck everything up... from 98KHz to 50KHz
+	spi_wait_for_rx_watermark(SPI); // TRY TO GET RID OF THIS
 	uint32_t res;
 	spi_read_word(SPI, &res);
 	return ((uint16_t)(res & mask));
@@ -204,7 +194,7 @@ void write_to_flash(spi_host_t *SPI, dma_t *DMA, uint16_t *data, uint32_t byte_c
 		write_to_flash_256_bytes_max(SPI, DMA, (uint8_t*)data + 256*i, 256, addr + 256*i);
 	}
 	if(remainder)
-		write_to_flash_256_bytes_max(SPI, DMA, (uint8_t*)data + 256*i, remainder, i*256);
+		write_to_flash_256_bytes_max(SPI, DMA, (uint8_t*)data + 256*i, remainder, addr + 256*i);
 }
 
 void write_to_flash_256_bytes_max(spi_host_t *SPI, dma_t *DMA, uint16_t *data, uint32_t byte_count, uint32_t addr)
@@ -441,27 +431,45 @@ int main(int argc, char *argv[])
 	gpio_state = false;
 #endif
 
+	const uint32_t cmd_set_voltage = spi_create_command((spi_command_t){
+			.len = 3, // It's tot len - 1
+			.csaat = false,
+			.speed = kSpiSpeedStandard,
+			.direction = kSpiDirTxOnly});
+
+	const uint32_t cmd_get_voltage = spi_create_command((spi_command_t){
+			.len = 1,       // It's tot len - 1
+			.csaat = false, // Chip Select Active After Transaction (to keep it activated)
+			.speed = kSpiSpeedStandard,
+			.direction = kSpiDirRxOnly});
+
 	// This should fill the FLASH with as many acquisitions as possible
 	uint32_t acq_count = FLASH_SIZE / (N_SAMPLES * sizeof(uint16_t));
+	//#define acq_count 1
 	for(uint32_t batch = 0; batch < acq_count; ++batch)
 	{
 		uint32_t i = 0;
-		setup_timer(10, freq_hz);
+		setup_timer(97, freq_hz);
 		rv_timer_counter_set_enabled(&timer, 0, kRvTimerEnabled);
+
+    	CSR_CLEAR_BITS(CSR_REG_MSTATUS, 0x8);
 		
 		// CORE LOOP TO BE OPTIMIZED
 		while (1)
 		{
 			wait_for_interrupt();
+			mmio_region_write32(timer.base_addr, RV_TIMER_TIMER_V_LOWER0_REG_OFFSET, 0);
+			//mmio_region_write32(timer.base_addr, RV_TIMER_TIMER_V_UPPER0_REG_OFFSET, 0);
+			rv_timer_irq_clear(&timer, 0, 0);
 			if (i == N_SAMPLES)
 				break;
-			set_voltage(&spi_host_dac, ALL, chirp[i]);
+			set_voltage(&spi_host_dac, ALL, chirp[i], &cmd_set_voltage);
 			// Small delay to make sure the ADC samples after the DAC has output the signal
-			for (volatile uint32_t k = 0; k < 5; ++k)
-				;
-			results[i] = (get_voltage(&spi_host_adc));
+			for (uint32_t k = 0; k < 18; ++k) asm volatile("nop");
+			results[i] = (get_voltage(&spi_host_adc, &cmd_get_voltage));
 			++i;
 		}
+    	CSR_SET_BITS(CSR_REG_MSTATUS, 0x8);
 		rv_timer_reset(&timer);
 
 		printf("Finished Batch: %lu\n\r", batch);
