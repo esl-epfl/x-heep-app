@@ -74,7 +74,7 @@ INC_FOLDERS_GCC             = $(addprefix -I ,$(INC_FOLDERS))
 
 
 build/heep_ultrasound.elf: src/heep_ultrasound.c
-	$(RISCV_EXE_PREFIX)gcc -march=rv32imc -o $@ -w -O3 -g -nostdlib \
+	$(RISCV_EXE_PREFIX)gcc -march=rv32imc -o $@ -w -Os -g -nostdlib \
 		$(CUSTOM_GCC_FLAGS) \
 		-DHOST_BUILD \
 		-T $(HEEP_SW)/linker/link.ld \
@@ -90,7 +90,7 @@ build/heep_ultrasound.elf: src/heep_ultrasound.c
 		-lc -lm -lgcc -flto -ffunction-sections -fdata-sections -specs=nano.specs
 
 build/heep_ultrasound.flash_exec.elf: src/heep_ultrasound.c
-	$(RISCV_EXE_PREFIX)gcc -march=rv32im -o $@ -w -O3 -g -nostdlib \
+	$(RISCV_EXE_PREFIX)gcc -march=rv32imc -o $@ -w -Os -g -nostdlib \
 		$(CUSTOM_GCC_FLAGS) \
 		-DHOST_BUILD \
 		-T $(HEEP_SW)/linker/link_flash_exec.ld \
@@ -106,7 +106,7 @@ build/heep_ultrasound.flash_exec.elf: src/heep_ultrasound.c
 		-lc -lm -lgcc -flto -ffunction-sections -fdata-sections -specs=nano.specs
 
 build/heep_ultrasound.flash_load.elf: src/heep_ultrasound.c
-	$(RISCV_EXE_PREFIX)gcc -march=rv32imc -o $@ -w -O3 -g -nostdlib \
+	$(RISCV_EXE_PREFIX)gcc -march=rv32imc -o $@ -w -Os -g -nostdlib \
 		$(CUSTOM_GCC_FLAGS) \
 		-DHOST_BUILD \
 		-T $(HEEP_SW)/linker/link_flash_load.ld \
@@ -125,4 +125,5 @@ clean:
 	rm -rf */*.elf \
 	rm -rf */*.hex \
 	rm -rf */*.dis \
-	rm -rf */*.dump
+	rm -rf */*.dump \
+	rm -rf */*.map
