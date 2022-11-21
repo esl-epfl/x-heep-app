@@ -1,6 +1,6 @@
 ## Prerequisite
 
-Copy this folder in _x-heep/sw/applications/_
+Copy this folder in _x-heep/sw/applications/_ or create symbolic link to this folder
 
 ## Building
 

@@ -19,13 +19,19 @@
 #include "gpio.h"
 #include "fast_intr_ctrl_regs.h"
 
-#define N_SAMPLES 30000
+#define N_SAMPLES 35000 // 5000 added to capture tail
+#define PHYSICAL_FLASH
 
 #define REVERT_24b_ADDR(addr) ((((uint32_t)addr & 0xff0000) >> 16) | ((uint32_t)addr & 0xff00) | (((uint32_t)addr & 0xff) << 16))
 
 #define FLASH_ADDR 0x00000000 // 256B data alignment
 
+#ifdef PHYSICAL_FLASH
 #define FLASH_SIZE 16 * 1024 * 1024 // BYTES
+#else
+#define FLASH_SIZE 126 * 1024 * 1024
+#endif
+
 #define FLASH_CLK_MAX_HZ (133 * 1000 * 1000) // In Hz (133 MHz for the flash w25q128jvsim used in the EPFL Programmer)
 
 static rv_timer_t timer;
@@ -66,6 +72,8 @@ const uint16_t chirp[N_SAMPLES] = {4095,3995,3704,3251,2679,2046,1413,842,389,99
 	1141,465,3672,2894,40,2113,4026,1084,507,3711,2832,28,2181,4007,1023,554,3751,2766,17,2254,3984,959,607,3792,2693,8,2332,3957,892,665,3834,2614,3,2415,3925,823,730,3875,2530,0,2502,3887,751,801,3914,2439,2,2593,3843,679,879,3952,2342,8,2689,3793,605,964,3987,2240,19,2787,3735,532,1057,4019,2131,37,2889,3670,459,1156,4047,2017,62,2993,3597,388,1264,4069,1898,95,3098,3515,319,1379,4085,1775,136,3204,3424,254,1501,4094,1647,187,3310,3323,194,1631,4094,1516,248,3414,3213,140,1767,4085,1382,319,3516,3094,92,1910,4066,1246,402,3615,2964,54,2059,4036,1110,496,3708,2825,24,2214,3993,974,603,3795,2676,6,2372,3937,840,722,3875,2519,0,2534,3868,710,853,3944,2354,8,2697,3783,585,998,4002,2181,30,2861,3683,467,1154,4048,2002,69,3023,3568,357,1322,4079,1818,124,3182,3437,259,1501,4094,1630,198,3336,3290,173,1689,4091,1442,290,3483,3128,102,1886,4069,1254,401,3619,2951,49,2090,4026,1069,532,3744,2760,14,2298,3962,889,682,3853,2557,0,2509,3876,718,851,3945,2343,9,2720,3766,558,1037,4018,2121,43,2928,3633,412,1241,4067,1892,102,3130,3477,283,1459,4092,1660,187,3322,3299,175,1690,4091,1429,300,3502,3100,90,1931,4060,1201,440,3664,2881,32,2179,4000,980,607,3805,2645,3,2431,3908,771,799,3923,2395,5,2681,3785,579,1016,4012,2134,41,2926,3631,407,1254,4071,1867,112,3161,3447,259,1510,4095,1597,218,3381,3234,142,1782,4082,1331,360,3580,2995,57,2063,4030,1073,536,3754,2733,10,2349,3939,830,746,3896,2453,2,2634,3808,607,986,4004,2159,37,2912,3638,410,1253,4071,1858,116,3176,3430,246,1542,4095,1556,239,3420,3187,120,1848,4072,1260,407,3635,2913,37,2163,4002,978,616,3817,2615,1,2481,3882,717,864,3957,2297,16,2793,3714,486,1146,4051,1967,84,3090,3500,292,1456,4093,1635,205,3365,3243,143,1787,4080,1309,378,3607,2950,44,2131,4010,998,602,3809,2626,1,2477,3882,714,871,3962,2280,19,2816,3697,465,1179,4059,1922,98,3136,3459,261,1519,4095,1563,240,3427,3173,112,1881,4066,1214,442,3676,2846,23,2253,3970,888,700,3875,2487,1,2624,3808,597,1008,4015,2109,50,2979,3582,352,1357,4086,1723,170,3307,3298,166,1735,4085,1344,361,3592,2964,46,2130,4008,986,617,3823,2591,0,2527,3855,665,931,3989,2193,34,2910,3630,393,1294,4079,1783,148,3263,3337,185,1692,4089,1380,342,3572,2988,51,2109,4013,999,609,3819,2595,0,2529,3852,658,942,3994,2174,38,2933,3611,374,1327,4084,1741,166,3303,3296,162,1750,4083,1318,381,3619,2921,35,2191,3987,923,676,3865,2500,1,2631,3799,578,1041,4027,2052,66,3047,3522,300,1459,4094,1599,229,3419,3170,106,1911,4058,1163,486,3725,2756,9,2375,3919,768,827,3948,2301,18,2827,3680,436,1236,4072,1827,135,3243,3350,188,1694,4088,1360,358,3597,2945,39,2176,3990,926,678,3869,2486,2,2656,3782,552,1079,4039,1996,82,3105,3471,260,1540,4095,1505,278,3498,3073,71,2037,4029,1041,583,3807,2608,0,2539,3842,633,980,4011,2105,55,3016,3541,310,1449,4094,1592,236,3436,3143,94,1960,4047,1104,535,3771,2670,2,2481,3869,673,937,3996,2151,45,2979,3568,329,1417,4092,1620,224,3419,3160,99,1944,4049,1113,530,3769,2672,2,2484,3866,667,945,4000,2136,49,2998,3552,315,1443,4094,1587,241,3448,3126,86,1990,4039,1068,567,3799,2616,0,2546,3835,617,1007,4021,2059,68,3070,3493,270,1530,4095,1495,289,3519,3037,59,2098,4010,970,649,3857,2499,2,2667,3768,526,1124,4053,1920,109,3192,3386,201,1678,4088,1346,376,3627,2890,26,2268,3954,826,784,3934,2319,18,2844,3658,404,1302,4083,1720,184,3356,3221,120,1890,4058,1145,513,3760,2679,2,2496,3856,644,980,4015,2076,66,3067,3491,265,1547,4095,1465,309,3550,2991,45,2165,3988,903,714,3899,2399,9,2776,3699,443,1247,4077,1770,165,3324,3252,131,1861,4063,1163,503,3754,2685,2,2498,3853,636,993,4020,2051,73,3095,3464,245,1592,4093,1412,341,3593,2930,31,2241,3960,832,784,3937,2302,22,2876,3630,373,1360,4090,1642,222,3429,3133,84,2013,4029,1021,616,3841,2518,2,2674,3757,504,1166,4064,1847,138,3273,3299,150,1815,4069,1193,485,3742,2699,3,2495,3851,629,1007,4026,2023,82,3130,3429,220,1650,4089,1344,385,3647,2847,17,2344,3918,742,882,3983,2168,47,3008,3529,287,1518,4095,1470,312,3563,2962,37,2221,3964,836,787,3942,2282,26,2909,3602,343,1417,4093,1568,262,3496,3047,56,2129,3994,908,720,3908,2364,15,2836,3652,387,1347,4089,1637,229,3448,3103,72,2068,4012,957,678,3885,2416,9,2791,3680,413,1307,4086,1676,212,3422,3132,81,2037,4020,979,659,3875,2437,8,2775,3690,422,1295,4085,1684,209,3418,3135,81,2038,4019,976,664,3878,2427,9,2787,3680,411,1313,4087,1662,220,3438,3111,73,2070,4010,946,691,3895,2387,13,2828,3652,383,1360,4091,1609,246,3479,3060,58,2132,3990,891,743,3924,2316,22,2897,3603,338,1436,4094,1527,288,3541,2981,38,2226,3958,812,821,3962,2214,41,2993,3531,280,1544,4094,1416,351,3620,2872,18,2349,3909,712,927,4005,2080,72,3113,3431,213,1684,4084,1279,439,3711,2731,3,2502,3838,595,1065,4047,1916,122,3253,3301,143,1856,4059,1117,555,3810,2556,1,2682,3740,468,1238,4079,1721,198,3408,3136,78,2060,4010,937,707,3909,2346,19,2885,3607,337,1447,4095,1500,307,3571,2933,27,2295,3929,744,898,3997,2102,68,3105,3433,211,1694,4082,1257,457,3733,2689,1,2557,3807,547,1133,4063,1827,157,3334,3213,104,1977,4031,999,656,3881,2405,13,2839,3635,359,1413,4094,1525,296,3560,2944,28,2293,3928,739,908,4001,2081,74,3131,3407,194,1738,4076,1207,495,3768,2624,0,2632,3763,489,1216,4078,1727,200,3418,3117,70,2102,3994,886,761,3940,2258,35,2982,3528,270,1579,4092,1352,399,3682,2765,5,2495,3835,581,1096,4057,1853,149,3325,3216,103,1989,4026,976,681,3899,2355,20,2899,3589,315,1497,4095,1426,356,3637,2829,11,2432,3864,622,1047,4046,1902,132,3291,3250,115,1954,4034,1001,662,3889,2376,17,2885,3596,320,1491,4095,1427,357,3640,2822,9,2446,3856,608,1067,4051,1874,144,3318,3219,102,1997,4022,959,701,3912,2319,26,2943,3552,284,1561,4092,1353,404,3692,2741,3,2536,3810,540,1157,4070,1767,187,3404,3123,68,2119,3985,854,801,3963,2184,53,3068,3450,213,1708,4078,1208,504,3783,2584,1,2700,3715,426,1322,4090,1586,273,3541,2953,27,2317,3911,693,972,4028,1970,113,3252,3280,124,1935,4036,1000,670,3898,2346,23,2930,3557,284,1568,4091,1334,421,3712,2702,1,2589,3777,494,1226,4081,1679,229,3480,3028,42,2242,3940,745,918,4011,2026,96,3213,3315,139,1899,4043,1025,652,3889,2362,21,2923,3560,284,1571,4091,1323,430,3723,2680,0,2619,3758,469,1265,4086,1630,255,3521,2972,29,2312,3910,685,988,4034,1935,127,3292,3233,103,2009,4015,924,744,3941,2233,45,3045,3461,214,1718,4075,1178,534,3813,2517,5,2787,3652,358,1444,4095,1438,361,3656,2781,4,2526,3807,526,1191,4078,1700,224,3478,3022,39,2266,3927,713,962,4028,1957,122,3284,3238,103,2013,4012,913,758,3950,2204,52,3079,3428,193,1772,4066,1120,582,3849,2439,13,2870,3591,303,1545,4092,1330,432,3730,2658,0,2661,3728,429,1334,4092,1538,307,3598,2860,11,2454,3840,567,1141,4071,1742,207,3456,3043,42,2254,3929,713,967,4031,1938,130,3308,3208,90,2062,3996,862,811,3976,2125,73,3158,3354,151,1881,4044,1012,674,3909,2300,34,3008,3482,223,1712,4074,1161,555,3834,2463,11,2861,3593,301,1556,4091,1306,452,3753,2612,1,2719,3688,384,1413,4095,1444,365,3669,2749,2,2584,3768,469,1283,4089,1576,292,3583,2872,12,2457,3835,554,1166,4076,1698,231,3499,2983,28,2339,3890,637,1062,4057,1812,181,3418,3080,49,2230,3935,717,970,4034,1915,141,3340,3166,73,2132,3970,792,890,4009,2009,110,3268,3241,99,2044,3998,860,821,3983,2091,85,3203,3304,124,1967,4020,922,763,3958,2163,66,3145,3358,148,1900,4037,977,714,3935,2224,52,3094,3401,170,1845,4049,1023,675,3915,2274,41,3053,3437,189,1800,4058,1060,644,3898,2313,34,3020,3463,204,1766,4064,1088,622,3885,2342,29,2996,3482,215,1743,4068,1107,607,3876,2360,26,2982,3492,222,1730,4069,1117,600,3872,2368,25,2977
 };
 
+uint16_t results[N_SAMPLES];
+
 void setup_timer(uint32_t counter_val, uint32_t system_freq_hz)
 {
 	// Setup rv_timer
@@ -81,9 +89,6 @@ void setup_timer(uint32_t counter_val, uint32_t system_freq_hz)
 	rv_timer_irq_enable(&timer, 0, 0, kRvTimerEnabled);
 	rv_timer_arm(&timer, 0, 0, counter_val);
 }
-
-
-uint16_t results[N_SAMPLES];
 
 static inline __attribute__((always_inline)) void toggle_gpio()
 {
@@ -184,6 +189,7 @@ uint16_t get_voltage(spi_host_t *SPI, const uint32_t *cmd_get_voltage)
 
 void write_to_flash(spi_host_t *SPI, dma_t *DMA, uint16_t *data, uint32_t byte_count, uint32_t addr)
 {
+#ifdef PHYSICAL_FLASH
 	uint32_t chunks = byte_count / 256;
 	uint32_t remainder = byte_count % 256;
 	printf("Chunks: %u, remainer: %u\n\r", chunks, remainder);
@@ -195,6 +201,73 @@ void write_to_flash(spi_host_t *SPI, dma_t *DMA, uint16_t *data, uint32_t byte_c
 	}
 	if(remainder)
 		write_to_flash_256_bytes_max(SPI, DMA, (uint8_t*)data + 256*i, remainder, addr + 256*i);
+#else
+
+    uint32_t write_to_mem = 0x02;
+    spi_write_word(SPI, write_to_mem);
+    uint32_t cmd_write_to_mem = spi_create_command((spi_command_t){
+        .len        = 0,
+        .csaat      = true,
+        .speed      = kSpiSpeedStandard,
+        .direction  = kSpiDirTxOnly
+    });
+    spi_set_command(SPI, cmd_write_to_mem);
+    spi_wait_for_ready(SPI);
+
+    uint32_t addr_cmd = __builtin_bswap32(addr); //0xF8F00200;
+    spi_write_word(SPI, addr_cmd);
+    uint32_t cmd_address = spi_create_command((spi_command_t){
+        .len        = 3,
+        .csaat      = true,
+        .speed      = kSpiSpeedStandard,
+        .direction  = kSpiDirTxOnly
+    });
+    spi_set_command(SPI, cmd_address);
+    spi_wait_for_ready(SPI);
+
+    uint32_t *fifo_ptr_tx = spi_host.base_addr.base + SPI_HOST_TXDATA_REG_OFFSET;
+
+    // -- DMA CONFIGURATION --
+    dma_set_read_ptr_inc(DMA, (uint32_t) 2); // Do not increment address when reading from the SPI (Pop from FIFO)
+    dma_set_write_ptr_inc(DMA, (uint32_t) 0); // Do not increment address when reading from the SPI (Pop from FIFO)
+    dma_set_read_ptr(DMA, (uint32_t) data); // SPI RX FIFO addr
+    dma_set_write_ptr(DMA, (uint32_t) fifo_ptr_tx); // copy data address
+    // Set the correct SPI-DMA mode:
+    // (0) disable
+    // (1) receive from SPI (use SPI_START_ADDRESS for spi_host pointer)
+    // (2) send to SPI (use SPI_START_ADDRESS for spi_host pointer)
+    // (3) receive from SPI FLASH (use SPI_FLASH_START_ADDRESS for spi_host pointer)
+    // (4) send to SPI FLASH (use SPI_FLASH_START_ADDRESS for spi_host pointer)
+    dma_set_spi_mode(DMA, (uint32_t) 4); // The DMA will wait for the SPI FLASH TX FIFO ready signal
+    dma_set_data_type(DMA, (uint32_t) 1); // 1 is for 16-bits
+    dma_set_cnt_start(DMA, (uint32_t)byte_count); // Size of data received by SPI
+
+    // Wait for the first data to arrive to the TX FIFO before enabling interrupt
+    spi_wait_for_tx_not_empty(SPI);
+    // Enable event interrupt
+    spi_enable_evt_intr(SPI, true);
+    // Enable TX empty interrupt
+    spi_enable_txempty_intr(SPI, true);
+
+    const uint32_t cmd_write_tx = spi_create_command((spi_command_t){
+        .len        = byte_count - 1,
+        .csaat      = false,
+        .speed      = kSpiSpeedStandard,
+        .direction  = kSpiDirTxOnly
+    });
+    spi_set_command(SPI, cmd_write_tx);
+    spi_wait_for_ready(SPI);
+
+    // Wait for SPI interrupt
+    printf("Waiting for the SPI interrupt...\n\r");
+    while(spi_intr_flag == 0) {
+        wait_for_interrupt();
+    }
+    printf("triggered!\n\r");
+
+    printf("%d Bytes written in Flash at @0x%08x \n\r", byte_count, addr); 
+
+#endif
 }
 
 void write_to_flash_256_bytes_max(spi_host_t *SPI, dma_t *DMA, uint16_t *data, uint32_t byte_count, uint32_t addr)
@@ -309,7 +382,6 @@ int main(int argc, char *argv[])
 	// Get current Frequency
 	soc_ctrl_t soc_ctrl;
 	soc_ctrl.base_addr = mmio_region_from_addr((uintptr_t)SOC_CTRL_START_ADDRESS);
-	uint32_t freq_hz = soc_ctrl_get_frequency(&soc_ctrl);
 	soc_ctrl_select_spi_host(&soc_ctrl); // IS THIS CORRECT EVEN WITH TWO SPIs?
 
 	uint32_t core_clk = soc_ctrl_get_frequency(&soc_ctrl);
@@ -411,6 +483,7 @@ int main(int argc, char *argv[])
 	spi_wait_for_ready(&spi_host_flash);
 	spi_set_rx_watermark(&spi_host_flash, 1);
 
+#ifdef PHYSICAL_FLASH
 	// Power up flash
 	const uint32_t powerup_byte_cmd = 0xab;
 	spi_write_word(&spi_host_flash, powerup_byte_cmd);
@@ -421,6 +494,32 @@ int main(int argc, char *argv[])
 			.direction = kSpiDirTxOnly});
 	spi_set_command(&spi_host_flash, cmd_powerup);
 	spi_wait_for_ready(&spi_host_flash);
+#else
+
+	// To set the number of dummy cycles we have to send command 0x11 and then a 1B value
+    const uint32_t reset_cmd = 0x11;
+    spi_write_word(&spi_host, reset_cmd);
+    const uint32_t cmd_reset = spi_create_command((spi_command_t){
+        .len        = 0,
+        .csaat      = true,
+        .speed      = kSpiSpeedStandard,
+        .direction  = kSpiDirTxOnly
+    });
+    spi_set_command(&spi_host, cmd_reset);
+    spi_wait_for_ready(&spi_host);
+
+    const uint32_t set_dummy_cycle = 0x07;
+    spi_write_word(&spi_host, set_dummy_cycle);
+    const uint32_t cmd_set_dummy = spi_create_command((spi_command_t){
+        .len        = 0,
+        .csaat      = false,
+        .speed      = kSpiSpeedStandard,
+        .direction  = kSpiDirTxOnly
+    });
+
+    spi_set_command(&spi_host, cmd_set_dummy);
+    spi_wait_for_ready(&spi_host);
+#endif
 
 	//prepare_sin_table(sin_lookup, N_SAMPLES, 9100, 91000);
 
@@ -449,7 +548,7 @@ int main(int argc, char *argv[])
 	for(uint32_t batch = 0; batch < acq_count; ++batch)
 	{
 		uint32_t i = 0;
-		setup_timer(97, freq_hz);
+		setup_timer(97, core_clk);
 		rv_timer_counter_set_enabled(&timer, 0, kRvTimerEnabled);
 
     	CSR_CLEAR_BITS(CSR_REG_MSTATUS, 0x8);
@@ -478,7 +577,7 @@ int main(int argc, char *argv[])
 
 	printf("Finished Acquisitions... FLASH IS FULL\n\r");
 
-
+	#ifdef PHYSICAL_FLASH
 	const uint32_t powerdown_byte_cmd = 0xb9;
 	spi_write_word(&spi_host_flash, powerdown_byte_cmd);
 	const uint32_t cmd_powerdown = spi_create_command((spi_command_t){
@@ -488,6 +587,7 @@ int main(int argc, char *argv[])
 			.direction = kSpiDirTxOnly});
 	spi_set_command(&spi_host_flash, cmd_powerdown);
 	spi_wait_for_ready(&spi_host_flash);
+	#endif
 
 	printf("Flash powered off\n\r");
 
