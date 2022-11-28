@@ -21,8 +21,8 @@ with open(filename, "rb") as file:
         unpacked = struct.unpack("<H", word)
         res.append(unpacked[0])
 
-res = res[:len(res)]
+#res = res[:len(res)]
 
-plt.plot([i for i in range(len(res))], res, "-bo")
+plt.plot(res)
 plt.show()
 

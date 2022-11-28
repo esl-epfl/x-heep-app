@@ -74,7 +74,7 @@ INC_FOLDERS_GCC             = $(addprefix -I ,$(INC_FOLDERS))
 
 
 build/heep_ultrasound.elf: src/heep_ultrasound.c
-	$(RISCV_EXE_PREFIX)gcc -march=rv32imc -o $@ -w -Os -g -nostdlib \
+	$(RISCV_EXE_PREFIX)gcc -march=rv32imc -o $@ -w -O3 -g -nostdlib \
 		$(CUSTOM_GCC_FLAGS) \
 		-DHOST_BUILD \
 		-T $(HEEP_SW)/linker/link.ld \
