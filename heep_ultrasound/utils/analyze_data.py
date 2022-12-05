@@ -1,22 +1,22 @@
 import sys
 import matplotlib.pyplot as plt
 
-if len(sys.argv) != 2:
-    print("Usage: script.py filename")
+if len(sys.argv) != 3:
+    print("Usage: script.py filename window")
     sys.exit(-1)
 
 filename = sys.argv[1]
+window = int(sys.argv[2])
 
-content = []
+counter = 0
 with open(filename, "r") as file:
-    content = [int(i) for i in file.readline().split(",")]
-
-for b in range(len(content) - 150000, len(content), 35000):
-    window = content[b:b+35000]
-    print(window)
-    plt.plot(window)
+    lines = file.readlines()
+    print("Lines:", len(lines))
+    w = lines[window]
+    w_split = w.split(",")
+    w = [int(i) for i in w_split]
+    plt.plot(w)
     plt.show()
-    plt.clf()
 
 
 

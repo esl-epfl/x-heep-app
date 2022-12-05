@@ -23,10 +23,35 @@ for i, file in enumerate(files):
     res = []
     with open(file, "rb") as input_file:
         with open(f"{file}.csv", "w") as output_file:
+            count = 0
+            window = []
+            possible_end = False
             while(word:=input_file.read(2)):
-                #if word == b"\xff\xff":break
-                unpacked = struct.unpack(f"{endianness}H", word)
-                res.append(unpacked[0])
-            output_file.write(",".join([str(i) for i in res]))
+                if word == b"":break
+                elif word == b"\xff\xff":
+                    if count == 35000:
+                        res.append(window)
+                        window = []
+                        count = 0
+                    elif count == 0:
+                        if possible_end:
+                            possible_end = False
+                            print("End of file")
+                            break # We should be at the end of file
+                        else:
+                            possible_end = True
+                    else:
+                        # We have a corrupted window I guess
+                        print("Corrupted window size:", count)
+                        window = []
+                        count = 0
+                else:
+                    unpacked = struct.unpack(f"{endianness}H", word)
+                    window.append(unpacked[0])
+                    count += 1
+                    possible_end = False
+            for window in res:
+                output_file.write(",".join([str(i) for i in window]))
+                output_file.write("\n")
 
 

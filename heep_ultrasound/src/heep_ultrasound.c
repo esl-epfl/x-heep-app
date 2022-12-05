@@ -19,7 +19,7 @@
 #include "gpio.h"
 #include "fast_intr_ctrl_regs.h"
 
-#define N_SAMPLES 35000 //34816 // 5000 added to capture tail
+#define N_SAMPLES 35002 //34816 // 5000 added to capture tail
 //#define PHYSICAL_FLASH
 //#define DEBUG
 
@@ -233,13 +233,13 @@ void write_to_flash(spi_host_t *SPI, dma_t *DMA, uint16_t *data, uint32_t byte_c
     spi_set_command(SPI, cmd_address);
     spi_wait_for_ready(SPI);
 
-    uint32_t *fifo_ptr_tx = spi_host_flash.base_addr.base + SPI_HOST_TXDATA_REG_OFFSET;
+    uint32_t *fifo_ptr_tx = SPI->base_addr.base + SPI_HOST_TXDATA_REG_OFFSET;
 
     // -- DMA CONFIGURATION --
-    dma_set_read_ptr_inc(DMA, (uint32_t) 2); // Do not increment address when reading from the SPI (Pop from FIFO)
+    dma_set_read_ptr_inc(DMA, (uint32_t) 2); 
     dma_set_write_ptr_inc(DMA, (uint32_t) 0); // Do not increment address when reading from the SPI (Pop from FIFO)
-    dma_set_read_ptr(DMA, (uint32_t) data); // SPI RX FIFO addr
-    dma_set_write_ptr(DMA, (uint32_t) fifo_ptr_tx); // copy data address
+    dma_set_read_ptr(DMA, (uint32_t) data); 
+    dma_set_write_ptr(DMA, (uint32_t) fifo_ptr_tx); 
     // Set the correct SPI-DMA mode:
     // (0) disable
     // (1) receive from SPI (use SPI_START_ADDRESS for spi_host pointer)
@@ -267,11 +267,11 @@ void write_to_flash(spi_host_t *SPI, dma_t *DMA, uint16_t *data, uint32_t byte_c
     spi_wait_for_ready(SPI);
 
     // Wait for SPI interrupt
-    printf("Waiting for the SPI interrupt...\n\r");
+    //printf("Waiting for the SPI interrupt...\n\r");
     while(spi_intr_flag == 0) {
         wait_for_interrupt();
     }
-    printf("triggered!\n\r");
+    //printf("triggered!\n\r");
 
     printf("%d Bytes written in Flash at @0x%08x \n\r", byte_count, addr); 
 
@@ -339,12 +339,12 @@ void write_to_flash_256_bytes_max(spi_host_t *SPI, dma_t *DMA, uint16_t *data, u
 	spi_wait_for_ready(SPI);
 
 	// Wait for SPI interrupt
-	printf("Waiting for the SPI interrupt...\n\r");
+	//printf("Waiting for the SPI interrupt...\n\r");
 	while (spi_intr_flag == 0)
 	{
 		wait_for_interrupt();
 	}
-	printf("triggered!\n\r");
+	//printf("triggered!\n\r");
 
 	// Check status register status waiting for ready
 	bool flash_busy = true;
@@ -372,7 +372,7 @@ void write_to_flash_256_bytes_max(spi_host_t *SPI, dma_t *DMA, uint16_t *data, u
 		if ((flash_resp[0] & 0x01) == 0)
 			flash_busy = false;
 	}
-	printf("Finished Writing to Flash!\n\r");
+	//printf("Finished Writing to Flash!\n\r");
 }
 
 int main(int argc, char *argv[])
@@ -423,9 +423,6 @@ int main(int argc, char *argv[])
 
 	dma_t dma;
 	dma.base_addr = mmio_region_from_addr((uintptr_t)DMA_START_ADDRESS);
-
-	uint32_t *fifo_ptr_tx = spi_host_flash.base_addr.base + SPI_HOST_TXDATA_REG_OFFSET;
-	uint32_t *fifo_ptr_rx = spi_host_flash.base_addr.base + SPI_HOST_RXDATA_REG_OFFSET;
 
 	const uint32_t chip_cfg_dac = spi_create_configopts((spi_configopts_t){
 			.clkdiv = 0, // 50 MHz
@@ -561,7 +558,7 @@ int main(int argc, char *argv[])
 	for(uint32_t batch = 0; batch < acq_count; ++batch)
 	{
 		//uint32_t i = 0; 
-		setup_timer(94, core_clk);
+		setup_timer(95, core_clk);
 		rv_timer_counter_set_enabled(&timer, 0, kRvTimerEnabled);
 
     CSR_CLEAR_BITS(CSR_REG_MSTATUS, 0x8);
@@ -569,7 +566,7 @@ int main(int argc, char *argv[])
 		// CORE LOOP TO BE OPTIMIZED
 		// NOTE: turning this while loop into an equivalent for does not work and I have no idea why
 		//while(1)
-		for(uint32_t i = 0; i < N_SAMPLES; ++i)
+		for(uint32_t i = 0; i < N_SAMPLES - 2; ++i) // To leavae space for the end-of-window 0xffff word
 		{
 			wait_for_interrupt();
 			mmio_region_write32(timer.base_addr, RV_TIMER_TIMER_V_LOWER0_REG_OFFSET, 0);
@@ -580,7 +577,7 @@ int main(int argc, char *argv[])
 			set_voltage(&spi_host_dac, ALL, chirp[i], &cmd_set_voltage);
 			// Small delay to make sure the ADC samples after the DAC has output the signal
 			// Be careful changing this count or removing volatile as it changes things drastically
-			for (volatile uint32_t k = 0; k < 5; ++k) asm volatile("nop");
+			for (volatile uint32_t k = 0; k < 6; ++k) asm volatile("nop");
 			results[i] = (get_voltage(&spi_host_adc, &cmd_get_voltage));
 			//++i;
 		}
@@ -590,6 +587,11 @@ int main(int argc, char *argv[])
 			rv_timer_irq_clear(&timer, 0, 0);
     	CSR_SET_BITS(CSR_REG_MSTATUS, 0x8);
 		rv_timer_reset(&timer);
+
+		results[N_SAMPLES - 2] = 0xffff; // TO MARK END OF WINDOW
+		results[N_SAMPLES - 1] = 0xffff; // TO MARK END OF WINDOW
+		
+		
 
 		printf("Finished Batch: %lu\n\r", batch);
 		write_to_flash(&spi_host_flash, &dma, results, sizeof(*results) * N_SAMPLES, FLASH_ADDR + sizeof(*results) * N_SAMPLES * batch);
