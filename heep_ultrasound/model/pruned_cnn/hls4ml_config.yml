@@ -101,5 +101,5 @@ IOType: io_stream
 KerasModel: !keras_model 'pruned_cnn//keras_model.h5'
 OutputDir: pruned_cnn/
 ProjectName: myproject
-Stamp: 0Af3Db47
+Stamp: bCa4EfFc
 XilinxPart: xc7z020clg400-1

@@ -52,7 +52,7 @@ struct config2 : nnet::conv1d_config {
     static const unsigned dilation = 1;
     static const unsigned out_width = N_OUTPUTS_2;
     static const unsigned reuse_factor = 4;
-    static const unsigned n_zeros = 2048;
+    static const unsigned n_zeros = 0;
     static const bool store_weights_in_bram = false;
     static const unsigned strategy = nnet::resource;
     static const nnet::conv_implementation implementation = nnet::conv_implementation::linebuffer;
@@ -125,7 +125,7 @@ struct config6 : nnet::conv1d_config {
     static const unsigned dilation = 1;
     static const unsigned out_width = N_OUTPUTS_6;
     static const unsigned reuse_factor = 4;
-    static const unsigned n_zeros = 32768;
+    static const unsigned n_zeros = 0;
     static const bool store_weights_in_bram = false;
     static const unsigned strategy = nnet::resource;
     static const nnet::conv_implementation implementation = nnet::conv_implementation::linebuffer;
@@ -180,8 +180,8 @@ struct config11 : nnet::dense_config {
     static const unsigned io_type = nnet::io_stream;
     static const unsigned strategy = nnet::resource;
     static const unsigned reuse_factor = 4;
-    static const unsigned n_zeros = 2160;
-    static const unsigned n_nonzeros = 2160;
+    static const unsigned n_zeros = 0;
+    static const unsigned n_nonzeros = 4320;
     static const bool store_weights_in_bram = false;
     typedef ap_fixed<16,6> accum_t;
     typedef dense_bias_t bias_t;
