@@ -1,0 +1,483 @@
+
+
+================================================================
+== Synthesis Summary Report of 'inference'
+================================================================
++ General Information: 
+    * Date:           Fri Jan  6 21:26:10 2023
+    * Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+    * Project:        ultrasound_accelerator
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------------------------------------------------------------+------+-------+----------+-----------+----------+----------+----------+----------+------+---------+-----------+-----------+-----+
+    |                                Modules                                | Issue|       | Latency  |  Latency  | Iteration|          |   Trip   |          |      |         |           |           |     |
+    |                                & Loops                                | Type | Slack | (cycles) |    (ns)   |  Latency | Interval |   Count  | Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +-----------------------------------------------------------------------+------+-------+----------+-----------+----------+----------+----------+----------+------+---------+-----------+-----------+-----+
+    |+ inference                                                            |     -|  18.41|         -|          -|         -|         -|         -|        no|     -|  18 (8%)|  3622 (3%)|  4934 (9%)|    -|
+    | + inference_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3  |     -|  18.41|  35840003|  1.792e+09|         -|  35840003|         -|        no|     -|  2 (~0%)|  147 (~0%)|   593 (1%)|    -|
+    |  o VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3                    |     -|  36.50|  35840001|  1.792e+09|         3|         1|  35840000|       yes|     -|        -|          -|          -|    -|
+    | + inference_Pipeline_VITIS_LOOP_54_1                                  |     -|  25.98|         -|          -|         -|         -|         -|        no|     -|        -|  2548 (2%)|  2001 (3%)|    -|
+    |  o VITIS_LOOP_54_1                                                    |     -|  36.50|         -|          -|        37|         1|         -|       yes|     -|        -|          -|          -|    -|
+    | + inference_Pipeline_VITIS_LOOP_76_1                                  |     -|  21.04|       265|  1.325e+04|         -|       265|         -|        no|     -|  16 (7%)|  654 (~0%)|  2059 (3%)|    -|
+    |  o VITIS_LOOP_76_1                                                    |    II|  36.50|       263|  1.315e+04|        24|        16|        16|       yes|     -|        -|          -|          -|    -|
+    +-----------------------------------------------------------------------+------+-------+----------+-----------+----------+----------+----------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_FIFO
++-----------+------------+
+| Interface | Data Width |
++-----------+------------+
+| input_r   | 16         |
+| output_r  | 16         |
++-----------+------------+
+
+* AP_MEMORY
++----------------------------+----------+
+| Interface                  | Bitwidth |
++----------------------------+----------+
+| conv_weights_0_address0    | 7        |
+| conv_weights_0_q0          | 32       |
+| conv_weights_10_address0   | 7        |
+| conv_weights_10_q0         | 32       |
+| conv_weights_11_address0   | 7        |
+| conv_weights_11_q0         | 32       |
+| conv_weights_12_address0   | 7        |
+| conv_weights_12_q0         | 32       |
+| conv_weights_13_address0   | 7        |
+| conv_weights_13_q0         | 32       |
+| conv_weights_14_address0   | 7        |
+| conv_weights_14_q0         | 32       |
+| conv_weights_15_address0   | 7        |
+| conv_weights_15_q0         | 32       |
+| conv_weights_1_address0    | 7        |
+| conv_weights_1_q0          | 32       |
+| conv_weights_2_address0    | 7        |
+| conv_weights_2_q0          | 32       |
+| conv_weights_3_address0    | 7        |
+| conv_weights_3_q0          | 32       |
+| conv_weights_4_address0    | 7        |
+| conv_weights_4_q0          | 32       |
+| conv_weights_5_address0    | 7        |
+| conv_weights_5_q0          | 32       |
+| conv_weights_6_address0    | 7        |
+| conv_weights_6_q0          | 32       |
+| conv_weights_7_address0    | 7        |
+| conv_weights_7_q0          | 32       |
+| conv_weights_8_address0    | 7        |
+| conv_weights_8_q0          | 32       |
+| conv_weights_9_address0    | 7        |
+| conv_weights_9_q0          | 32       |
+| linear_weights_0_address0  | 4        |
+| linear_weights_0_address1  | 4        |
+| linear_weights_0_q0        | 32       |
+| linear_weights_0_q1        | 32       |
+| linear_weights_10_address0 | 4        |
+| linear_weights_10_address1 | 4        |
+| linear_weights_10_q0       | 32       |
+| linear_weights_10_q1       | 32       |
+| linear_weights_11_address0 | 4        |
+| linear_weights_11_address1 | 4        |
+| linear_weights_11_q0       | 32       |
+| linear_weights_11_q1       | 32       |
+| linear_weights_12_address0 | 4        |
+| linear_weights_12_address1 | 4        |
+| linear_weights_12_q0       | 32       |
+| linear_weights_12_q1       | 32       |
+| linear_weights_13_address0 | 4        |
+| linear_weights_13_address1 | 4        |
+| linear_weights_13_q0       | 32       |
+| linear_weights_13_q1       | 32       |
+| linear_weights_14_address0 | 4        |
+| linear_weights_14_address1 | 4        |
+| linear_weights_14_q0       | 32       |
+| linear_weights_14_q1       | 32       |
+| linear_weights_15_address0 | 4        |
+| linear_weights_15_address1 | 4        |
+| linear_weights_15_q0       | 32       |
+| linear_weights_15_q1       | 32       |
+| linear_weights_1_address0  | 4        |
+| linear_weights_1_address1  | 4        |
+| linear_weights_1_q0        | 32       |
+| linear_weights_1_q1        | 32       |
+| linear_weights_2_address0  | 4        |
+| linear_weights_2_address1  | 4        |
+| linear_weights_2_q0        | 32       |
+| linear_weights_2_q1        | 32       |
+| linear_weights_3_address0  | 4        |
+| linear_weights_3_address1  | 4        |
+| linear_weights_3_q0        | 32       |
+| linear_weights_3_q1        | 32       |
+| linear_weights_4_address0  | 4        |
+| linear_weights_4_address1  | 4        |
+| linear_weights_4_q0        | 32       |
+| linear_weights_4_q1        | 32       |
+| linear_weights_5_address0  | 4        |
+| linear_weights_5_address1  | 4        |
+| linear_weights_5_q0        | 32       |
+| linear_weights_5_q1        | 32       |
+| linear_weights_6_address0  | 4        |
+| linear_weights_6_address1  | 4        |
+| linear_weights_6_q0        | 32       |
+| linear_weights_6_q1        | 32       |
+| linear_weights_7_address0  | 4        |
+| linear_weights_7_address1  | 4        |
+| linear_weights_7_q0        | 32       |
+| linear_weights_7_q1        | 32       |
+| linear_weights_8_address0  | 4        |
+| linear_weights_8_address1  | 4        |
+| linear_weights_8_q0        | 32       |
+| linear_weights_8_q1        | 32       |
+| linear_weights_9_address0  | 4        |
+| linear_weights_9_address1  | 4        |
+| linear_weights_9_q0        | 32       |
+| linear_weights_9_q1        | 32       |
++----------------------------+----------+
+
+* REGISTER
++------------------+---------+----------+
+| Interface        | Mode    | Bitwidth |
++------------------+---------+----------+
+| conv_biases_0    | ap_none | 32       |
+| conv_biases_1    | ap_none | 32       |
+| conv_biases_10   | ap_none | 32       |
+| conv_biases_11   | ap_none | 32       |
+| conv_biases_12   | ap_none | 32       |
+| conv_biases_13   | ap_none | 32       |
+| conv_biases_14   | ap_none | 32       |
+| conv_biases_15   | ap_none | 32       |
+| conv_biases_2    | ap_none | 32       |
+| conv_biases_3    | ap_none | 32       |
+| conv_biases_4    | ap_none | 32       |
+| conv_biases_5    | ap_none | 32       |
+| conv_biases_6    | ap_none | 32       |
+| conv_biases_7    | ap_none | 32       |
+| conv_biases_8    | ap_none | 32       |
+| conv_biases_9    | ap_none | 32       |
+| linear_biases_0  | ap_none | 32       |
+| linear_biases_1  | ap_none | 32       |
+| linear_biases_10 | ap_none | 32       |
+| linear_biases_11 | ap_none | 32       |
+| linear_biases_12 | ap_none | 32       |
+| linear_biases_13 | ap_none | 32       |
+| linear_biases_14 | ap_none | 32       |
+| linear_biases_15 | ap_none | 32       |
+| linear_biases_2  | ap_none | 32       |
+| linear_biases_3  | ap_none | 32       |
+| linear_biases_4  | ap_none | 32       |
+| linear_biases_5  | ap_none | 32       |
+| linear_biases_6  | ap_none | 32       |
+| linear_biases_7  | ap_none | 32       |
+| linear_biases_8  | ap_none | 32       |
+| linear_biases_9  | ap_none | 32       |
+| pool_size        | ap_none | 32       |
+| pool_stride      | ap_none | 32       |
++------------------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------------+-----------+------------------------+
+| Argument       | Direction | Datatype               |
++----------------+-----------+------------------------+
+| input          | in        | stream<ap_int<16>, 0>& |
+| output         | out       | stream<ap_int<16>, 0>& |
+| conv_weights   | in        | int const *            |
+| conv_biases    | in        | int const *            |
+| pool_size      | in        | int const              |
+| pool_stride    | in        | int const              |
+| linear_weights | in        | int const *            |
+| linear_biases  | in        | int const *            |
++----------------+-----------+------------------------+
+
+* SW-to-HW Mapping
++----------------+----------------------------+-----------+----------+
+| Argument       | HW Interface               | HW Type   | HW Usage |
++----------------+----------------------------+-----------+----------+
+| input          | input_r                    | interface |          |
+| output         | output_r                   | interface |          |
+| conv_weights   | conv_weights_0_address0    | port      | offset   |
+| conv_weights   | conv_weights_0_ce0         | port      |          |
+| conv_weights   | conv_weights_0_q0          | port      |          |
+| conv_weights   | conv_weights_1_address0    | port      | offset   |
+| conv_weights   | conv_weights_1_ce0         | port      |          |
+| conv_weights   | conv_weights_1_q0          | port      |          |
+| conv_weights   | conv_weights_2_address0    | port      | offset   |
+| conv_weights   | conv_weights_2_ce0         | port      |          |
+| conv_weights   | conv_weights_2_q0          | port      |          |
+| conv_weights   | conv_weights_3_address0    | port      | offset   |
+| conv_weights   | conv_weights_3_ce0         | port      |          |
+| conv_weights   | conv_weights_3_q0          | port      |          |
+| conv_weights   | conv_weights_4_address0    | port      | offset   |
+| conv_weights   | conv_weights_4_ce0         | port      |          |
+| conv_weights   | conv_weights_4_q0          | port      |          |
+| conv_weights   | conv_weights_5_address0    | port      | offset   |
+| conv_weights   | conv_weights_5_ce0         | port      |          |
+| conv_weights   | conv_weights_5_q0          | port      |          |
+| conv_weights   | conv_weights_6_address0    | port      | offset   |
+| conv_weights   | conv_weights_6_ce0         | port      |          |
+| conv_weights   | conv_weights_6_q0          | port      |          |
+| conv_weights   | conv_weights_7_address0    | port      | offset   |
+| conv_weights   | conv_weights_7_ce0         | port      |          |
+| conv_weights   | conv_weights_7_q0          | port      |          |
+| conv_weights   | conv_weights_8_address0    | port      | offset   |
+| conv_weights   | conv_weights_8_ce0         | port      |          |
+| conv_weights   | conv_weights_8_q0          | port      |          |
+| conv_weights   | conv_weights_9_address0    | port      | offset   |
+| conv_weights   | conv_weights_9_ce0         | port      |          |
+| conv_weights   | conv_weights_9_q0          | port      |          |
+| conv_weights   | conv_weights_10_address0   | port      | offset   |
+| conv_weights   | conv_weights_10_ce0        | port      |          |
+| conv_weights   | conv_weights_10_q0         | port      |          |
+| conv_weights   | conv_weights_11_address0   | port      | offset   |
+| conv_weights   | conv_weights_11_ce0        | port      |          |
+| conv_weights   | conv_weights_11_q0         | port      |          |
+| conv_weights   | conv_weights_12_address0   | port      | offset   |
+| conv_weights   | conv_weights_12_ce0        | port      |          |
+| conv_weights   | conv_weights_12_q0         | port      |          |
+| conv_weights   | conv_weights_13_address0   | port      | offset   |
+| conv_weights   | conv_weights_13_ce0        | port      |          |
+| conv_weights   | conv_weights_13_q0         | port      |          |
+| conv_weights   | conv_weights_14_address0   | port      | offset   |
+| conv_weights   | conv_weights_14_ce0        | port      |          |
+| conv_weights   | conv_weights_14_q0         | port      |          |
+| conv_weights   | conv_weights_15_address0   | port      | offset   |
+| conv_weights   | conv_weights_15_ce0        | port      |          |
+| conv_weights   | conv_weights_15_q0         | port      |          |
+| conv_biases    | conv_biases_0              | port      |          |
+| conv_biases    | conv_biases_1              | port      |          |
+| conv_biases    | conv_biases_2              | port      |          |
+| conv_biases    | conv_biases_3              | port      |          |
+| conv_biases    | conv_biases_4              | port      |          |
+| conv_biases    | conv_biases_5              | port      |          |
+| conv_biases    | conv_biases_6              | port      |          |
+| conv_biases    | conv_biases_7              | port      |          |
+| conv_biases    | conv_biases_8              | port      |          |
+| conv_biases    | conv_biases_9              | port      |          |
+| conv_biases    | conv_biases_10             | port      |          |
+| conv_biases    | conv_biases_11             | port      |          |
+| conv_biases    | conv_biases_12             | port      |          |
+| conv_biases    | conv_biases_13             | port      |          |
+| conv_biases    | conv_biases_14             | port      |          |
+| conv_biases    | conv_biases_15             | port      |          |
+| pool_size      | pool_size                  | port      |          |
+| pool_stride    | pool_stride                | port      |          |
+| linear_weights | linear_weights_0_address0  | port      | offset   |
+| linear_weights | linear_weights_0_ce0       | port      |          |
+| linear_weights | linear_weights_0_q0        | port      |          |
+| linear_weights | linear_weights_0_address1  | port      | offset   |
+| linear_weights | linear_weights_0_ce1       | port      |          |
+| linear_weights | linear_weights_0_q1        | port      |          |
+| linear_weights | linear_weights_1_address0  | port      | offset   |
+| linear_weights | linear_weights_1_ce0       | port      |          |
+| linear_weights | linear_weights_1_q0        | port      |          |
+| linear_weights | linear_weights_1_address1  | port      | offset   |
+| linear_weights | linear_weights_1_ce1       | port      |          |
+| linear_weights | linear_weights_1_q1        | port      |          |
+| linear_weights | linear_weights_2_address0  | port      | offset   |
+| linear_weights | linear_weights_2_ce0       | port      |          |
+| linear_weights | linear_weights_2_q0        | port      |          |
+| linear_weights | linear_weights_2_address1  | port      | offset   |
+| linear_weights | linear_weights_2_ce1       | port      |          |
+| linear_weights | linear_weights_2_q1        | port      |          |
+| linear_weights | linear_weights_3_address0  | port      | offset   |
+| linear_weights | linear_weights_3_ce0       | port      |          |
+| linear_weights | linear_weights_3_q0        | port      |          |
+| linear_weights | linear_weights_3_address1  | port      | offset   |
+| linear_weights | linear_weights_3_ce1       | port      |          |
+| linear_weights | linear_weights_3_q1        | port      |          |
+| linear_weights | linear_weights_4_address0  | port      | offset   |
+| linear_weights | linear_weights_4_ce0       | port      |          |
+| linear_weights | linear_weights_4_q0        | port      |          |
+| linear_weights | linear_weights_4_address1  | port      | offset   |
+| linear_weights | linear_weights_4_ce1       | port      |          |
+| linear_weights | linear_weights_4_q1        | port      |          |
+| linear_weights | linear_weights_5_address0  | port      | offset   |
+| linear_weights | linear_weights_5_ce0       | port      |          |
+| linear_weights | linear_weights_5_q0        | port      |          |
+| linear_weights | linear_weights_5_address1  | port      | offset   |
+| linear_weights | linear_weights_5_ce1       | port      |          |
+| linear_weights | linear_weights_5_q1        | port      |          |
+| linear_weights | linear_weights_6_address0  | port      | offset   |
+| linear_weights | linear_weights_6_ce0       | port      |          |
+| linear_weights | linear_weights_6_q0        | port      |          |
+| linear_weights | linear_weights_6_address1  | port      | offset   |
+| linear_weights | linear_weights_6_ce1       | port      |          |
+| linear_weights | linear_weights_6_q1        | port      |          |
+| linear_weights | linear_weights_7_address0  | port      | offset   |
+| linear_weights | linear_weights_7_ce0       | port      |          |
+| linear_weights | linear_weights_7_q0        | port      |          |
+| linear_weights | linear_weights_7_address1  | port      | offset   |
+| linear_weights | linear_weights_7_ce1       | port      |          |
+| linear_weights | linear_weights_7_q1        | port      |          |
+| linear_weights | linear_weights_8_address0  | port      | offset   |
+| linear_weights | linear_weights_8_ce0       | port      |          |
+| linear_weights | linear_weights_8_q0        | port      |          |
+| linear_weights | linear_weights_8_address1  | port      | offset   |
+| linear_weights | linear_weights_8_ce1       | port      |          |
+| linear_weights | linear_weights_8_q1        | port      |          |
+| linear_weights | linear_weights_9_address0  | port      | offset   |
+| linear_weights | linear_weights_9_ce0       | port      |          |
+| linear_weights | linear_weights_9_q0        | port      |          |
+| linear_weights | linear_weights_9_address1  | port      | offset   |
+| linear_weights | linear_weights_9_ce1       | port      |          |
+| linear_weights | linear_weights_9_q1        | port      |          |
+| linear_weights | linear_weights_10_address0 | port      | offset   |
+| linear_weights | linear_weights_10_ce0      | port      |          |
+| linear_weights | linear_weights_10_q0       | port      |          |
+| linear_weights | linear_weights_10_address1 | port      | offset   |
+| linear_weights | linear_weights_10_ce1      | port      |          |
+| linear_weights | linear_weights_10_q1       | port      |          |
+| linear_weights | linear_weights_11_address0 | port      | offset   |
+| linear_weights | linear_weights_11_ce0      | port      |          |
+| linear_weights | linear_weights_11_q0       | port      |          |
+| linear_weights | linear_weights_11_address1 | port      | offset   |
+| linear_weights | linear_weights_11_ce1      | port      |          |
+| linear_weights | linear_weights_11_q1       | port      |          |
+| linear_weights | linear_weights_12_address0 | port      | offset   |
+| linear_weights | linear_weights_12_ce0      | port      |          |
+| linear_weights | linear_weights_12_q0       | port      |          |
+| linear_weights | linear_weights_12_address1 | port      | offset   |
+| linear_weights | linear_weights_12_ce1      | port      |          |
+| linear_weights | linear_weights_12_q1       | port      |          |
+| linear_weights | linear_weights_13_address0 | port      | offset   |
+| linear_weights | linear_weights_13_ce0      | port      |          |
+| linear_weights | linear_weights_13_q0       | port      |          |
+| linear_weights | linear_weights_13_address1 | port      | offset   |
+| linear_weights | linear_weights_13_ce1      | port      |          |
+| linear_weights | linear_weights_13_q1       | port      |          |
+| linear_weights | linear_weights_14_address0 | port      | offset   |
+| linear_weights | linear_weights_14_ce0      | port      |          |
+| linear_weights | linear_weights_14_q0       | port      |          |
+| linear_weights | linear_weights_14_address1 | port      | offset   |
+| linear_weights | linear_weights_14_ce1      | port      |          |
+| linear_weights | linear_weights_14_q1       | port      |          |
+| linear_weights | linear_weights_15_address0 | port      | offset   |
+| linear_weights | linear_weights_15_ce0      | port      |          |
+| linear_weights | linear_weights_15_q0       | port      |          |
+| linear_weights | linear_weights_15_address1 | port      | offset   |
+| linear_weights | linear_weights_15_ce1      | port      |          |
+| linear_weights | linear_weights_15_q1       | port      |          |
+| linear_biases  | linear_biases_0            | port      |          |
+| linear_biases  | linear_biases_1            | port      |          |
+| linear_biases  | linear_biases_2            | port      |          |
+| linear_biases  | linear_biases_3            | port      |          |
+| linear_biases  | linear_biases_4            | port      |          |
+| linear_biases  | linear_biases_5            | port      |          |
+| linear_biases  | linear_biases_6            | port      |          |
+| linear_biases  | linear_biases_7            | port      |          |
+| linear_biases  | linear_biases_8            | port      |          |
+| linear_biases  | linear_biases_9            | port      |          |
+| linear_biases  | linear_biases_10           | port      |          |
+| linear_biases  | linear_biases_11           | port      |          |
+| linear_biases  | linear_biases_12           | port      |          |
+| linear_biases  | linear_biases_13           | port      |          |
+| linear_biases  | linear_biases_14           | port      |          |
+| linear_biases  | linear_biases_15           | port      |          |
++----------------+----------------------------+-----------+----------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------------------------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                                                                  | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++-----------------------------------------------------------------------+-----+--------+-------------+-----+--------+---------+
+| + inference                                                           | 18  |        |             |     |        |         |
+|  + inference_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3 | 2   |        |             |     |        |         |
+|    add_ln22_fu_518_p2                                                 | -   |        | add_ln22    | add | fabric | 0       |
+|    add_ln22_1_fu_568_p2                                               | -   |        | add_ln22_1  | add | fabric | 0       |
+|    add_ln23_fu_582_p2                                                 | -   |        | add_ln23    | add | fabric | 0       |
+|    add_ln27_fu_640_p2                                                 | -   |        | add_ln27    | add | fabric | 0       |
+|    mul_32s_16s_32_1_1_U3                                              | 2   |        | mul_ln28    | mul | auto   | 0       |
+|    sum_2_fu_794_p2                                                    | -   |        | sum_2       | add | fabric | 0       |
+|    add_ln25_fu_652_p2                                                 | -   |        | add_ln25    | add | fabric | 0       |
+|    conv_output_din                                                    | -   |        | add_ln260   | add | fabric | 0       |
+|    add_ln23_1_fu_693_p2                                               | -   |        | add_ln23_1  | add | fabric | 0       |
+|  + inference_Pipeline_VITIS_LOOP_54_1                                 | 0   |        |             |     |        |         |
+|    sum_1_fu_126_p2                                                    | -   |        | sum_1       | add | fabric | 0       |
+|    count_1_fu_132_p2                                                  | -   |        | count_1     | add | fabric | 0       |
+|    i_2_fu_105_p2                                                      | -   |        | i_2         | add | fabric | 0       |
+|  + inference_Pipeline_VITIS_LOOP_76_1                                 | 16  |        |             |     |        |         |
+|    add_ln76_fu_2809_p2                                                | -   |        | add_ln76    | add | fabric | 0       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U52                                 | 1   |        | mul_ln79    | mul | dsp48  | 3       |
+|    mul_mul_16s_16s_16_4_1_U49                                         | 1   |        | mul_ln79_1  | mul | dsp48  | 3       |
+|    mul_mul_16s_16s_16_4_1_U50                                         | 1   |        | mul_ln79_2  | mul | dsp48  | 3       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U54                                 | 1   |        | mul_ln79_3  | mul | dsp48  | 3       |
+|    mul_mul_16s_16s_16_4_1_U51                                         | 1   |        | mul_ln79_4  | mul | dsp48  | 3       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U56                                 | 1   |        | mul_ln79_5  | mul | dsp48  | 3       |
+|    mul_mul_16s_16s_16_4_1_U53                                         | 1   |        | mul_ln79_6  | mul | dsp48  | 3       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U58                                 | 1   |        | mul_ln79_7  | mul | dsp48  | 3       |
+|    mul_mul_16s_16s_16_4_1_U55                                         | 1   |        | mul_ln79_8  | mul | dsp48  | 3       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U60                                 | 1   |        | mul_ln79_9  | mul | dsp48  | 3       |
+|    mul_mul_16s_16s_16_4_1_U57                                         | 1   |        | mul_ln79_10 | mul | dsp48  | 3       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U61                                 | 1   |        | mul_ln79_11 | mul | dsp48  | 3       |
+|    mul_mul_16s_16s_16_4_1_U59                                         | 1   |        | mul_ln79_12 | mul | dsp48  | 3       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U63                                 | 1   |        | mul_ln79_13 | mul | dsp48  | 3       |
+|    mul_mul_16s_16s_16_4_1_U62                                         | 1   |        | mul_ln79_14 | mul | dsp48  | 3       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U64                                 | 1   |        | mul_ln79_15 | mul | dsp48  | 3       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U52                                 | 1   |        | add_ln79    | add | dsp48  | 3       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U54                                 | 1   |        | add_ln79_1  | add | dsp48  | 3       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U56                                 | 1   |        | add_ln79_3  | add | dsp48  | 3       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U58                                 | 1   |        | add_ln79_4  | add | dsp48  | 3       |
+|    add_ln79_5_fu_2930_p2                                              | -   |        | add_ln79_5  | add | fabric | 0       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U60                                 | 1   |        | add_ln79_7  | add | dsp48  | 3       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U61                                 | 1   |        | add_ln79_8  | add | dsp48  | 3       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U63                                 | 1   |        | add_ln79_10 | add | dsp48  | 3       |
+|    mac_muladd_16s_16s_16ns_16_4_1_U64                                 | 1   |        | add_ln79_11 | add | dsp48  | 3       |
+|    add_ln79_12_fu_2944_p2                                             | -   |        | add_ln79_12 | add | fabric | 0       |
++-----------------------------------------------------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++----------------------+------+------+--------+-------------+---------+------+---------+
+| Name                 | BRAM | URAM | Pragma | Variable    | Storage | Impl | Latency |
++----------------------+------+------+--------+-------------+---------+------+---------+
+| + inference          | 0    | 0    |        |             |         |      |         |
+|   conv_output_fifo_U | -    | -    |        | conv_output | fifo    | srl  | 0       |
+|   pool_output_fifo_U | -    | -    |        | pool_output | fifo    | srl  | 0       |
++----------------------+------+------+--------+-------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+---------------------------------+-----------------------------------+
+| Type            | Options                         | Location                          |
++-----------------+---------------------------------+-----------------------------------+
+| array_partition | variable=weights complete dim=1 | HLS_CNN.cpp:18 in conv1d, weights |
+| array_partition | variable=biases complete        | HLS_CNN.cpp:19 in conv1d, biases  |
+| array_partition | variable=weights complete dim=1 | HLS_CNN.cpp:72 in linear, weights |
+| array_partition | variable=biases complete        | HLS_CNN.cpp:73 in linear, biases  |
++-----------------+---------------------------------+-----------------------------------+
+
+

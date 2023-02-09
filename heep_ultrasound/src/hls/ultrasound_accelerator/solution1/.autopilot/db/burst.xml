@@ -1,0 +1,4 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="HLS_CNN.cpp:54:22" msg_id="214-252" msg_severity="INFO" msg_body="Could not analyze the loop bounds" resolution="214-252" LoopLoc="HLS_CNN.cpp:54:22" LoopName="VITIS_LOOP_54_1" ParentFunc="inference(hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, int const (*) [128], int const*, int, int, int const (*) [16], int const*)"/>
+</VitisHLS:BurstInfo>
+

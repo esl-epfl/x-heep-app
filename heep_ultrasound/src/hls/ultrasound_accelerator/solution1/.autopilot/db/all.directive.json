@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "inference",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/saverio\/Documents\/x-heep-app\/heep_ultrasound\/src\/hls\/ultrasound_accelerator\/solution1\/csynth.tcl",
+          "sourceLine": "13",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "inference"
+              }]
+          }
+        }]
+    }]}

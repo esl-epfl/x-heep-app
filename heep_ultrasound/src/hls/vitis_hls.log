@@ -1,0 +1,245 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'saverio' on host 'sawi' (Linux_x86_64 version 5.10.0-20-amd64) on Fri Jan 06 21:25:32 CET 2023
+INFO: [HLS 200-10] On os Debian GNU/Linux 11 (bullseye)
+INFO: [HLS 200-10] In directory '/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls'
+Sourcing Tcl script '/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls/ultrasound_accelerator/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: source /home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls/ultrasound_accelerator/solution1/csynth.tcl
+INFO: [HLS 200-1510] Running: open_project ultrasound_accelerator 
+INFO: [HLS 200-10] Opening project '/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls/ultrasound_accelerator'.
+INFO: [HLS 200-1510] Running: set_top inference 
+INFO: [HLS 200-1510] Running: add_files HLS_CNN.cpp 
+INFO: [HLS 200-10] Adding design file 'HLS_CNN.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls/ultrasound_accelerator/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 50ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 50 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 50ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 631.441 MB.
+INFO: [HLS 200-10] Analyzing design file 'HLS_CNN.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 11.57 seconds. CPU system time: 2.22 seconds. Elapsed time: 11.39 seconds; current allocated memory: 114.613 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-178] Inlining function 'conv1d(hls::stream<ap_int<16>, 0>&, hls::stream<ap_int<16>, 0>&, int const (*) [128], int const*)' into 'inference(hls::stream<ap_int<16>, 0>&, hls::stream<ap_int<16>, 0>&, int const (*) [128], int const*, int, int, int const (*) [16], int const*)' (HLS_CNN.cpp:95:0)
+INFO: [HLS 214-178] Inlining function 'avg_pool1d(hls::stream<ap_int<16>, 0>&, hls::stream<ap_int<16>, 0>&, int, int)' into 'inference(hls::stream<ap_int<16>, 0>&, hls::stream<ap_int<16>, 0>&, int const (*) [128], int const*, int, int, int const (*) [16], int const*)' (HLS_CNN.cpp:95:0)
+INFO: [HLS 214-178] Inlining function 'linear(hls::stream<ap_int<16>, 0>&, hls::stream<ap_int<16>, 0>&, int const (*) [16], int const*)' into 'inference(hls::stream<ap_int<16>, 0>&, hls::stream<ap_int<16>, 0>&, int const (*) [128], int const*, int, int, int const (*) [16], int const*)' (HLS_CNN.cpp:95:0)
+INFO: [HLS 214-248] Applying array_partition to 'conv_weights': Complete partitioning on dimension 1. (HLS_CNN.cpp:95:0)
+INFO: [HLS 214-248] Applying array_partition to 'conv_biases': Complete partitioning on dimension 1. (HLS_CNN.cpp:95:0)
+INFO: [HLS 214-248] Applying array_partition to 'linear_weights': Complete partitioning on dimension 1. (HLS_CNN.cpp:95:0)
+INFO: [HLS 214-248] Applying array_partition to 'linear_biases': Complete partitioning on dimension 1. (HLS_CNN.cpp:95:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'output' with compact=bit mode in 16-bits (HLS_CNN.cpp:95:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'input' with compact=bit mode in 16-bits (HLS_CNN.cpp:95:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_int<16>s' into 'inference(hls::stream<ap_int<16>, 0>&, hls::stream<ap_int<16>, 0>&, int const (*) [128], int const*, int, int, int const (*) [16], int const*)' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 8.4 seconds. CPU system time: 0.98 seconds. Elapsed time: 9.61 seconds; current allocated memory: 114.707 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 114.707 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.12 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.19 seconds; current allocated memory: 118.734 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 123.512 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_25_3' (HLS_CNN.cpp:24) in function 'inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_54_1' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:0) in function 'inference' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_76_1' (HLS_CNN.cpp:77) in function 'inference' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_76_1' (HLS_CNN.cpp:77) in function 'inference' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_78_2' (HLS_CNN.cpp:77) in function 'inference' completely with a factor of 16.
+WARNING: [HLS 200-805] An internal stream 'conv_output' (HLS_CNN.cpp:97) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'pool_output' (HLS_CNN.cpp:98) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-11] Balancing expressions in function 'inference' (HLS_CNN.cpp:0:30)...15 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1.25 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.5 seconds; current allocated memory: 153.574 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_23_2' (HLS_CNN.cpp:24:17) in function 'inference'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_22_1' (HLS_CNN.cpp:22:28) in function 'inference'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.72 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.78 seconds; current allocated memory: 178.246 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'inference' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'inference_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 4, loop 'VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.46 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.67 seconds; current allocated memory: 181.246 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.25 seconds. CPU system time: 0 seconds. Elapsed time: 0.29 seconds; current allocated memory: 181.246 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'inference_Pipeline_VITIS_LOOP_54_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_54_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 37, loop 'VITIS_LOOP_54_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.43 seconds. CPU system time: 0 seconds. Elapsed time: 0.42 seconds; current allocated memory: 181.371 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.4 seconds. CPU system time: 0 seconds. Elapsed time: 0.4 seconds; current allocated memory: 181.371 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'inference_Pipeline_VITIS_LOOP_76_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79_15) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79_11) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79_7) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=mul_ln79_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_76_1'.
+WARNING: [HLS 200-880] The II Violation in module 'inference_Pipeline_VITIS_LOOP_76_1' (loop 'VITIS_LOOP_76_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between fifo read operation ('pool_output_read_1', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'pool_output' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read operation ('pool_output_read', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'pool_output' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145).
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'inference_Pipeline_VITIS_LOOP_76_1' (loop 'VITIS_LOOP_76_1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between fifo read operation ('pool_output_read_2', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'pool_output' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read operation ('pool_output_read', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'pool_output' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145).
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'inference_Pipeline_VITIS_LOOP_76_1' (loop 'VITIS_LOOP_76_1'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1) between fifo read operation ('pool_output_read_3', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'pool_output' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read operation ('pool_output_read', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'pool_output' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145).
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'inference_Pipeline_VITIS_LOOP_76_1' (loop 'VITIS_LOOP_76_1'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between fifo read operation ('pool_output_read_4', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'pool_output' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read operation ('pool_output_read', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'pool_output' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145).
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'inference_Pipeline_VITIS_LOOP_76_1' (loop 'VITIS_LOOP_76_1'): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1) between fifo read operation ('pool_output_read_11', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'pool_output' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read operation ('pool_output_read', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'pool_output' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145).
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'inference_Pipeline_VITIS_LOOP_76_1' (loop 'VITIS_LOOP_76_1'): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1) between fifo read operation ('pool_output_read_15', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'pool_output' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read operation ('pool_output_read', /tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145) on port 'pool_output' (/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:145).
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 16, Depth = 24, loop 'VITIS_LOOP_76_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2.06 seconds. CPU system time: 0.02 seconds. Elapsed time: 2.16 seconds; current allocated memory: 188.520 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.96 seconds. CPU system time: 0 seconds. Elapsed time: 0.99 seconds; current allocated memory: 188.520 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'inference' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.69 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.72 seconds; current allocated memory: 188.520 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.24 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 188.520 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'inference_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'inference_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3' pipeline 'VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_16s_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_165_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'inference_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.39 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.4 seconds; current allocated memory: 188.520 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'inference_Pipeline_VITIS_LOOP_54_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'inference_Pipeline_VITIS_LOOP_54_1' pipeline 'VITIS_LOOP_54_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sdiv_32ns_32ns_16_36_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'inference_Pipeline_VITIS_LOOP_54_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.62 seconds. CPU system time: 0 seconds. Elapsed time: 0.64 seconds; current allocated memory: 191.816 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'inference_Pipeline_VITIS_LOOP_76_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'inference_Pipeline_VITIS_LOOP_76_1' pipeline 'VITIS_LOOP_76_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16s_16ns_16_4_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16s_16s_16_4_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_165_32_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'inference_Pipeline_VITIS_LOOP_76_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.47 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.48 seconds; current allocated memory: 196.207 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'inference' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/input_r' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/output_r' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_weights_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_4' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_5' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_6' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_7' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_8' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_9' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_10' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_11' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_12' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_13' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_14' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/conv_biases_15' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/pool_size' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/pool_stride' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_0' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_1' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_2' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_3' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_4' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_5' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_6' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_7' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_8' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_9' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_10' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_11' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_12' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_13' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_14' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_weights_15' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_0' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_1' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_2' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_3' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_4' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_5' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_6' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_7' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_8' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_9' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_10' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_11' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_12' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_13' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_14' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'inference/linear_biases_15' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'inference' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'inference'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.36 seconds. CPU system time: 0.11 seconds. Elapsed time: 1.46 seconds; current allocated memory: 207.508 MB.
+INFO: [RTMG 210-285] Implementing FIFO 'conv_output_U(inference_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'pool_output_U(inference_fifo_w16_d2_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.06 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.11 seconds; current allocated memory: 213.164 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 4.65 seconds. CPU system time: 0.05 seconds. Elapsed time: 4.72 seconds; current allocated memory: 225.309 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for inference.
+INFO: [VLOG 209-307] Generating Verilog RTL for inference.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 55.29 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 36.28 seconds. CPU system time: 3.64 seconds. Elapsed time: 38.49 seconds; current allocated memory: -406.133 MB.
+INFO: [HLS 200-112] Total CPU user time: 39.82 seconds. Total CPU system time: 4.39 seconds. Total elapsed time: 43.97 seconds; peak allocated memory: 631.441 MB.
