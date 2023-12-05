@@ -1,0 +1,57 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_ref.h:724:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_ref.h:738:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/ap_int_ref.h:752:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS_CNN.cpp:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1d" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS_CNN.cpp:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="conv1d" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=biases complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS_CNN.cpp:72:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="linear" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=weights complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="HLS_CNN.cpp:73:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="linear" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=biases complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls/ultrasound_accelerator/solution1/csynth.tcl:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="inference" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=inference" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="HLS_CNN.cpp:95:0" msg_body="Inlining function 'conv1d(hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, int const (*) [128], int const*)' into 'inference(hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, int const (*) [128], int const*, int, int, int const (*) [16], int const*)'">
+        <args Callee="conv1d(hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, int const (*) [128], int const*)" Caller="inference(hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, int const (*) [128], int const*, int, int, int const (*) [16], int const*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="HLS_CNN.cpp:95:0" msg_body="Inlining function 'avg_pool1d(hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, int, int)' into 'inference(hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, int const (*) [128], int const*, int, int, int const (*) [16], int const*)'">
+        <args Callee="avg_pool1d(hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, int, int)" Caller="inference(hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, int const (*) [128], int const*, int, int, int const (*) [16], int const*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="HLS_CNN.cpp:95:0" msg_body="Inlining function 'linear(hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, int const (*) [16], int const*)' into 'inference(hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, int const (*) [128], int const*, int, int, int const (*) [16], int const*)'">
+        <args Callee="linear(hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, int const (*) [16], int const*)" Caller="inference(hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, int const (*) [128], int const*, int, int, int const (*) [16], int const*)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="HLS_CNN.cpp:95:0" msg_body="Applying array_partition to 'conv_weights': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="conv_weights"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="HLS_CNN.cpp:95:0" msg_body="Applying array_partition to 'conv_biases': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="conv_biases"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="HLS_CNN.cpp:95:0" msg_body="Applying array_partition to 'linear_weights': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="linear_weights"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="HLS_CNN.cpp:95:0" msg_body="Applying array_partition to 'linear_biases': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="linear_biases"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="HLS_CNN.cpp:95:0" msg_body="Aggregating fifo (hls::stream) variable 'output' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="fifo (hls::stream)" Name="output"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="HLS_CNN.cpp:95:0" msg_body="Aggregating fifo (hls::stream) variable 'input' with compact=bit mode in 16-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="16" HwTyName="fifo (hls::stream)" Name="input"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/tools/Xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h:174:9" msg_body="Inlining function '_llvm.fpga.pack.none.i16.s_struct.ap_int&lt;16&gt;s' into 'inference(hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, int const (*) [128], int const*, int, int, int const (*) [16], int const*)'">
+        <args Callee="_llvm.fpga.pack.none.i16.s_struct.ap_int&lt;16&gt;s" Caller="inference(hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, hls::stream&lt;ap_int&lt;16&gt;, 0&gt;&amp;, int const (*) [128], int const*, int, int, int const (*) [16], int const*)"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

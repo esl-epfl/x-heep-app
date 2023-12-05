@@ -1,0 +1,1395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1673036770112">
+  <ports id="1" name="input_r" type="PortType" coreId="254" bitwidth="16" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="output_r" type="PortType" coreId="3621216858" bitwidth="16" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="3" name="conv_weights_0" type="PortType" coreName="RAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="4" name="conv_weights_1" type="PortType" coreName="RAM" coreId="3910823056" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="5" name="conv_weights_2" type="PortType" coreName="RAM" coreId="3907173024" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="6" name="conv_weights_3" type="PortType" coreName="RAM" coreId="448" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="7" name="conv_weights_4" type="PortType" coreName="RAM" coreId="3907173024" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="8" name="conv_weights_5" type="PortType" coreName="RAM" coreId="3910147824" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="9" name="conv_weights_6" type="PortType" coreName="RAM" coreId="1397508187" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="10" name="conv_weights_7" type="PortType" coreName="RAM" coreId="3910147824" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="11" name="conv_weights_8" type="PortType" coreName="RAM" coreId="3910227712" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="12" name="conv_weights_9" type="PortType" coreName="RAM" coreId="3910568976" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="13" name="conv_weights_10" type="PortType" coreName="RAM" coreId="3910813440" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="14" name="conv_weights_11" type="PortType" coreName="RAM" coreId="1765" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="15" name="conv_weights_12" type="PortType" coreName="RAM" coreId="1794" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="16" name="conv_weights_13" type="PortType" coreName="RAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="17" name="conv_weights_14" type="PortType" coreName="RAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="18" name="conv_weights_15" type="PortType" coreName="RAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="128">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="19" name="conv_biases_0" type="PortType" originalName="conv_biases" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="20" name="conv_biases_1" type="PortType" originalName="conv_biases" coreId="3910717040" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="21" name="conv_biases_2" type="PortType" originalName="conv_biases" coreId="1330007625" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="22" name="conv_biases_3" type="PortType" originalName="conv_biases" coreId="3910733360" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="23" name="conv_biases_4" type="PortType" originalName="conv_biases" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="24" name="conv_biases_5" type="PortType" originalName="conv_biases" coreId="3910632288" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="25" name="conv_biases_6" type="PortType" originalName="conv_biases" coreId="1330007625" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="26" name="conv_biases_7" type="PortType" originalName="conv_biases" coreId="3910634576" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="27" name="conv_biases_8" type="PortType" originalName="conv_biases" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="28" name="conv_biases_9" type="PortType" originalName="conv_biases" coreId="3910797216" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="29" name="conv_biases_10" type="PortType" originalName="conv_biases" coreId="1330007625" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="30" name="conv_biases_11" type="PortType" originalName="conv_biases" coreId="3910808944" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="31" name="conv_biases_12" type="PortType" originalName="conv_biases" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="32" name="conv_biases_13" type="PortType" originalName="conv_biases" coreId="3910787008" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="33" name="conv_biases_14" type="PortType" originalName="conv_biases" coreId="1397508187" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="34" name="conv_biases_15" type="PortType" originalName="conv_biases" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="35" name="pool_size" type="PortType" originalName="pool_size" coreId="3910789488" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="36" name="pool_stride" type="PortType" originalName="pool_stride" coreId="1397508187" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="37" name="linear_weights_0" type="PortType" coreName="RAM" coreId="3910794320" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="38" name="linear_weights_1" type="PortType" coreName="RAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="39" name="linear_weights_2" type="PortType" coreName="RAM" coreId="3910797216" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="40" name="linear_weights_3" type="PortType" coreName="RAM" coreId="1330007625" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="41" name="linear_weights_4" type="PortType" coreName="RAM" coreId="3910811424" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="42" name="linear_weights_5" type="PortType" coreName="RAM" coreId="2029" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="43" name="linear_weights_6" type="PortType" coreName="RAM" coreId="1988" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="44" name="linear_weights_7" type="PortType" coreName="RAM" coreId="542329928" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="45" name="linear_weights_8" type="PortType" coreName="RAM" coreId="3910568544" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="46" name="linear_weights_9" type="PortType" coreName="RAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="47" name="linear_weights_10" type="PortType" coreName="RAM" coreId="1814457697" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="48" name="linear_weights_11" type="PortType" coreName="RAM" coreId="3910570144" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="49" name="linear_weights_12" type="PortType" coreName="RAM" coreId="3910570648" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="50" name="linear_weights_13" type="PortType" coreName="RAM" coreId="3910570688" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="51" name="linear_weights_14" type="PortType" coreName="RAM" coreId="939525744" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="52" name="linear_weights_15" type="PortType" coreName="RAM" coreId="1702258035" bitwidth="32" iftype="IfTypeRegister" arraysize="16">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="53" name="linear_biases_0" type="PortType" originalName="linear_biases" coreId="1852795251" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="54" name="linear_biases_1" type="PortType" originalName="linear_biases" coreId="176" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="55" name="linear_biases_2" type="PortType" originalName="linear_biases" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="56" name="linear_biases_3" type="PortType" originalName="linear_biases" coreId="3910574512" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="57" name="linear_biases_4" type="PortType" originalName="linear_biases" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="58" name="linear_biases_5" type="PortType" originalName="linear_biases" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="59" name="linear_biases_6" type="PortType" originalName="linear_biases" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="60" name="linear_biases_7" type="PortType" originalName="linear_biases" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="61" name="linear_biases_8" type="PortType" originalName="linear_biases" coreId="3910797952" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="62" name="linear_biases_9" type="PortType" originalName="linear_biases" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="63" name="linear_biases_10" type="PortType" originalName="linear_biases" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="64" name="linear_biases_11" type="PortType" originalName="linear_biases" coreId="0" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="65" name="linear_biases_12" type="PortType" originalName="linear_biases" coreId="3910800056" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="66" name="linear_biases_13" type="PortType" originalName="linear_biases" coreId="3910573392" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="67" name="linear_biases_14" type="PortType" originalName="linear_biases" coreId="3910800704" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="68" name="linear_biases_15" type="PortType" originalName="linear_biases" coreId="3910800992" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="267" source_obj="//@ports.35" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="269" source_obj="//@ports.34" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="270" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="271" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="277" source_obj="//@ports.18" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="279" source_obj="//@ports.19" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="281" source_obj="//@ports.20" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="283" source_obj="//@ports.21" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="285" source_obj="//@ports.22" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="287" source_obj="//@ports.23" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="289" source_obj="//@ports.24" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="291" source_obj="//@ports.25" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="293" source_obj="//@ports.26" sink_obj="//@blocks.0/@node_objs.14"/>
+  <edges id="295" source_obj="//@ports.27" sink_obj="//@blocks.0/@node_objs.15"/>
+  <edges id="297" source_obj="//@ports.28" sink_obj="//@blocks.0/@node_objs.16"/>
+  <edges id="299" source_obj="//@ports.29" sink_obj="//@blocks.0/@node_objs.17"/>
+  <edges id="301" source_obj="//@ports.30" sink_obj="//@blocks.0/@node_objs.18"/>
+  <edges id="303" source_obj="//@ports.31" sink_obj="//@blocks.0/@node_objs.19"/>
+  <edges id="305" source_obj="//@ports.32" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="307" source_obj="//@ports.33" sink_obj="//@blocks.0/@node_objs.21"/>
+  <edges id="312" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="313" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="314" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="315" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="316" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="317" source_obj="//@ports.7" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="318" source_obj="//@ports.8" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="319" source_obj="//@ports.9" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="320" source_obj="//@ports.10" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="321" source_obj="//@ports.11" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="322" source_obj="//@ports.12" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="323" source_obj="//@ports.13" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="324" source_obj="//@ports.14" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="325" source_obj="//@ports.15" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="326" source_obj="//@ports.16" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="327" source_obj="//@ports.17" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="328" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="329" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="330" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="331" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="332" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="333" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="334" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="335" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="336" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="337" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="338" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="339" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="340" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="341" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="342" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="343" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="344" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="345" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="347" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.25"/>
+  <edges id="350" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.26"/>
+  <edges id="352" source_obj="//@blocks.0/@node_objs.25" sink_obj="//@blocks.0/@node_objs.27"/>
+  <edges id="353" source_obj="//@blocks.0/@node_objs.26" sink_obj="//@blocks.0/@node_objs.27"/>
+  <edges id="354" source_obj="//@blocks.0/@node_objs.27" sink_obj="//@blocks.0/@node_objs.28"/>
+  <edges id="355" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.28"/>
+  <edges id="356" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.0/@node_objs.28"/>
+  <edges id="360" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="361" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="362" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="363" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="365" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="367" source_obj="//@ports.52" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="369" source_obj="//@ports.53" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="371" source_obj="//@ports.54" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="373" source_obj="//@ports.55" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="375" source_obj="//@ports.56" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="377" source_obj="//@ports.57" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="379" source_obj="//@ports.58" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="381" source_obj="//@ports.59" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="383" source_obj="//@ports.60" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="385" source_obj="//@ports.61" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="387" source_obj="//@ports.62" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="389" source_obj="//@ports.63" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="391" source_obj="//@ports.64" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="393" source_obj="//@ports.65" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="395" source_obj="//@ports.66" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="397" source_obj="//@ports.67" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="401" source_obj="//@ports.51" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="402" source_obj="//@ports.50" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="403" source_obj="//@ports.49" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="404" source_obj="//@ports.48" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="405" source_obj="//@ports.47" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="406" source_obj="//@ports.46" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="407" source_obj="//@ports.45" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="408" source_obj="//@ports.44" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="409" source_obj="//@ports.43" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="410" source_obj="//@ports.42" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="411" source_obj="//@ports.41" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="412" source_obj="//@ports.40" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="413" source_obj="//@ports.39" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="414" source_obj="//@ports.38" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="415" source_obj="//@ports.37" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="416" source_obj="//@ports.36" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="417" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="418" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="419" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="420" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="421" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="422" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="423" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="424" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="425" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="426" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="427" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="428" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="429" source_obj="//@blocks.2/@node_objs.11" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="430" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="431" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="432" source_obj="//@blocks.2/@node_objs.14" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="433" source_obj="//@blocks.2/@node_objs.15" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="434" source_obj="//@blocks.2/@node_objs.17" sink_obj="//@ports.1"/>
+  <edges id="1936" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="1937" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="1938" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="1939" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.22" sink_obj="//@blocks.0/@node_objs.24"/>
+  <edges id="1940" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1941" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1942" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1943" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1944" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1945" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1946" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1947" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1948" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1949" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1950" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1951" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1952" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1953" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1954" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1955" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1956" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.20" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1957" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.21" sink_obj="//@blocks.0/@node_objs.22"/>
+  <edges id="1958" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.22" sink_obj="//@blocks.0/@node_objs.23"/>
+  <edges id="1959" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.23" sink_obj="//@blocks.0/@node_objs.24"/>
+  <edges id="1960" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="1961" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="1962" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="1963" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1964" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1965" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1966" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1967" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1968" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1969" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1970" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1971" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1972" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1973" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1974" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.11" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1975" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1976" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1977" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.14" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1978" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.15" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1979" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="1980" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1981" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="1982" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="1983" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="1984" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="1985" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="1986" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="1987" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="1988" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="1989" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="1990" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="1991" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="1992" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="1993" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="1994" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="1995" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="1996" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="1997" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="1998" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.24" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="1999" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="2000" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="2001" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="2002" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="2003" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="2004" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="2005" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="2006" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="2007" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="2008" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="2009" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="2010" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="2011" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="2012" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="2013" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="2014" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="2015" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.23" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="2016" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="2017" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.23" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="2018" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.17"/>
+  <blocks id="239" name="entry" type="BlockType">
+    <controlOutputObjs>_Z10avg_pool1dRN3hls6streamI6ap_intILi16EELi0EEES4_ii.exit</controlOutputObjs>
+    <controlOutputObjs>for.cond.i.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="pool_stride_read" lineNumber="86" fileName="HLS_CNN.cpp" fileDirectory=".." coreId="862527532" contextFuncName="inference" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="HLS_CNN.cpp" linenumber="86" fileDirectory="/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls" functionName="inference"/>
+      <dataInputObjs>pool_stride</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="pool_size_read" lineNumber="86" fileName="HLS_CNN.cpp" fileDirectory=".." coreId="0" contextFuncName="inference" bitwidth="32" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="HLS_CNN.cpp" linenumber="86" fileDirectory="/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls" functionName="inference"/>
+      <dataInputObjs>pool_size</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="trunc_ln86" lineNumber="86" fileName="HLS_CNN.cpp" fileDirectory=".." rtlName="trunc_ln86_fu_512_p1" coreId="3910802792" contextFuncName="inference" bitwidth="31" opcode="trunc" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="HLS_CNN.cpp" linenumber="86" fileDirectory="/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls" functionName="inference"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="trunc_ln86_1" lineNumber="86" fileName="HLS_CNN.cpp" fileDirectory=".." rtlName="trunc_ln86_1_fu_516_p1" coreId="0" contextFuncName="inference" bitwidth="31" opcode="trunc" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="HLS_CNN.cpp" linenumber="86" fileDirectory="/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls" functionName="inference"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="210" name="conv_output" lineNumber="97" originalName="conv_output" fileName="HLS_CNN.cpp" fileDirectory=".." rtlName="conv_output_fifo_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="inference" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="HLS_CNN.cpp" linenumber="97" fileDirectory="/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls" functionName="inference"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="213" name="pool_output" lineNumber="98" originalName="pool_output" fileName="HLS_CNN.cpp" fileDirectory=".." rtlName="pool_output_fifo_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="inference" bitwidth="16" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="HLS_CNN.cpp" linenumber="98" fileDirectory="/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls" functionName="inference"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="216" name="conv_biases_0_read" coreId="0" bitwidth="32" opcode="read" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_0</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="217" name="conv_biases_1_read" coreId="3910806016" bitwidth="32" opcode="read" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_1</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="218" name="conv_biases_2_read" coreId="0" bitwidth="32" opcode="read" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_2</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="219" name="conv_biases_3_read" coreId="3910574032" bitwidth="32" opcode="read" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_3</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="220" name="conv_biases_4_read" coreId="285" bitwidth="32" opcode="read" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_4</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="221" name="conv_biases_5_read" coreId="3910574144" bitwidth="32" opcode="read" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_5</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="222" name="conv_biases_6_read" coreId="0" bitwidth="32" opcode="read" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_6</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="223" name="conv_biases_7_read" coreId="0" bitwidth="32" opcode="read" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_7</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="224" name="conv_biases_8_read" coreId="909207854" bitwidth="32" opcode="read" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_8</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="225" name="conv_biases_9_read" coreId="304" bitwidth="32" opcode="read" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_9</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="226" name="conv_biases_10_read" coreId="3910582256" bitwidth="32" opcode="read" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_10</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="227" name="conv_biases_11_read" coreId="0" bitwidth="32" opcode="read" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_11</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="228" name="conv_biases_12_read" coreId="3910147824" bitwidth="32" opcode="read" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_12</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="229" name="conv_biases_13_read" coreId="3910585840" bitwidth="32" opcode="read" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_13</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="230" name="conv_biases_14_read" coreId="539915108" bitwidth="32" opcode="read" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_14</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="231" name="conv_biases_15_read" coreId="3910585520" bitwidth="32" opcode="read" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_biases_15</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="232" name="empty_12" coreId="0" bitwidth="32" opcode="wait" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="233" name="_ln0" rtlName="grp_inference_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3_fu_394" coreId="3910586928" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <dataInputObjs>conv_weights_0</dataInputObjs>
+      <dataInputObjs>conv_weights_1</dataInputObjs>
+      <dataInputObjs>conv_weights_2</dataInputObjs>
+      <dataInputObjs>conv_weights_3</dataInputObjs>
+      <dataInputObjs>conv_weights_4</dataInputObjs>
+      <dataInputObjs>conv_weights_5</dataInputObjs>
+      <dataInputObjs>conv_weights_6</dataInputObjs>
+      <dataInputObjs>conv_weights_7</dataInputObjs>
+      <dataInputObjs>conv_weights_8</dataInputObjs>
+      <dataInputObjs>conv_weights_9</dataInputObjs>
+      <dataInputObjs>conv_weights_10</dataInputObjs>
+      <dataInputObjs>conv_weights_11</dataInputObjs>
+      <dataInputObjs>conv_weights_12</dataInputObjs>
+      <dataInputObjs>conv_weights_13</dataInputObjs>
+      <dataInputObjs>conv_weights_14</dataInputObjs>
+      <dataInputObjs>conv_weights_15</dataInputObjs>
+      <dataInputObjs>input_r</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>inference_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="234" name="empty_13" coreId="808333344" bitwidth="32" opcode="wait" nodeLabel="3.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="235" name="icmp_ln46" lineNumber="46" fileName="HLS_CNN.cpp" fileDirectory=".." rtlName="icmp_ln46_fu_520_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="avg_pool1d" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.47" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="HLS_CNN.cpp" linenumber="46" fileDirectory="/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls" functionName="avg_pool1d"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="236" name="icmp_ln46_1" lineNumber="46" fileName="HLS_CNN.cpp" fileDirectory=".." rtlName="icmp_ln46_1_fu_526_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="avg_pool1d" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.47" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="HLS_CNN.cpp" linenumber="46" fileDirectory="/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls" functionName="avg_pool1d"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="237" name="or_ln46" lineNumber="46" fileName="HLS_CNN.cpp" fileDirectory=".." rtlName="or_ln46_fu_532_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="avg_pool1d" bitwidth="1" opcode="or" m_display="0" m_delay="0.97" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="HLS_CNN.cpp" linenumber="46" fileDirectory="/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls" functionName="avg_pool1d"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="238" name="br_ln46" lineNumber="46" fileName="HLS_CNN.cpp" fileDirectory=".." coreId="3910590160" contextFuncName="avg_pool1d" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="HLS_CNN.cpp" linenumber="46" fileDirectory="/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls" functionName="avg_pool1d"/>
+      <dataInputObjs>or</dataInputObjs>
+      <controlInputObjs>for.cond.i.preheader</controlInputObjs>
+      <controlInputObjs>_Z10avg_pool1dRN3hls6streamI6ap_intILi16EELi0EEES4_ii.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="HLS_CNN.cpp">
+      <validLinenumbers>86</validLinenumbers>
+      <validLinenumbers>97</validLinenumbers>
+      <validLinenumbers>98</validLinenumbers>
+      <validLinenumbers>46</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="244" name="for.cond.i.preheader" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>_Z10avg_pool1dRN3hls6streamI6ap_intILi16EELi0EEES4_ii.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="240" name="empty_14" coreId="3910592920" bitwidth="32" opcode="wait" nodeLabel="4.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="241" name="_ln86" lineNumber="86" fileName="HLS_CNN.cpp" fileDirectory=".." rtlName="grp_inference_Pipeline_VITIS_LOOP_54_1_fu_449" coreId="3910592208" contextFuncName="inference" opcode="call" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="4.14" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="HLS_CNN.cpp" linenumber="86" fileDirectory="/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls" functionName="inference"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>inference_Pipeline_VITIS_LOOP_54_1</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="242" name="empty_15" coreId="875376688" bitwidth="32" opcode="wait" nodeLabel="6.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="243" name="br_ln0" coreId="0" opcode="br" nodeLabel="6.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <controlInputObjs>_Z10avg_pool1dRN3hls6streamI6ap_intILi16EELi0EEES4_ii.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="HLS_CNN.cpp">
+      <validLinenumbers>86</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="264" name="_Z10avg_pool1dRN3hls6streamI6ap_intILi16EELi0EEES4_ii.exit" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>for.cond.i.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="245" name="linear_biases_0_read" coreId="1886216486" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_0</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="246" name="linear_biases_1_read" coreId="3910550656" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_1</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="247" name="linear_biases_2_read" coreId="3910551480" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_2</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="248" name="linear_biases_3_read" coreId="3910147824" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_3</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="249" name="linear_biases_4_read" coreId="3910552000" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_4</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="250" name="linear_biases_5_read" coreId="776097056" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_5</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="251" name="linear_biases_6_read" coreId="1398101057" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_6</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="252" name="linear_biases_7_read" coreId="1919950882" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_7</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="253" name="linear_biases_8_read" coreId="3910555104" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_8</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="254" name="linear_biases_9_read" coreId="3910557304" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_9</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="255" name="linear_biases_10_read" coreId="3910147824" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_10</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="256" name="linear_biases_11_read" coreId="3910556560" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_11</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="257" name="linear_biases_12_read" coreId="3910557824" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_12</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="258" name="linear_biases_13_read" coreId="3910558400" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_13</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="259" name="linear_biases_14_read" coreId="3910559024" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_14</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="260" name="linear_biases_15_read" coreId="0" bitwidth="32" opcode="read" nodeLabel="6.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_biases_15</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="261" name="empty_16" coreId="3910560400" bitwidth="32" opcode="wait" nodeLabel="7.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1"/>
+    <node_objs xsi:type="cdfg:CdfgNode" id="262" name="_ln0" rtlName="grp_inference_Pipeline_VITIS_LOOP_76_1_fu_457" coreId="1397508187" opcode="call" nodeLabel="7.0" nodeLatency="1" m_display="0" m_delay="2.06" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <dataInputObjs>linear_weights_15</dataInputObjs>
+      <dataInputObjs>linear_weights_14</dataInputObjs>
+      <dataInputObjs>linear_weights_13</dataInputObjs>
+      <dataInputObjs>linear_weights_12</dataInputObjs>
+      <dataInputObjs>linear_weights_11</dataInputObjs>
+      <dataInputObjs>linear_weights_10</dataInputObjs>
+      <dataInputObjs>linear_weights_9</dataInputObjs>
+      <dataInputObjs>linear_weights_8</dataInputObjs>
+      <dataInputObjs>linear_weights_7</dataInputObjs>
+      <dataInputObjs>linear_weights_6</dataInputObjs>
+      <dataInputObjs>linear_weights_5</dataInputObjs>
+      <dataInputObjs>linear_weights_4</dataInputObjs>
+      <dataInputObjs>linear_weights_3</dataInputObjs>
+      <dataInputObjs>linear_weights_2</dataInputObjs>
+      <dataInputObjs>linear_weights_1</dataInputObjs>
+      <dataInputObjs>linear_weights_0</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>output_r</dataOutputObjs>
+      <constName>inference_Pipeline_VITIS_LOOP_76_1</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="263" name="_ln106" lineNumber="106" fileName="HLS_CNN.cpp" fileDirectory=".." coreId="3910561536" contextFuncName="inference" opcode="ret" nodeLabel="8.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="HLS_CNN.cpp" linenumber="106" fileDirectory="/home/saverio/Documents/x-heep-app/heep_ultrasound/src/hls" functionName="inference"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="HLS_CNN.cpp">
+      <validLinenumbers>106</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <regnodes realName="linear_biases_0_read_reg_644">
+    <nodeIds>245</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_3_read_reg_575">
+    <nodeIds>219</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_output_reg_548">
+    <nodeIds>210</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_7_read_reg_595">
+    <nodeIds>223</nodeIds>
+  </regnodes>
+  <regnodes realName="linear_biases_13_read_reg_709">
+    <nodeIds>258</nodeIds>
+  </regnodes>
+  <regnodes realName="linear_biases_12_read_reg_704">
+    <nodeIds>257</nodeIds>
+  </regnodes>
+  <regnodes realName="linear_biases_4_read_reg_664">
+    <nodeIds>249</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_12_read_reg_620">
+    <nodeIds>228</nodeIds>
+  </regnodes>
+  <regnodes realName="linear_biases_10_read_reg_694">
+    <nodeIds>255</nodeIds>
+  </regnodes>
+  <regnodes realName="linear_biases_5_read_reg_669">
+    <nodeIds>250</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_13_read_reg_625">
+    <nodeIds>229</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_0_read_reg_560">
+    <nodeIds>216</nodeIds>
+  </regnodes>
+  <regnodes realName="linear_biases_7_read_reg_679">
+    <nodeIds>252</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_1_read_reg_565">
+    <nodeIds>217</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_6_read_reg_590">
+    <nodeIds>222</nodeIds>
+  </regnodes>
+  <regnodes realName="linear_biases_1_read_reg_649">
+    <nodeIds>246</nodeIds>
+  </regnodes>
+  <regnodes realName="linear_biases_6_read_reg_674">
+    <nodeIds>251</nodeIds>
+  </regnodes>
+  <regnodes realName="linear_biases_15_read_reg_719">
+    <nodeIds>260</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_15_read_reg_635">
+    <nodeIds>231</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln86_1_reg_543">
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_11_read_reg_615">
+    <nodeIds>227</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_8_read_reg_600">
+    <nodeIds>224</nodeIds>
+  </regnodes>
+  <regnodes realName="linear_biases_2_read_reg_654">
+    <nodeIds>247</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_10_read_reg_610">
+    <nodeIds>226</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_4_read_reg_580">
+    <nodeIds>220</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_9_read_reg_605">
+    <nodeIds>225</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_5_read_reg_585">
+    <nodeIds>221</nodeIds>
+  </regnodes>
+  <regnodes realName="linear_biases_14_read_reg_714">
+    <nodeIds>259</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln86_reg_538">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <regnodes realName="linear_biases_11_read_reg_699">
+    <nodeIds>256</nodeIds>
+  </regnodes>
+  <regnodes realName="pool_output_reg_554">
+    <nodeIds>213</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_2_read_reg_570">
+    <nodeIds>218</nodeIds>
+  </regnodes>
+  <regnodes realName="linear_biases_3_read_reg_659">
+    <nodeIds>248</nodeIds>
+  </regnodes>
+  <regnodes realName="or_ln46_reg_640">
+    <nodeIds>237</nodeIds>
+  </regnodes>
+  <regnodes realName="linear_biases_8_read_reg_684">
+    <nodeIds>253</nodeIds>
+  </regnodes>
+  <regnodes realName="conv_biases_14_read_reg_630">
+    <nodeIds>230</nodeIds>
+  </regnodes>
+  <regnodes realName="linear_biases_9_read_reg_689">
+    <nodeIds>254</nodeIds>
+  </regnodes>
+  <expressionNodes realName="conv_output_fu_182">
+    <nodeIds>210</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln86_fu_512">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln46_1_fu_526">
+    <nodeIds>236</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln46_fu_532">
+    <nodeIds>237</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln86_1_fu_516">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln46_fu_520">
+    <nodeIds>235</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="pool_output_fu_186">
+    <nodeIds>213</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_inference_Pipeline_VITIS_LOOP_76_1_fu_457">
+    <nodeIds>262</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_inference_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3_fu_394">
+    <nodeIds>233</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_inference_Pipeline_VITIS_LOOP_54_1_fu_449">
+    <nodeIds>241</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="conv_biases_8_read_read_fu_250">
+    <nodeIds>224</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_1_read_read_fu_304">
+    <nodeIds>246</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv_biases_0_read_read_fu_202">
+    <nodeIds>216</nodeIds>
+  </ioNodes>
+  <ioNodes realName="pool_size_read_read_fu_196">
+    <nodeIds>70</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_3_read_read_fu_316">
+    <nodeIds>248</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_9_read_read_fu_352">
+    <nodeIds>254</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_5_read_read_fu_328">
+    <nodeIds>250</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_0_read_read_fu_298">
+    <nodeIds>245</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv_biases_13_read_read_fu_280">
+    <nodeIds>229</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv_biases_9_read_read_fu_256">
+    <nodeIds>225</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv_biases_10_read_read_fu_262">
+    <nodeIds>226</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv_biases_12_read_read_fu_274">
+    <nodeIds>228</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv_biases_14_read_read_fu_286">
+    <nodeIds>230</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv_biases_5_read_read_fu_232">
+    <nodeIds>221</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_4_read_read_fu_322">
+    <nodeIds>249</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_6_read_read_fu_334">
+    <nodeIds>251</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv_biases_7_read_read_fu_244">
+    <nodeIds>223</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_2_read_read_fu_310">
+    <nodeIds>247</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv_biases_15_read_read_fu_292">
+    <nodeIds>231</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv_biases_11_read_read_fu_268">
+    <nodeIds>227</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_10_read_read_fu_358">
+    <nodeIds>255</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv_biases_3_read_read_fu_220">
+    <nodeIds>219</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv_biases_6_read_read_fu_238">
+    <nodeIds>222</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv_biases_1_read_read_fu_208">
+    <nodeIds>217</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_11_read_read_fu_364">
+    <nodeIds>256</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_12_read_read_fu_370">
+    <nodeIds>257</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_14_read_read_fu_382">
+    <nodeIds>259</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv_biases_4_read_read_fu_226">
+    <nodeIds>220</nodeIds>
+  </ioNodes>
+  <ioNodes realName="conv_biases_2_read_read_fu_214">
+    <nodeIds>218</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_13_read_read_fu_376">
+    <nodeIds>258</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_7_read_read_fu_340">
+    <nodeIds>252</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_8_read_read_fu_346">
+    <nodeIds>253</nodeIds>
+  </ioNodes>
+  <ioNodes realName="pool_stride_read_read_fu_190">
+    <nodeIds>69</nodeIds>
+  </ioNodes>
+  <ioNodes realName="linear_biases_15_read_read_fu_388">
+    <nodeIds>260</nodeIds>
+  </ioNodes>
+  <ioPorts name="conv_biases_0">
+    <contents name="read">
+      <nodeIds>216</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv_biases_1">
+    <contents name="read">
+      <nodeIds>217</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv_biases_10">
+    <contents name="read">
+      <nodeIds>226</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv_biases_11">
+    <contents name="read">
+      <nodeIds>227</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv_biases_12">
+    <contents name="read">
+      <nodeIds>228</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv_biases_13">
+    <contents name="read">
+      <nodeIds>229</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv_biases_14">
+    <contents name="read">
+      <nodeIds>230</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv_biases_15">
+    <contents name="read">
+      <nodeIds>231</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv_biases_2">
+    <contents name="read">
+      <nodeIds>218</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv_biases_3">
+    <contents name="read">
+      <nodeIds>219</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv_biases_4">
+    <contents name="read">
+      <nodeIds>220</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv_biases_5">
+    <contents name="read">
+      <nodeIds>221</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv_biases_6">
+    <contents name="read">
+      <nodeIds>222</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv_biases_7">
+    <contents name="read">
+      <nodeIds>223</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv_biases_8">
+    <contents name="read">
+      <nodeIds>224</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="conv_biases_9">
+    <contents name="read">
+      <nodeIds>225</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="input_r">
+    <contents name="call">
+      <nodeIds>233</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_0">
+    <contents name="read">
+      <nodeIds>245</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_1">
+    <contents name="read">
+      <nodeIds>246</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_10">
+    <contents name="read">
+      <nodeIds>255</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_11">
+    <contents name="read">
+      <nodeIds>256</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_12">
+    <contents name="read">
+      <nodeIds>257</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_13">
+    <contents name="read">
+      <nodeIds>258</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_14">
+    <contents name="read">
+      <nodeIds>259</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_15">
+    <contents name="read">
+      <nodeIds>260</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_2">
+    <contents name="read">
+      <nodeIds>247</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_3">
+    <contents name="read">
+      <nodeIds>248</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_4">
+    <contents name="read">
+      <nodeIds>249</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_5">
+    <contents name="read">
+      <nodeIds>250</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_6">
+    <contents name="read">
+      <nodeIds>251</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_7">
+    <contents name="read">
+      <nodeIds>252</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_8">
+    <contents name="read">
+      <nodeIds>253</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="linear_biases_9">
+    <contents name="read">
+      <nodeIds>254</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="output_r">
+    <contents name="call">
+      <nodeIds>262</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="pool_size">
+    <contents name="read">
+      <nodeIds>70</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="pool_stride">
+    <contents name="read">
+      <nodeIds>69</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="210" stage="1" latency="1"/>
+      <operations id="213" stage="1" latency="1"/>
+      <operations id="216" stage="1" latency="1"/>
+      <operations id="217" stage="1" latency="1"/>
+      <operations id="218" stage="1" latency="1"/>
+      <operations id="219" stage="1" latency="1"/>
+      <operations id="220" stage="1" latency="1"/>
+      <operations id="221" stage="1" latency="1"/>
+      <operations id="222" stage="1" latency="1"/>
+      <operations id="223" stage="1" latency="1"/>
+      <operations id="224" stage="1" latency="1"/>
+      <operations id="225" stage="1" latency="1"/>
+      <operations id="226" stage="1" latency="1"/>
+      <operations id="227" stage="1" latency="1"/>
+      <operations id="228" stage="1" latency="1"/>
+      <operations id="229" stage="1" latency="1"/>
+      <operations id="230" stage="1" latency="1"/>
+      <operations id="231" stage="1" latency="1"/>
+      <operations id="235" stage="1" latency="1"/>
+      <operations id="236" stage="1" latency="1"/>
+      <operations id="237" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="232" stage="1" latency="1"/>
+      <operations id="233" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="233" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="117" stage="1" latency="1"/>
+      <operations id="118" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="122" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="128" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="1"/>
+      <operations id="130" stage="1" latency="1"/>
+      <operations id="131" stage="1" latency="1"/>
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="133" stage="1" latency="1"/>
+      <operations id="134" stage="1" latency="1"/>
+      <operations id="135" stage="1" latency="1"/>
+      <operations id="136" stage="1" latency="1"/>
+      <operations id="137" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+      <operations id="139" stage="1" latency="1"/>
+      <operations id="140" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+      <operations id="142" stage="1" latency="1"/>
+      <operations id="143" stage="1" latency="1"/>
+      <operations id="144" stage="1" latency="1"/>
+      <operations id="145" stage="1" latency="1"/>
+      <operations id="146" stage="1" latency="1"/>
+      <operations id="147" stage="1" latency="1"/>
+      <operations id="148" stage="1" latency="1"/>
+      <operations id="149" stage="1" latency="1"/>
+      <operations id="150" stage="1" latency="1"/>
+      <operations id="151" stage="1" latency="1"/>
+      <operations id="152" stage="1" latency="1"/>
+      <operations id="153" stage="1" latency="1"/>
+      <operations id="154" stage="1" latency="1"/>
+      <operations id="155" stage="1" latency="1"/>
+      <operations id="156" stage="1" latency="1"/>
+      <operations id="157" stage="1" latency="1"/>
+      <operations id="158" stage="1" latency="1"/>
+      <operations id="159" stage="1" latency="1"/>
+      <operations id="160" stage="1" latency="1"/>
+      <operations id="161" stage="1" latency="1"/>
+      <operations id="162" stage="1" latency="1"/>
+      <operations id="163" stage="1" latency="1"/>
+      <operations id="164" stage="1" latency="1"/>
+      <operations id="165" stage="1" latency="1"/>
+      <operations id="166" stage="1" latency="1"/>
+      <operations id="167" stage="1" latency="1"/>
+      <operations id="168" stage="1" latency="1"/>
+      <operations id="169" stage="1" latency="1"/>
+      <operations id="170" stage="1" latency="1"/>
+      <operations id="171" stage="1" latency="1"/>
+      <operations id="172" stage="1" latency="1"/>
+      <operations id="173" stage="1" latency="1"/>
+      <operations id="174" stage="1" latency="1"/>
+      <operations id="175" stage="1" latency="1"/>
+      <operations id="176" stage="1" latency="1"/>
+      <operations id="177" stage="1" latency="1"/>
+      <operations id="178" stage="1" latency="1"/>
+      <operations id="179" stage="1" latency="1"/>
+      <operations id="180" stage="1" latency="1"/>
+      <operations id="181" stage="1" latency="1"/>
+      <operations id="182" stage="1" latency="1"/>
+      <operations id="183" stage="1" latency="1"/>
+      <operations id="184" stage="1" latency="1"/>
+      <operations id="185" stage="1" latency="1"/>
+      <operations id="186" stage="1" latency="1"/>
+      <operations id="187" stage="1" latency="1"/>
+      <operations id="188" stage="1" latency="1"/>
+      <operations id="189" stage="1" latency="1"/>
+      <operations id="190" stage="1" latency="1"/>
+      <operations id="191" stage="1" latency="1"/>
+      <operations id="192" stage="1" latency="1"/>
+      <operations id="193" stage="1" latency="1"/>
+      <operations id="194" stage="1" latency="1"/>
+      <operations id="195" stage="1" latency="1"/>
+      <operations id="196" stage="1" latency="1"/>
+      <operations id="197" stage="1" latency="1"/>
+      <operations id="198" stage="1" latency="1"/>
+      <operations id="199" stage="1" latency="1"/>
+      <operations id="200" stage="1" latency="1"/>
+      <operations id="201" stage="1" latency="1"/>
+      <operations id="202" stage="1" latency="1"/>
+      <operations id="203" stage="1" latency="1"/>
+      <operations id="204" stage="1" latency="1"/>
+      <operations id="205" stage="1" latency="1"/>
+      <operations id="206" stage="1" latency="1"/>
+      <operations id="207" stage="1" latency="1"/>
+      <operations id="208" stage="1" latency="1"/>
+      <operations id="209" stage="1" latency="1"/>
+      <operations id="211" stage="1" latency="1"/>
+      <operations id="212" stage="1" latency="1"/>
+      <operations id="214" stage="1" latency="1"/>
+      <operations id="215" stage="1" latency="1"/>
+      <operations id="234" stage="1" latency="1"/>
+      <operations id="238" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="240" stage="1" latency="1"/>
+      <operations id="241" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="241" stage="1" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="242" stage="1" latency="1"/>
+      <operations id="243" stage="1" latency="1"/>
+      <operations id="245" stage="1" latency="1"/>
+      <operations id="246" stage="1" latency="1"/>
+      <operations id="247" stage="1" latency="1"/>
+      <operations id="248" stage="1" latency="1"/>
+      <operations id="249" stage="1" latency="1"/>
+      <operations id="250" stage="1" latency="1"/>
+      <operations id="251" stage="1" latency="1"/>
+      <operations id="252" stage="1" latency="1"/>
+      <operations id="253" stage="1" latency="1"/>
+      <operations id="254" stage="1" latency="1"/>
+      <operations id="255" stage="1" latency="1"/>
+      <operations id="256" stage="1" latency="1"/>
+      <operations id="257" stage="1" latency="1"/>
+      <operations id="258" stage="1" latency="1"/>
+      <operations id="259" stage="1" latency="1"/>
+      <operations id="260" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="261" stage="1" latency="1"/>
+      <operations id="262" stage="2" latency="2"/>
+    </states>
+    <states id="9">
+      <operations id="262" stage="1" latency="2"/>
+      <operations id="263" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="inference" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <basicBlocks>239</basicBlocks>
+      <basicBlocks>244</basicBlocks>
+      <basicBlocks>264</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

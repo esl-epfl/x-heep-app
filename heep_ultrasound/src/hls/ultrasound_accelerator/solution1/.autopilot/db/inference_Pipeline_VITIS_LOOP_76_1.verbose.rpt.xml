@@ -1,0 +1,346 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'inference_Pipeline_VITIS_LOOP_76_1'" level="0">
+<item name = "Date">Fri Jan  6 21:26:08 2023
+</item>
+<item name = "Version">2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)</item>
+<item name = "Project">ultrasound_accelerator</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">50.00 ns, 15.460 ns, 13.50 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">265, 265, 13.250 us, 13.250 us, 265, 265, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_76_1">263, 263, 24, 16, 1, 16, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, 16, -, -, -</column>
+<column name="Expression">-, -, 0, 175, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 195, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 1689, -</column>
+<column name="Register">-, -, 654, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 7, ~0, 3, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="mux_165_32_1_1_U46">mux_165_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="mux_165_32_1_1_U47">mux_165_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="mux_165_32_1_1_U48">mux_165_32_1_1, 0, 0, 0, 65, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="mac_muladd_16s_16s_16ns_16_4_1_U52">mac_muladd_16s_16s_16ns_16_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_16s_16s_16ns_16_4_1_U54">mac_muladd_16s_16s_16ns_16_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_16s_16s_16ns_16_4_1_U56">mac_muladd_16s_16s_16ns_16_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_16s_16s_16ns_16_4_1_U58">mac_muladd_16s_16s_16ns_16_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_16s_16s_16ns_16_4_1_U60">mac_muladd_16s_16s_16ns_16_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_16s_16s_16ns_16_4_1_U61">mac_muladd_16s_16s_16ns_16_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_16s_16s_16ns_16_4_1_U63">mac_muladd_16s_16s_16ns_16_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_16s_16s_16ns_16_4_1_U64">mac_muladd_16s_16s_16ns_16_4_1, i0 + i1 * i2</column>
+<column name="mul_mul_16s_16s_16_4_1_U49">mul_mul_16s_16s_16_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_16_4_1_U50">mul_mul_16s_16s_16_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_16_4_1_U51">mul_mul_16s_16s_16_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_16_4_1_U53">mul_mul_16s_16s_16_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_16_4_1_U55">mul_mul_16s_16s_16_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_16_4_1_U57">mul_mul_16s_16s_16_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_16_4_1_U59">mul_mul_16s_16s_16_4_1, i0 * i1</column>
+<column name="mul_mul_16s_16s_16_4_1_U62">mul_mul_16s_16s_16_4_1, i0 * i1</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln76_fu_2809_p2">+, 0, 0, 13, 5, 1</column>
+<column name="add_ln79_12_fu_2944_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln79_13_fu_2948_p2">+, 0, 0, 16, 16, 16</column>
+<column name="add_ln79_2_fu_2926_p2">+, 0, 0, 16, 16, 16</column>
+<column name="add_ln79_5_fu_2930_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln79_6_fu_2934_p2">+, 0, 0, 16, 16, 16</column>
+<column name="add_ln79_9_fu_2940_p2">+, 0, 0, 16, 16, 16</column>
+<column name="add_ln81_fu_2954_p2">+, 0, 0, 16, 16, 16</column>
+<column name="output_r_din">+, 0, 0, 16, 16, 16</column>
+<column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage10_11001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state10_pp0_stage9_iter0">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln76_fu_2803_p2">icmp, 0, 0, 10, 5, 6</column>
+<column name="ap_block_pp0_stage7_01001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">81, 17, 1, 17</column>
+<column name="ap_done_int">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter0">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter0_reg">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_sig_allocacmp_i_1">9, 2, 5, 10</column>
+<column name="i_fu_140">9, 2, 5, 10</column>
+<column name="linear_weights_0_address0">48, 9, 4, 36</column>
+<column name="linear_weights_0_address1">48, 9, 4, 36</column>
+<column name="linear_weights_10_address0">48, 9, 4, 36</column>
+<column name="linear_weights_10_address1">48, 9, 4, 36</column>
+<column name="linear_weights_11_address0">48, 9, 4, 36</column>
+<column name="linear_weights_11_address1">48, 9, 4, 36</column>
+<column name="linear_weights_12_address0">48, 9, 4, 36</column>
+<column name="linear_weights_12_address1">48, 9, 4, 36</column>
+<column name="linear_weights_13_address0">48, 9, 4, 36</column>
+<column name="linear_weights_13_address1">48, 9, 4, 36</column>
+<column name="linear_weights_14_address0">48, 9, 4, 36</column>
+<column name="linear_weights_14_address1">48, 9, 4, 36</column>
+<column name="linear_weights_15_address0">48, 9, 4, 36</column>
+<column name="linear_weights_15_address1">48, 9, 4, 36</column>
+<column name="linear_weights_1_address0">48, 9, 4, 36</column>
+<column name="linear_weights_1_address1">48, 9, 4, 36</column>
+<column name="linear_weights_2_address0">48, 9, 4, 36</column>
+<column name="linear_weights_2_address1">48, 9, 4, 36</column>
+<column name="linear_weights_3_address0">48, 9, 4, 36</column>
+<column name="linear_weights_3_address1">48, 9, 4, 36</column>
+<column name="linear_weights_4_address0">48, 9, 4, 36</column>
+<column name="linear_weights_4_address1">48, 9, 4, 36</column>
+<column name="linear_weights_5_address0">48, 9, 4, 36</column>
+<column name="linear_weights_5_address1">48, 9, 4, 36</column>
+<column name="linear_weights_6_address0">48, 9, 4, 36</column>
+<column name="linear_weights_6_address1">48, 9, 4, 36</column>
+<column name="linear_weights_7_address0">48, 9, 4, 36</column>
+<column name="linear_weights_7_address1">48, 9, 4, 36</column>
+<column name="linear_weights_8_address0">48, 9, 4, 36</column>
+<column name="linear_weights_8_address1">48, 9, 4, 36</column>
+<column name="linear_weights_9_address0">48, 9, 4, 36</column>
+<column name="linear_weights_9_address1">48, 9, 4, 36</column>
+<column name="output_r_blk_n">9, 2, 1, 2</column>
+<column name="pool_output_blk_n">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln79_10_reg_4516">16, 0, 16, 0</column>
+<column name="add_ln79_1_reg_4461">16, 0, 16, 0</column>
+<column name="add_ln79_3_reg_4471">16, 0, 16, 0</column>
+<column name="add_ln79_6_reg_4486">16, 0, 16, 0</column>
+<column name="add_ln79_7_reg_4501">16, 0, 16, 0</column>
+<column name="add_ln79_8_reg_4511">16, 0, 16, 0</column>
+<column name="add_ln79_reg_4451">16, 0, 16, 0</column>
+<column name="ap_CS_fsm">16, 0, 16, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="i_1_reg_3061">5, 0, 5, 0</column>
+<column name="i_fu_140">5, 0, 5, 0</column>
+<column name="icmp_ln76_reg_3227">1, 0, 1, 0</column>
+<column name="mul_ln79_10_reg_4476">16, 0, 16, 0</column>
+<column name="mul_ln79_12_reg_4491">16, 0, 16, 0</column>
+<column name="mul_ln79_14_reg_4506">16, 0, 16, 0</column>
+<column name="mul_ln79_1_reg_4081">16, 0, 16, 0</column>
+<column name="mul_ln79_2_reg_4251">16, 0, 16, 0</column>
+<column name="mul_ln79_4_reg_4436">16, 0, 16, 0</column>
+<column name="mul_ln79_6_reg_4456">16, 0, 16, 0</column>
+<column name="mul_ln79_8_reg_4466">16, 0, 16, 0</column>
+<column name="pool_output_read_15_reg_4496">16, 0, 16, 0</column>
+<column name="reg_2775">16, 0, 16, 0</column>
+<column name="reg_2779">16, 0, 16, 0</column>
+<column name="reg_2783">16, 0, 16, 0</column>
+<column name="reg_2787">16, 0, 16, 0</column>
+<column name="reg_2791">16, 0, 16, 0</column>
+<column name="trunc_ln79_10_reg_3741">16, 0, 16, 0</column>
+<column name="trunc_ln79_11_reg_4431">16, 0, 16, 0</column>
+<column name="trunc_ln79_12_reg_3906">16, 0, 16, 0</column>
+<column name="trunc_ln79_13_reg_4441">16, 0, 16, 0</column>
+<column name="trunc_ln79_14_reg_3911">16, 0, 16, 0</column>
+<column name="trunc_ln79_15_reg_4446">16, 0, 16, 0</column>
+<column name="trunc_ln79_1_reg_3396">16, 0, 16, 0</column>
+<column name="trunc_ln79_2_reg_3401">16, 0, 16, 0</column>
+<column name="trunc_ln79_3_reg_4086">16, 0, 16, 0</column>
+<column name="trunc_ln79_4_reg_3566">16, 0, 16, 0</column>
+<column name="trunc_ln79_5_reg_4256">16, 0, 16, 0</column>
+<column name="trunc_ln79_6_reg_3571">16, 0, 16, 0</column>
+<column name="trunc_ln79_7_reg_4261">16, 0, 16, 0</column>
+<column name="trunc_ln79_8_reg_3736">16, 0, 16, 0</column>
+<column name="trunc_ln79_9_reg_4426">16, 0, 16, 0</column>
+<column name="trunc_ln79_reg_4076">16, 0, 16, 0</column>
+<column name="trunc_ln81_reg_3231">16, 0, 16, 0</column>
+<column name="trunc_ln81_reg_3231_pp0_iter1_reg">16, 0, 16, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, inference_Pipeline_VITIS_LOOP_76_1, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, inference_Pipeline_VITIS_LOOP_76_1, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, inference_Pipeline_VITIS_LOOP_76_1, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, inference_Pipeline_VITIS_LOOP_76_1, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, inference_Pipeline_VITIS_LOOP_76_1, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, inference_Pipeline_VITIS_LOOP_76_1, return value</column>
+<column name="pool_output_dout">in, 16, ap_fifo, pool_output, pointer</column>
+<column name="pool_output_empty_n">in, 1, ap_fifo, pool_output, pointer</column>
+<column name="pool_output_read">out, 1, ap_fifo, pool_output, pointer</column>
+<column name="output_r_din">out, 16, ap_fifo, output_r, pointer</column>
+<column name="output_r_full_n">in, 1, ap_fifo, output_r, pointer</column>
+<column name="output_r_write">out, 1, ap_fifo, output_r, pointer</column>
+<column name="linear_weights_15_address0">out, 4, ap_memory, linear_weights_15, array</column>
+<column name="linear_weights_15_ce0">out, 1, ap_memory, linear_weights_15, array</column>
+<column name="linear_weights_15_q0">in, 32, ap_memory, linear_weights_15, array</column>
+<column name="linear_weights_15_address1">out, 4, ap_memory, linear_weights_15, array</column>
+<column name="linear_weights_15_ce1">out, 1, ap_memory, linear_weights_15, array</column>
+<column name="linear_weights_15_q1">in, 32, ap_memory, linear_weights_15, array</column>
+<column name="linear_weights_14_address0">out, 4, ap_memory, linear_weights_14, array</column>
+<column name="linear_weights_14_ce0">out, 1, ap_memory, linear_weights_14, array</column>
+<column name="linear_weights_14_q0">in, 32, ap_memory, linear_weights_14, array</column>
+<column name="linear_weights_14_address1">out, 4, ap_memory, linear_weights_14, array</column>
+<column name="linear_weights_14_ce1">out, 1, ap_memory, linear_weights_14, array</column>
+<column name="linear_weights_14_q1">in, 32, ap_memory, linear_weights_14, array</column>
+<column name="linear_weights_13_address0">out, 4, ap_memory, linear_weights_13, array</column>
+<column name="linear_weights_13_ce0">out, 1, ap_memory, linear_weights_13, array</column>
+<column name="linear_weights_13_q0">in, 32, ap_memory, linear_weights_13, array</column>
+<column name="linear_weights_13_address1">out, 4, ap_memory, linear_weights_13, array</column>
+<column name="linear_weights_13_ce1">out, 1, ap_memory, linear_weights_13, array</column>
+<column name="linear_weights_13_q1">in, 32, ap_memory, linear_weights_13, array</column>
+<column name="linear_weights_12_address0">out, 4, ap_memory, linear_weights_12, array</column>
+<column name="linear_weights_12_ce0">out, 1, ap_memory, linear_weights_12, array</column>
+<column name="linear_weights_12_q0">in, 32, ap_memory, linear_weights_12, array</column>
+<column name="linear_weights_12_address1">out, 4, ap_memory, linear_weights_12, array</column>
+<column name="linear_weights_12_ce1">out, 1, ap_memory, linear_weights_12, array</column>
+<column name="linear_weights_12_q1">in, 32, ap_memory, linear_weights_12, array</column>
+<column name="linear_weights_11_address0">out, 4, ap_memory, linear_weights_11, array</column>
+<column name="linear_weights_11_ce0">out, 1, ap_memory, linear_weights_11, array</column>
+<column name="linear_weights_11_q0">in, 32, ap_memory, linear_weights_11, array</column>
+<column name="linear_weights_11_address1">out, 4, ap_memory, linear_weights_11, array</column>
+<column name="linear_weights_11_ce1">out, 1, ap_memory, linear_weights_11, array</column>
+<column name="linear_weights_11_q1">in, 32, ap_memory, linear_weights_11, array</column>
+<column name="linear_weights_10_address0">out, 4, ap_memory, linear_weights_10, array</column>
+<column name="linear_weights_10_ce0">out, 1, ap_memory, linear_weights_10, array</column>
+<column name="linear_weights_10_q0">in, 32, ap_memory, linear_weights_10, array</column>
+<column name="linear_weights_10_address1">out, 4, ap_memory, linear_weights_10, array</column>
+<column name="linear_weights_10_ce1">out, 1, ap_memory, linear_weights_10, array</column>
+<column name="linear_weights_10_q1">in, 32, ap_memory, linear_weights_10, array</column>
+<column name="linear_weights_9_address0">out, 4, ap_memory, linear_weights_9, array</column>
+<column name="linear_weights_9_ce0">out, 1, ap_memory, linear_weights_9, array</column>
+<column name="linear_weights_9_q0">in, 32, ap_memory, linear_weights_9, array</column>
+<column name="linear_weights_9_address1">out, 4, ap_memory, linear_weights_9, array</column>
+<column name="linear_weights_9_ce1">out, 1, ap_memory, linear_weights_9, array</column>
+<column name="linear_weights_9_q1">in, 32, ap_memory, linear_weights_9, array</column>
+<column name="linear_weights_8_address0">out, 4, ap_memory, linear_weights_8, array</column>
+<column name="linear_weights_8_ce0">out, 1, ap_memory, linear_weights_8, array</column>
+<column name="linear_weights_8_q0">in, 32, ap_memory, linear_weights_8, array</column>
+<column name="linear_weights_8_address1">out, 4, ap_memory, linear_weights_8, array</column>
+<column name="linear_weights_8_ce1">out, 1, ap_memory, linear_weights_8, array</column>
+<column name="linear_weights_8_q1">in, 32, ap_memory, linear_weights_8, array</column>
+<column name="linear_weights_7_address0">out, 4, ap_memory, linear_weights_7, array</column>
+<column name="linear_weights_7_ce0">out, 1, ap_memory, linear_weights_7, array</column>
+<column name="linear_weights_7_q0">in, 32, ap_memory, linear_weights_7, array</column>
+<column name="linear_weights_7_address1">out, 4, ap_memory, linear_weights_7, array</column>
+<column name="linear_weights_7_ce1">out, 1, ap_memory, linear_weights_7, array</column>
+<column name="linear_weights_7_q1">in, 32, ap_memory, linear_weights_7, array</column>
+<column name="linear_weights_6_address0">out, 4, ap_memory, linear_weights_6, array</column>
+<column name="linear_weights_6_ce0">out, 1, ap_memory, linear_weights_6, array</column>
+<column name="linear_weights_6_q0">in, 32, ap_memory, linear_weights_6, array</column>
+<column name="linear_weights_6_address1">out, 4, ap_memory, linear_weights_6, array</column>
+<column name="linear_weights_6_ce1">out, 1, ap_memory, linear_weights_6, array</column>
+<column name="linear_weights_6_q1">in, 32, ap_memory, linear_weights_6, array</column>
+<column name="linear_weights_5_address0">out, 4, ap_memory, linear_weights_5, array</column>
+<column name="linear_weights_5_ce0">out, 1, ap_memory, linear_weights_5, array</column>
+<column name="linear_weights_5_q0">in, 32, ap_memory, linear_weights_5, array</column>
+<column name="linear_weights_5_address1">out, 4, ap_memory, linear_weights_5, array</column>
+<column name="linear_weights_5_ce1">out, 1, ap_memory, linear_weights_5, array</column>
+<column name="linear_weights_5_q1">in, 32, ap_memory, linear_weights_5, array</column>
+<column name="linear_weights_4_address0">out, 4, ap_memory, linear_weights_4, array</column>
+<column name="linear_weights_4_ce0">out, 1, ap_memory, linear_weights_4, array</column>
+<column name="linear_weights_4_q0">in, 32, ap_memory, linear_weights_4, array</column>
+<column name="linear_weights_4_address1">out, 4, ap_memory, linear_weights_4, array</column>
+<column name="linear_weights_4_ce1">out, 1, ap_memory, linear_weights_4, array</column>
+<column name="linear_weights_4_q1">in, 32, ap_memory, linear_weights_4, array</column>
+<column name="linear_weights_3_address0">out, 4, ap_memory, linear_weights_3, array</column>
+<column name="linear_weights_3_ce0">out, 1, ap_memory, linear_weights_3, array</column>
+<column name="linear_weights_3_q0">in, 32, ap_memory, linear_weights_3, array</column>
+<column name="linear_weights_3_address1">out, 4, ap_memory, linear_weights_3, array</column>
+<column name="linear_weights_3_ce1">out, 1, ap_memory, linear_weights_3, array</column>
+<column name="linear_weights_3_q1">in, 32, ap_memory, linear_weights_3, array</column>
+<column name="linear_weights_2_address0">out, 4, ap_memory, linear_weights_2, array</column>
+<column name="linear_weights_2_ce0">out, 1, ap_memory, linear_weights_2, array</column>
+<column name="linear_weights_2_q0">in, 32, ap_memory, linear_weights_2, array</column>
+<column name="linear_weights_2_address1">out, 4, ap_memory, linear_weights_2, array</column>
+<column name="linear_weights_2_ce1">out, 1, ap_memory, linear_weights_2, array</column>
+<column name="linear_weights_2_q1">in, 32, ap_memory, linear_weights_2, array</column>
+<column name="linear_weights_1_address0">out, 4, ap_memory, linear_weights_1, array</column>
+<column name="linear_weights_1_ce0">out, 1, ap_memory, linear_weights_1, array</column>
+<column name="linear_weights_1_q0">in, 32, ap_memory, linear_weights_1, array</column>
+<column name="linear_weights_1_address1">out, 4, ap_memory, linear_weights_1, array</column>
+<column name="linear_weights_1_ce1">out, 1, ap_memory, linear_weights_1, array</column>
+<column name="linear_weights_1_q1">in, 32, ap_memory, linear_weights_1, array</column>
+<column name="linear_weights_0_address0">out, 4, ap_memory, linear_weights_0, array</column>
+<column name="linear_weights_0_ce0">out, 1, ap_memory, linear_weights_0, array</column>
+<column name="linear_weights_0_q0">in, 32, ap_memory, linear_weights_0, array</column>
+<column name="linear_weights_0_address1">out, 4, ap_memory, linear_weights_0, array</column>
+<column name="linear_weights_0_ce1">out, 1, ap_memory, linear_weights_0, array</column>
+<column name="linear_weights_0_q1">in, 32, ap_memory, linear_weights_0, array</column>
+<column name="linear_biases_0_load">in, 32, ap_none, linear_biases_0_load, scalar</column>
+<column name="linear_biases_1_load">in, 32, ap_none, linear_biases_1_load, scalar</column>
+<column name="linear_biases_2_load">in, 32, ap_none, linear_biases_2_load, scalar</column>
+<column name="linear_biases_3_load">in, 32, ap_none, linear_biases_3_load, scalar</column>
+<column name="linear_biases_4_load">in, 32, ap_none, linear_biases_4_load, scalar</column>
+<column name="linear_biases_5_load">in, 32, ap_none, linear_biases_5_load, scalar</column>
+<column name="linear_biases_6_load">in, 32, ap_none, linear_biases_6_load, scalar</column>
+<column name="linear_biases_7_load">in, 32, ap_none, linear_biases_7_load, scalar</column>
+<column name="linear_biases_8_load">in, 32, ap_none, linear_biases_8_load, scalar</column>
+<column name="linear_biases_9_load">in, 32, ap_none, linear_biases_9_load, scalar</column>
+<column name="linear_biases_10_load">in, 32, ap_none, linear_biases_10_load, scalar</column>
+<column name="linear_biases_11_load">in, 32, ap_none, linear_biases_11_load, scalar</column>
+<column name="linear_biases_12_load">in, 32, ap_none, linear_biases_12_load, scalar</column>
+<column name="linear_biases_13_load">in, 32, ap_none, linear_biases_13_load, scalar</column>
+<column name="linear_biases_14_load">in, 32, ap_none, linear_biases_14_load, scalar</column>
+<column name="linear_biases_15_load">in, 32, ap_none, linear_biases_15_load, scalar</column>
+</table>
+</item>
+</section>
+</profile>

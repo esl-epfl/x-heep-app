@@ -1,0 +1,342 @@
+
+
+================================================================
+== Vitis HLS Report for 'inference'
+================================================================
+* Date:           Fri Jan  6 21:26:09 2023
+
+* Version:        2022.1 (Build 3526262 on Mon Apr 18 15:47:01 MDT 2022)
+* Project:        ultrasound_accelerator
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  50.00 ns|  18.087 ns|    13.50 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------------------------------------+--------------------------------------------------------------------+----------+----------+-----------+-----------+----------+----------+---------+
+        |                                                                               |                                                                    |   Latency (cycles)  |   Latency (absolute)  |       Interval      | Pipeline|
+        |                                    Instance                                   |                               Module                               |    min   |    max   |    min    |    max    |    min   |    max   |   Type  |
+        +-------------------------------------------------------------------------------+--------------------------------------------------------------------+----------+----------+-----------+-----------+----------+----------+---------+
+        |grp_inference_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3_fu_394  |inference_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3  |  35840003|  35840003|  1.792 sec|  1.792 sec|  35840003|  35840003|       no|
+        |grp_inference_Pipeline_VITIS_LOOP_54_1_fu_449                                  |inference_Pipeline_VITIS_LOOP_54_1                                  |         ?|         ?|          ?|          ?|         ?|         ?|       no|
+        |grp_inference_Pipeline_VITIS_LOOP_76_1_fu_457                                  |inference_Pipeline_VITIS_LOOP_76_1                                  |       265|       265|  13.250 us|  13.250 us|       265|       265|       no|
+        +-------------------------------------------------------------------------------+--------------------------------------------------------------------+----------+----------+-----------+-----------+----------+----------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     38|    -|
+|FIFO             |        -|    -|     198|    136|    -|
+|Instance         |        -|   18|    3349|   4653|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    107|    -|
+|Register         |        -|    -|      75|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|   18|    3622|   4934|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    8|       3|      9|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------------------------------------------------+--------------------------------------------------------------------+---------+----+------+------+-----+
+    |                                    Instance                                   |                               Module                               | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +-------------------------------------------------------------------------------+--------------------------------------------------------------------+---------+----+------+------+-----+
+    |grp_inference_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3_fu_394  |inference_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3  |        0|   2|   147|   593|    0|
+    |grp_inference_Pipeline_VITIS_LOOP_54_1_fu_449                                  |inference_Pipeline_VITIS_LOOP_54_1                                  |        0|   0|  2548|  2001|    0|
+    |grp_inference_Pipeline_VITIS_LOOP_76_1_fu_457                                  |inference_Pipeline_VITIS_LOOP_76_1                                  |        0|  16|   654|  2059|    0|
+    +-------------------------------------------------------------------------------+--------------------------------------------------------------------+---------+----+------+------+-----+
+    |Total                                                                          |                                                                    |        0|  18|  3349|  4653|    0|
+    +-------------------------------------------------------------------------------+--------------------------------------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +--------------------+---------+----+----+-----+------+-----+---------+
+    |        Name        | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +--------------------+---------+----+----+-----+------+-----+---------+
+    |conv_output_fifo_U  |        0|  99|   0|    -|     2|   16|       32|
+    |pool_output_fifo_U  |        0|  99|   0|    -|     2|   16|       32|
+    +--------------------+---------+----+----+-----+------+-----+---------+
+    |Total               |        0| 198|   0|    0|     4|   32|       64|
+    +--------------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |icmp_ln46_1_fu_526_p2  |      icmp|   0|  0|  18|          32|           1|
+    |icmp_ln46_fu_520_p2    |      icmp|   0|  0|  18|          32|           1|
+    |or_ln46_fu_532_p2      |        or|   0|  0|   2|           1|           1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0|  38|          65|           3|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------+----+-----------+-----+-----------+
+    |        Name       | LUT| Input Size| Bits| Total Bits|
+    +-------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm          |  53|         10|    1|         10|
+    |conv_output_read   |   9|          2|    1|          2|
+    |conv_output_write  |   9|          2|    1|          2|
+    |input_r_read       |   9|          2|    1|          2|
+    |output_r_write     |   9|          2|    1|          2|
+    |pool_output_read   |   9|          2|    1|          2|
+    |pool_output_write  |   9|          2|    1|          2|
+    +-------------------+----+-----------+-----+-----------+
+    |Total              | 107|         22|    7|         22|
+    +-------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                            Name                                            | FF | LUT| Bits| Const Bits|
+    +--------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                                                   |   9|   0|    9|          0|
+    |grp_inference_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_VITIS_LOOP_25_3_fu_394_ap_start_reg  |   1|   0|    1|          0|
+    |grp_inference_Pipeline_VITIS_LOOP_54_1_fu_449_ap_start_reg                                  |   1|   0|    1|          0|
+    |grp_inference_Pipeline_VITIS_LOOP_76_1_fu_457_ap_start_reg                                  |   1|   0|    1|          0|
+    |or_ln46_reg_640                                                                             |   1|   0|    1|          0|
+    |trunc_ln86_1_reg_543                                                                        |  31|   0|   31|          0|
+    |trunc_ln86_reg_538                                                                          |  31|   0|   31|          0|
+    +--------------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                                       |  75|   0|   75|          0|
+    +--------------------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------+-----+-----+------------+-------------------+--------------+
+|          RTL Ports         | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++----------------------------+-----+-----+------------+-------------------+--------------+
+|ap_clk                      |   in|    1|  ap_ctrl_hs|          inference|  return value|
+|ap_rst                      |   in|    1|  ap_ctrl_hs|          inference|  return value|
+|ap_start                    |   in|    1|  ap_ctrl_hs|          inference|  return value|
+|ap_done                     |  out|    1|  ap_ctrl_hs|          inference|  return value|
+|ap_idle                     |  out|    1|  ap_ctrl_hs|          inference|  return value|
+|ap_ready                    |  out|    1|  ap_ctrl_hs|          inference|  return value|
+|input_r_dout                |   in|   16|     ap_fifo|            input_r|       pointer|
+|input_r_empty_n             |   in|    1|     ap_fifo|            input_r|       pointer|
+|input_r_read                |  out|    1|     ap_fifo|            input_r|       pointer|
+|output_r_din                |  out|   16|     ap_fifo|           output_r|       pointer|
+|output_r_full_n             |   in|    1|     ap_fifo|           output_r|       pointer|
+|output_r_write              |  out|    1|     ap_fifo|           output_r|       pointer|
+|conv_weights_0_address0     |  out|    7|   ap_memory|     conv_weights_0|         array|
+|conv_weights_0_ce0          |  out|    1|   ap_memory|     conv_weights_0|         array|
+|conv_weights_0_q0           |   in|   32|   ap_memory|     conv_weights_0|         array|
+|conv_weights_1_address0     |  out|    7|   ap_memory|     conv_weights_1|         array|
+|conv_weights_1_ce0          |  out|    1|   ap_memory|     conv_weights_1|         array|
+|conv_weights_1_q0           |   in|   32|   ap_memory|     conv_weights_1|         array|
+|conv_weights_2_address0     |  out|    7|   ap_memory|     conv_weights_2|         array|
+|conv_weights_2_ce0          |  out|    1|   ap_memory|     conv_weights_2|         array|
+|conv_weights_2_q0           |   in|   32|   ap_memory|     conv_weights_2|         array|
+|conv_weights_3_address0     |  out|    7|   ap_memory|     conv_weights_3|         array|
+|conv_weights_3_ce0          |  out|    1|   ap_memory|     conv_weights_3|         array|
+|conv_weights_3_q0           |   in|   32|   ap_memory|     conv_weights_3|         array|
+|conv_weights_4_address0     |  out|    7|   ap_memory|     conv_weights_4|         array|
+|conv_weights_4_ce0          |  out|    1|   ap_memory|     conv_weights_4|         array|
+|conv_weights_4_q0           |   in|   32|   ap_memory|     conv_weights_4|         array|
+|conv_weights_5_address0     |  out|    7|   ap_memory|     conv_weights_5|         array|
+|conv_weights_5_ce0          |  out|    1|   ap_memory|     conv_weights_5|         array|
+|conv_weights_5_q0           |   in|   32|   ap_memory|     conv_weights_5|         array|
+|conv_weights_6_address0     |  out|    7|   ap_memory|     conv_weights_6|         array|
+|conv_weights_6_ce0          |  out|    1|   ap_memory|     conv_weights_6|         array|
+|conv_weights_6_q0           |   in|   32|   ap_memory|     conv_weights_6|         array|
+|conv_weights_7_address0     |  out|    7|   ap_memory|     conv_weights_7|         array|
+|conv_weights_7_ce0          |  out|    1|   ap_memory|     conv_weights_7|         array|
+|conv_weights_7_q0           |   in|   32|   ap_memory|     conv_weights_7|         array|
+|conv_weights_8_address0     |  out|    7|   ap_memory|     conv_weights_8|         array|
+|conv_weights_8_ce0          |  out|    1|   ap_memory|     conv_weights_8|         array|
+|conv_weights_8_q0           |   in|   32|   ap_memory|     conv_weights_8|         array|
+|conv_weights_9_address0     |  out|    7|   ap_memory|     conv_weights_9|         array|
+|conv_weights_9_ce0          |  out|    1|   ap_memory|     conv_weights_9|         array|
+|conv_weights_9_q0           |   in|   32|   ap_memory|     conv_weights_9|         array|
+|conv_weights_10_address0    |  out|    7|   ap_memory|    conv_weights_10|         array|
+|conv_weights_10_ce0         |  out|    1|   ap_memory|    conv_weights_10|         array|
+|conv_weights_10_q0          |   in|   32|   ap_memory|    conv_weights_10|         array|
+|conv_weights_11_address0    |  out|    7|   ap_memory|    conv_weights_11|         array|
+|conv_weights_11_ce0         |  out|    1|   ap_memory|    conv_weights_11|         array|
+|conv_weights_11_q0          |   in|   32|   ap_memory|    conv_weights_11|         array|
+|conv_weights_12_address0    |  out|    7|   ap_memory|    conv_weights_12|         array|
+|conv_weights_12_ce0         |  out|    1|   ap_memory|    conv_weights_12|         array|
+|conv_weights_12_q0          |   in|   32|   ap_memory|    conv_weights_12|         array|
+|conv_weights_13_address0    |  out|    7|   ap_memory|    conv_weights_13|         array|
+|conv_weights_13_ce0         |  out|    1|   ap_memory|    conv_weights_13|         array|
+|conv_weights_13_q0          |   in|   32|   ap_memory|    conv_weights_13|         array|
+|conv_weights_14_address0    |  out|    7|   ap_memory|    conv_weights_14|         array|
+|conv_weights_14_ce0         |  out|    1|   ap_memory|    conv_weights_14|         array|
+|conv_weights_14_q0          |   in|   32|   ap_memory|    conv_weights_14|         array|
+|conv_weights_15_address0    |  out|    7|   ap_memory|    conv_weights_15|         array|
+|conv_weights_15_ce0         |  out|    1|   ap_memory|    conv_weights_15|         array|
+|conv_weights_15_q0          |   in|   32|   ap_memory|    conv_weights_15|         array|
+|conv_biases_0               |   in|   32|     ap_none|      conv_biases_0|       pointer|
+|conv_biases_1               |   in|   32|     ap_none|      conv_biases_1|       pointer|
+|conv_biases_2               |   in|   32|     ap_none|      conv_biases_2|       pointer|
+|conv_biases_3               |   in|   32|     ap_none|      conv_biases_3|       pointer|
+|conv_biases_4               |   in|   32|     ap_none|      conv_biases_4|       pointer|
+|conv_biases_5               |   in|   32|     ap_none|      conv_biases_5|       pointer|
+|conv_biases_6               |   in|   32|     ap_none|      conv_biases_6|       pointer|
+|conv_biases_7               |   in|   32|     ap_none|      conv_biases_7|       pointer|
+|conv_biases_8               |   in|   32|     ap_none|      conv_biases_8|       pointer|
+|conv_biases_9               |   in|   32|     ap_none|      conv_biases_9|       pointer|
+|conv_biases_10              |   in|   32|     ap_none|     conv_biases_10|       pointer|
+|conv_biases_11              |   in|   32|     ap_none|     conv_biases_11|       pointer|
+|conv_biases_12              |   in|   32|     ap_none|     conv_biases_12|       pointer|
+|conv_biases_13              |   in|   32|     ap_none|     conv_biases_13|       pointer|
+|conv_biases_14              |   in|   32|     ap_none|     conv_biases_14|       pointer|
+|conv_biases_15              |   in|   32|     ap_none|     conv_biases_15|       pointer|
+|pool_size                   |   in|   32|     ap_none|          pool_size|        scalar|
+|pool_stride                 |   in|   32|     ap_none|        pool_stride|        scalar|
+|linear_weights_0_address0   |  out|    4|   ap_memory|   linear_weights_0|         array|
+|linear_weights_0_ce0        |  out|    1|   ap_memory|   linear_weights_0|         array|
+|linear_weights_0_q0         |   in|   32|   ap_memory|   linear_weights_0|         array|
+|linear_weights_0_address1   |  out|    4|   ap_memory|   linear_weights_0|         array|
+|linear_weights_0_ce1        |  out|    1|   ap_memory|   linear_weights_0|         array|
+|linear_weights_0_q1         |   in|   32|   ap_memory|   linear_weights_0|         array|
+|linear_weights_1_address0   |  out|    4|   ap_memory|   linear_weights_1|         array|
+|linear_weights_1_ce0        |  out|    1|   ap_memory|   linear_weights_1|         array|
+|linear_weights_1_q0         |   in|   32|   ap_memory|   linear_weights_1|         array|
+|linear_weights_1_address1   |  out|    4|   ap_memory|   linear_weights_1|         array|
+|linear_weights_1_ce1        |  out|    1|   ap_memory|   linear_weights_1|         array|
+|linear_weights_1_q1         |   in|   32|   ap_memory|   linear_weights_1|         array|
+|linear_weights_2_address0   |  out|    4|   ap_memory|   linear_weights_2|         array|
+|linear_weights_2_ce0        |  out|    1|   ap_memory|   linear_weights_2|         array|
+|linear_weights_2_q0         |   in|   32|   ap_memory|   linear_weights_2|         array|
+|linear_weights_2_address1   |  out|    4|   ap_memory|   linear_weights_2|         array|
+|linear_weights_2_ce1        |  out|    1|   ap_memory|   linear_weights_2|         array|
+|linear_weights_2_q1         |   in|   32|   ap_memory|   linear_weights_2|         array|
+|linear_weights_3_address0   |  out|    4|   ap_memory|   linear_weights_3|         array|
+|linear_weights_3_ce0        |  out|    1|   ap_memory|   linear_weights_3|         array|
+|linear_weights_3_q0         |   in|   32|   ap_memory|   linear_weights_3|         array|
+|linear_weights_3_address1   |  out|    4|   ap_memory|   linear_weights_3|         array|
+|linear_weights_3_ce1        |  out|    1|   ap_memory|   linear_weights_3|         array|
+|linear_weights_3_q1         |   in|   32|   ap_memory|   linear_weights_3|         array|
+|linear_weights_4_address0   |  out|    4|   ap_memory|   linear_weights_4|         array|
+|linear_weights_4_ce0        |  out|    1|   ap_memory|   linear_weights_4|         array|
+|linear_weights_4_q0         |   in|   32|   ap_memory|   linear_weights_4|         array|
+|linear_weights_4_address1   |  out|    4|   ap_memory|   linear_weights_4|         array|
+|linear_weights_4_ce1        |  out|    1|   ap_memory|   linear_weights_4|         array|
+|linear_weights_4_q1         |   in|   32|   ap_memory|   linear_weights_4|         array|
+|linear_weights_5_address0   |  out|    4|   ap_memory|   linear_weights_5|         array|
+|linear_weights_5_ce0        |  out|    1|   ap_memory|   linear_weights_5|         array|
+|linear_weights_5_q0         |   in|   32|   ap_memory|   linear_weights_5|         array|
+|linear_weights_5_address1   |  out|    4|   ap_memory|   linear_weights_5|         array|
+|linear_weights_5_ce1        |  out|    1|   ap_memory|   linear_weights_5|         array|
+|linear_weights_5_q1         |   in|   32|   ap_memory|   linear_weights_5|         array|
+|linear_weights_6_address0   |  out|    4|   ap_memory|   linear_weights_6|         array|
+|linear_weights_6_ce0        |  out|    1|   ap_memory|   linear_weights_6|         array|
+|linear_weights_6_q0         |   in|   32|   ap_memory|   linear_weights_6|         array|
+|linear_weights_6_address1   |  out|    4|   ap_memory|   linear_weights_6|         array|
+|linear_weights_6_ce1        |  out|    1|   ap_memory|   linear_weights_6|         array|
+|linear_weights_6_q1         |   in|   32|   ap_memory|   linear_weights_6|         array|
+|linear_weights_7_address0   |  out|    4|   ap_memory|   linear_weights_7|         array|
+|linear_weights_7_ce0        |  out|    1|   ap_memory|   linear_weights_7|         array|
+|linear_weights_7_q0         |   in|   32|   ap_memory|   linear_weights_7|         array|
+|linear_weights_7_address1   |  out|    4|   ap_memory|   linear_weights_7|         array|
+|linear_weights_7_ce1        |  out|    1|   ap_memory|   linear_weights_7|         array|
+|linear_weights_7_q1         |   in|   32|   ap_memory|   linear_weights_7|         array|
+|linear_weights_8_address0   |  out|    4|   ap_memory|   linear_weights_8|         array|
+|linear_weights_8_ce0        |  out|    1|   ap_memory|   linear_weights_8|         array|
+|linear_weights_8_q0         |   in|   32|   ap_memory|   linear_weights_8|         array|
+|linear_weights_8_address1   |  out|    4|   ap_memory|   linear_weights_8|         array|
+|linear_weights_8_ce1        |  out|    1|   ap_memory|   linear_weights_8|         array|
+|linear_weights_8_q1         |   in|   32|   ap_memory|   linear_weights_8|         array|
+|linear_weights_9_address0   |  out|    4|   ap_memory|   linear_weights_9|         array|
+|linear_weights_9_ce0        |  out|    1|   ap_memory|   linear_weights_9|         array|
+|linear_weights_9_q0         |   in|   32|   ap_memory|   linear_weights_9|         array|
+|linear_weights_9_address1   |  out|    4|   ap_memory|   linear_weights_9|         array|
+|linear_weights_9_ce1        |  out|    1|   ap_memory|   linear_weights_9|         array|
+|linear_weights_9_q1         |   in|   32|   ap_memory|   linear_weights_9|         array|
+|linear_weights_10_address0  |  out|    4|   ap_memory|  linear_weights_10|         array|
+|linear_weights_10_ce0       |  out|    1|   ap_memory|  linear_weights_10|         array|
+|linear_weights_10_q0        |   in|   32|   ap_memory|  linear_weights_10|         array|
+|linear_weights_10_address1  |  out|    4|   ap_memory|  linear_weights_10|         array|
+|linear_weights_10_ce1       |  out|    1|   ap_memory|  linear_weights_10|         array|
+|linear_weights_10_q1        |   in|   32|   ap_memory|  linear_weights_10|         array|
+|linear_weights_11_address0  |  out|    4|   ap_memory|  linear_weights_11|         array|
+|linear_weights_11_ce0       |  out|    1|   ap_memory|  linear_weights_11|         array|
+|linear_weights_11_q0        |   in|   32|   ap_memory|  linear_weights_11|         array|
+|linear_weights_11_address1  |  out|    4|   ap_memory|  linear_weights_11|         array|
+|linear_weights_11_ce1       |  out|    1|   ap_memory|  linear_weights_11|         array|
+|linear_weights_11_q1        |   in|   32|   ap_memory|  linear_weights_11|         array|
+|linear_weights_12_address0  |  out|    4|   ap_memory|  linear_weights_12|         array|
+|linear_weights_12_ce0       |  out|    1|   ap_memory|  linear_weights_12|         array|
+|linear_weights_12_q0        |   in|   32|   ap_memory|  linear_weights_12|         array|
+|linear_weights_12_address1  |  out|    4|   ap_memory|  linear_weights_12|         array|
+|linear_weights_12_ce1       |  out|    1|   ap_memory|  linear_weights_12|         array|
+|linear_weights_12_q1        |   in|   32|   ap_memory|  linear_weights_12|         array|
+|linear_weights_13_address0  |  out|    4|   ap_memory|  linear_weights_13|         array|
+|linear_weights_13_ce0       |  out|    1|   ap_memory|  linear_weights_13|         array|
+|linear_weights_13_q0        |   in|   32|   ap_memory|  linear_weights_13|         array|
+|linear_weights_13_address1  |  out|    4|   ap_memory|  linear_weights_13|         array|
+|linear_weights_13_ce1       |  out|    1|   ap_memory|  linear_weights_13|         array|
+|linear_weights_13_q1        |   in|   32|   ap_memory|  linear_weights_13|         array|
+|linear_weights_14_address0  |  out|    4|   ap_memory|  linear_weights_14|         array|
+|linear_weights_14_ce0       |  out|    1|   ap_memory|  linear_weights_14|         array|
+|linear_weights_14_q0        |   in|   32|   ap_memory|  linear_weights_14|         array|
+|linear_weights_14_address1  |  out|    4|   ap_memory|  linear_weights_14|         array|
+|linear_weights_14_ce1       |  out|    1|   ap_memory|  linear_weights_14|         array|
+|linear_weights_14_q1        |   in|   32|   ap_memory|  linear_weights_14|         array|
+|linear_weights_15_address0  |  out|    4|   ap_memory|  linear_weights_15|         array|
+|linear_weights_15_ce0       |  out|    1|   ap_memory|  linear_weights_15|         array|
+|linear_weights_15_q0        |   in|   32|   ap_memory|  linear_weights_15|         array|
+|linear_weights_15_address1  |  out|    4|   ap_memory|  linear_weights_15|         array|
+|linear_weights_15_ce1       |  out|    1|   ap_memory|  linear_weights_15|         array|
+|linear_weights_15_q1        |   in|   32|   ap_memory|  linear_weights_15|         array|
+|linear_biases_0             |   in|   32|     ap_none|    linear_biases_0|       pointer|
+|linear_biases_1             |   in|   32|     ap_none|    linear_biases_1|       pointer|
+|linear_biases_2             |   in|   32|     ap_none|    linear_biases_2|       pointer|
+|linear_biases_3             |   in|   32|     ap_none|    linear_biases_3|       pointer|
+|linear_biases_4             |   in|   32|     ap_none|    linear_biases_4|       pointer|
+|linear_biases_5             |   in|   32|     ap_none|    linear_biases_5|       pointer|
+|linear_biases_6             |   in|   32|     ap_none|    linear_biases_6|       pointer|
+|linear_biases_7             |   in|   32|     ap_none|    linear_biases_7|       pointer|
+|linear_biases_8             |   in|   32|     ap_none|    linear_biases_8|       pointer|
+|linear_biases_9             |   in|   32|     ap_none|    linear_biases_9|       pointer|
+|linear_biases_10            |   in|   32|     ap_none|   linear_biases_10|       pointer|
+|linear_biases_11            |   in|   32|     ap_none|   linear_biases_11|       pointer|
+|linear_biases_12            |   in|   32|     ap_none|   linear_biases_12|       pointer|
+|linear_biases_13            |   in|   32|     ap_none|   linear_biases_13|       pointer|
+|linear_biases_14            |   in|   32|     ap_none|   linear_biases_14|       pointer|
+|linear_biases_15            |   in|   32|     ap_none|   linear_biases_15|       pointer|
++----------------------------+-----+-----+------------+-------------------+--------------+
+

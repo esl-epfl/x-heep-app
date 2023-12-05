@@ -1,0 +1,105 @@
+Backend: Vivado
+Board: null
+ClockPeriod: 5
+HLSConfig:
+  LayerName:
+    average_pooling1d:
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 4
+      Strategy: Resource
+    average_pooling1d_1:
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 4
+      Strategy: Resource
+    conv1d:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<16,6>
+      ReuseFactor: 4
+      Strategy: Resource
+    conv1d_1:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<16,6>
+      ReuseFactor: 4
+      Strategy: Resource
+    conv1d_1_linear:
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 4
+      Strategy: Resource
+      table_size: 1024
+      table_t: ap_fixed<18,8>
+    conv1d_input:
+      Precision:
+        result: ap_fixed<16,6>
+      ReuseFactor: 4
+      Strategy: Resource
+    conv1d_linear:
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 4
+      Strategy: Resource
+      table_size: 1024
+      table_t: ap_fixed<18,8>
+    dense:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<16,6>
+      ReuseFactor: 4
+      Strategy: Resource
+    dense_linear:
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 4
+      Strategy: Resource
+      table_size: 1024
+      table_t: ap_fixed<18,8>
+    output_dense:
+      Precision:
+        bias: ap_fixed<16,6>
+        result: ap_fixed<16,6>
+        weight: ap_fixed<16,6>
+      ReuseFactor: 4
+      Strategy: Resource
+    output_dense_linear:
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 4
+      Strategy: Resource
+      table_size: 1024
+      table_t: ap_fixed<18,8>
+    output_softmax:
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 4
+      Strategy: Stable
+      exp_table_t: ap_fixed<18,8,AP_RND,AP_SAT>
+      inv_table_t: ap_fixed<18,8,AP_RND,AP_SAT>
+      table_size: 1024
+    re_lu:
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 4
+      Strategy: Resource
+      table_size: 1024
+      table_t: ap_fixed<18,8>
+    re_lu_1:
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 4
+      Strategy: Resource
+      table_size: 1024
+      table_t: ap_fixed<18,8>
+    re_lu_2:
+      Precision: ap_fixed<16,6>
+      ReuseFactor: 4
+      Strategy: Resource
+      table_size: 1024
+      table_t: ap_fixed<18,8>
+  Model:
+    Precision: ap_fixed<16,6>
+    ReuseFactor: 4
+    Strategy: Latency
+IOType: io_stream
+KerasModel: !keras_model 'pruned_cnn//keras_model.h5'
+OutputDir: pruned_cnn/
+ProjectName: myproject
+Stamp: bCa4EfFc
+XilinxPart: xc7z020clg400-1
